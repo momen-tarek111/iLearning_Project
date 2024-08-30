@@ -1,0 +1,1525 @@
+@media screen and (max-width: 1600px) {
+    .article-cat {
+        font-size: 16px;
+    }
+
+    .event-details-title-box h2 {
+        font-size: 40px;
+    }
+
+    .career-details-title-box h2 {
+        font-size: 50px;
+        line-height: 70px;
+        margin-bottom: 8px;
+    }
+
+    .article-wishlist {
+        width: 50px;
+        height: 50px;
+        font-size: 22px;
+    }
+
+    .slider-btn-box .slick-arrow {
+        width: 45px;
+        height: 45px;
+        font-size: 14px;
+    }
+
+    .footer-menu .menu-category {
+        font-size: 20px;
+        margin-bottom: 35px;
+    }
+
+    .hero-area {
+        padding-top: 115px;
+    }
+
+    .hero-title {
+        font-size: 60px;
+        line-height: 75px;
+    }
+
+    .hero-img-box {
+        height: 520px;
+    }
+
+    .hero-content {
+        margin-bottom: 65px;
+    }
+
+    .cat-title {
+        font-size: 25px;
+        margin-bottom: 5px;
+    }
+
+    .single-category {
+        padding: 35px;
+        border-radius: 10px;
+    }
+
+    .section-side-title {
+        font-size: 40px;
+        line-height: 55px;
+        margin-bottom: 20px;
+    }
+
+    .section-title-box h2,
+    .section-side-title-box h2,
+    .subscribe-box h2,
+    .short-dec-title {
+        font-size: 40px;
+        line-height: 55px;
+    }
+
+    .section-title-box {
+        max-width: 700px;
+        margin-bottom: 45px;
+    }
+
+    .section-side-title-box {
+        margin-bottom: 45px;
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    .single-testimonial{
+        width: 50%;
+    }
+    .single-expert{
+        width: 33.3333333333333333333333333333333333333%;
+    }
+    .btn-purple,
+    .btn-orange,
+    .btn-outline-purple,
+    .btn-white,
+    .btn-outline-gray {
+        font-size: 16px;
+        padding: 17px 25px;
+        line-height: 26px;
+    }
+
+    .single-contact-box {
+        padding: 90px 35px;
+    }
+
+    .single-contact-text {
+        font-size: 32px;
+        line-height: 50px;
+    }
+
+    .single-contact-img {
+        width: 130px;
+        height: 130px;
+    }
+
+    .user-lg-title {
+        font-size: 42px;
+        line-height: 60px;
+    }
+
+    .single-contact-img img {
+        width: 70px;
+    }
+
+    .form-top-box .form-name {
+        font-size: 32px;
+        line-height: 45px;
+    }
+
+    .form-text {
+        font-size: 18px;
+        line-height: 32px;
+    }
+
+    .expert-img {
+        height: 350px;
+        width: 240px;
+        border-radius: 100px;
+    }
+
+    .course-title {
+        font-size: 20px;
+        line-height: 34px;
+        margin-bottom: 10px;
+        min-height: 60px;
+    }
+
+    .course-short-desc p {
+        font-size: 13px;
+        line-height: 26px;
+        gap: 2px;
+    }
+
+    .course-short-desc p img {
+        width: 20px;
+    }
+
+    .instructor-name {
+        font-size: 16px;
+        line-height: 26px;
+    }
+
+    .course-price {
+        font-size: 16px;
+        line-height: 26px;
+    }
+
+    .course-content-top {
+        padding: 20px;
+    }
+
+    .course-content-bottom {
+        padding: 20px;
+    }
+
+    .cat-icon img {
+        width: 25px;
+    }
+    .cat-icon {
+        width: 70px;
+        height: 70px;
+    }
+
+    .cat-title {
+        font-size: 22px;
+        margin-bottom: 0px;
+    }
+
+    .cat-num {
+        font-size: 16px;
+    }
+
+    .choosong-us-icon {
+        width: 120px;
+        height: 120px;
+    }
+
+    .choosong-us-icon img {
+        width: 30px;
+    }
+
+    .article-wishlist {
+        width: 55px;
+        height: 55px;
+        top: 20px;
+        right: 20px;
+        font-size: 22px;
+    }
+}
+
+@media screen and (max-width: 1400px) {
+
+    .single-testimonial{
+        width: 50%;
+    }
+    .single-expert{
+        width: 33.3333333333333333333333333333333333333%;
+    }
+    .event-img {
+        width: 200px;
+        height: 300px;
+        right: 100px;
+    }
+
+    .navbar-brand.header-logo {
+        width: 130px;
+    }
+
+    .single-event-box .column-2 {
+        -webkit-columns: 1;
+        -moz-columns: 1;
+        columns: 1;
+    }
+
+    .single-ec-top a {
+        font-size: 32px;
+    }
+
+    .single-event-img {
+        height: 405px;
+        width: 340px;
+    }
+
+    .event-map .google-map iframe {
+        height: 450px;
+    }
+
+    .event-btn-group .btn-purple {
+        width: 85%;
+    }
+
+    .checkout-cart .scp-img {
+        height: 115px;
+    }
+
+    .error-title {
+        font-size: 45px;
+        line-height: 55px;
+        margin-bottom: 30px;
+    }
+
+    .error-text {
+        font-size: 22px;
+        margin-bottom: 30px;
+    }
+
+    .footer-menu .menu-category {
+        font-size: 18px;
+        margin-bottom: 30px;
+    }
+
+    .career-details-tag-box {
+        margin-top: 28px;
+        margin-bottom: 25px;
+    }
+}
+
+@media screen and (max-width: 1366px) {
+    .single-testimonial{
+        width: 50%;
+    }
+    .single-expert{
+        width: 33.3333333333333333333333333333333333333%;
+    }
+    .hero-title {
+        font-size: 50px;
+        line-height: 65px;
+    }
+
+    .header .nav-link {
+        font-size: 16px;
+    }
+
+    .product-full-img img {
+        width: 100%;
+    }
+
+    .accordion-button {
+        font-size: 22px;
+    }
+
+    .career-details-title-box h2 {
+        font-size: 40px;
+        line-height: 60px;
+    }
+
+    .share-blog li a {
+        width: 60px;
+        height: 60px;
+        font-size: 24px;
+    }
+
+    .single-article {
+        padding: 20px;
+    }
+
+    .home-article-area .aricle-img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .home-article-area .aricle-img {
+        width: 170px;
+        height: 170px;
+    }
+
+    .home-article-area .article-title {
+        margin-bottom: 12px;
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    .home-article-area .single-article {
+        padding: 16px;
+    }
+
+    .home-article-area .aricle-img {
+        width: 180px;
+        height: 180px;
+    }
+
+    .article-desc {
+        gap: 15px;
+    }
+
+    .article-desc p {
+        font-size: 16px;
+        gap: 2px;
+    }
+
+    .article-cat {
+        padding: 12px 20px;
+    }
+
+    .article-title {
+        font-size: 22px;
+        line-height: 32px;
+        margin-bottom: 20px;
+        min-height: 62px;
+    }
+
+    .choose-icon {
+        width: 100px;
+        height: 100px;
+    }
+
+    .choose-text h3 {
+        font-size: 25px;
+        line-height: 45px;
+    }
+
+    .choose-text p {
+        font-size: 16px;
+        line-height: 26px;
+    }
+
+    .single-home-aritcle-2 .aricle-img {
+        width: 100%;
+        height: 270px;
+    }
+}
+@media screen and (max-width: 1280px) {
+    .single-testimonial{
+        width: 50%;
+    }
+    .single-expert{
+        width: 33.3333333333333333333333333333333333333%;
+    }
+    .advisor-bg {
+        display: none;
+    }
+
+    .single-choose {
+        padding: 15px;
+    }
+
+    .footer-middle {
+        padding: 70px 0;
+    }
+
+    .bd-quote {
+        font-size: 22px;
+    }
+}
+@media screen and (max-width: 1200px) {
+    .single-testimonial{
+        width: 50%;
+    }
+    .single-expert{
+        width: 33.3333333333333333333333333333333333333%;
+    }
+    .page-title-right {
+        width: 350px;
+    }
+
+    .review-lg-star {
+        font-size: 35px;
+    }
+
+    .single-testimonial-3 .testi-left {
+        gap: 32px;
+        width: 100%;
+        padding: 40px;
+    }
+
+    .testi-right {
+        display: none;
+    }
+
+    .playing-video-title {
+        font-size: 26px;
+        line-height: 40px;
+    }
+
+    .checkout-cart .scp-img {
+        height: 85px;
+    }
+
+    .user-lg-title {
+        font-size: 36px;
+        line-height: 55px;
+    }
+
+    .hiring-process-collections li {
+        -webkit-box-align: start !important;
+        -ms-flex-align: start !important;
+        align-items: start !important;
+    }
+
+    .career-title {
+        font-size: 22px;
+    }
+
+    .cb-left .career-text {
+        margin-bottom: 20px;
+    }
+
+    .career-top p {
+        font-size: 20px;
+    }
+
+    .career-bottom {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-align: start;
+        -ms-flex-align: start;
+        align-items: start;
+        gap: 20px;
+    }
+
+    .lg-blog .article-title {
+        font-size: 32px;
+        line-height: 50px;
+    }
+
+    .bds-tag-collections li a {
+        padding: 16px 24px;
+        font-size: 16px;
+    }
+
+    .mobile-lg-show {
+        display: block;
+    }
+
+    .mobile-lg-hide {
+        display: none;
+    }
+
+    .offer-icon img {
+        width: 50px;
+    }
+
+    .offer-content h3 {
+        font-size: 26px;
+        line-height: 36px;
+        margin-bottom: 16px;
+    }
+
+    .offer-content p {
+        font-size: 16px;
+        line-height: 28px;
+    }
+
+    .education-area .column-2 {
+        -webkit-column-count: 1;
+        -moz-column-count: 1;
+        column-count: 1;
+    }
+
+    .footer-content {
+        width: 100%;
+    }
+
+    .page-title {
+        font-size: 40px;
+        line-height: 55px;
+    }
+
+    .home-article-area .article-desc p {
+        font-size: 12px;
+    }
+
+    .article-desc {
+        gap: 12px;
+    }
+
+    .choosong-us-icon {
+        left: -25px;
+    }
+
+    .hero-bg {
+        display: none;
+    }
+
+    .hero-area {
+        background: var(--dark-purple);
+        padding-bottom: 20px;
+        margin-bottom: 40px;
+    }
+
+    .hero-img-box-1 {
+        display: block;
+        height: auto;
+    }
+
+    .hero-img-box-2 {
+        display: none;
+    }
+
+    .hero-content {
+        width: 100%;
+    }
+
+    .expert-img {
+        height: 405px;
+        width: 280px;
+    }
+
+    .analytics-title {
+        font-size: 50px;
+        line-height: 65px;
+    }
+
+    .analytics-text {
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    .course-short-desc p {
+        font-size: 11px;
+    }
+
+    .total-rating {
+        font-size: 16px;
+    }
+
+    .rating-average {
+        font-size: 16px;
+    }
+
+    .section-title-box h2,
+    .section-side-title-box h2,
+    .subscribe-box h2,
+    .short-dec-title {
+        font-size: 35px;
+        line-height: 50px;
+    }
+
+    .section-side-title {
+        font-size: 35px;
+        line-height: 50px;
+        margin-bottom: 15px;
+    }
+
+    .section-side-text {
+        font-size: 16px;
+        line-height: 28px;
+    }
+
+    .section-side-list li span {
+        width: 30px;
+        height: 30px;
+    }
+
+    .section-side-list li span img {
+        width: 18px;
+    }
+
+    .img-sm-left {
+        left: 10px;
+        width: 60px;
+        height: 60px;
+        border-radius: 10px;
+    }
+
+    .book-icon-box {
+        width: 50px;
+        height: 50px;
+    }
+
+    .book-shop {
+        gap: 10px;
+        font-size: 20px;
+        line-height: 30px;
+        padding: 10px;
+        border-radius: 10px;
+        width: 210px;
+        bottom: 25px;
+        right: 10px;
+    }
+
+    .img-sm-left img {
+        width: 36px;
+    }
+
+    .book-icon-box img {
+        width: 25px;
+    }
+}
+@media screen and (max-width: 1024px) {
+    .single-testimonial{
+        width: 100%;
+    }
+    .single-expert{
+        width: 50%;
+    }
+    .single-article {
+        padding: 15px;
+        gap: 15px;
+    }
+
+    .single-testimonial-2 .testimonial-msg {
+        margin-bottom: 24px;
+    }
+
+    .no-job-title {
+        font-size: 40px;
+        margin-bottom: 16px;
+    }
+
+    .no-job-text {
+        font-size: 22px;
+        margin-bottom: 32px;
+    }
+
+    .accordion-button {
+        font-size: 20px;
+        line-height: 30px;
+        padding: 20px;
+    }
+
+    .event-details-page .instructor-social li a {
+        width: 60px;
+        height: 60px;
+        font-size: 22px;
+    }
+
+    .src-react-box {
+        width: 50px;
+        height: 50px;
+    }
+
+    .src-react-box button {
+        font-size: 24px;
+    }
+
+    .product-details-tab .nav-tabs .nav-link {
+        padding: 0 24px 16px 24px;
+        font-size: 20px;
+    }
+
+    .certificate-title {
+        font-size: 32px;
+    }
+
+    .certificate-title-box img {
+        width: 45px;
+    }
+
+    .article-desc {
+        gap: 15px;
+    }
+
+    .article-title {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    .article-cat {
+        margin-bottom: 8px;
+    }
+
+    .home-article-area .aricle-img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .home-article-area-2 .aricle-img {
+        height: 250px;
+    }
+
+    .article-desc p {
+        font-size: 14px;
+    }
+
+    .filter-btn-2 {
+        padding: 16px 20px;
+    }
+
+    .single-home-aritcle-2 .aricle-img {
+        width: 100%;
+        height: 200px;
+    }
+}
+@media screen and (max-width: 992px) {
+    .single-testimonial{
+        width: 100%;
+    }
+    .single-expert{
+        width: 50%;
+    }
+    .header {
+        background-color: #bfb1d4;
+    }
+    .hero-title {
+        font-size: 40px;
+        line-height: 55px;
+    }
+
+    .header-1 {
+        background: #0b033c;
+    }
+
+    .single-testimonial-3 .testimonial-msg {
+        font-size: 18px;
+        line-height: 30px;
+    }
+
+    .pdb-title {
+        font-size: 32px;
+    }
+
+    .product-name {
+        font-size: 22px;
+    }
+
+    .product-post {
+        font-size: 16px;
+    }
+
+    .product-author {
+        gap: 16px;
+    }
+
+    .buying-box {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-align: start;
+        -ms-flex-align: start;
+        align-items: start;
+    }
+
+    .no-job-title {
+        font-size: 36px;
+        line-height: 50px;
+    }
+
+    .btn-close {
+        right: -75px;
+        width: 50px;
+        height: 50px;
+        font-size: 24px;
+    }
+
+    .single-event-box {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+
+    .sei-box {
+        width: 100%;
+        height: 260px;
+    }
+
+    .single-event-img {
+        height: 100%;
+        width: 100%;
+        padding: 0;
+    }
+
+    .single-ec-top {
+        padding: 20px;
+    }
+
+    .single-ec-bottom {
+        padding: 20px;
+    }
+
+    .event-details-title-box h2 {
+        font-size: 35px;
+        line-height: 55px;
+    }
+
+    .visit-img {
+        height: 250px;
+    }
+
+    .visit-content {
+        padding: 20px 0;
+    }
+
+    .visit-address {
+        font-size: 16px;
+        line-height: 28px;
+    }
+
+    .career-details-title-box h2 {
+        font-size: 36px;
+    }
+
+    .career-details-title-box p {
+        font-size: 18px;
+    }
+
+    .career-details-title-box ul li {
+        font-size: 18px;
+    }
+
+    .career-bottom {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -webkit-box-align: end;
+        -ms-flex-align: end;
+        align-items: end;
+    }
+
+    .lg-blog .article-title {
+        font-size: 28px;
+        line-height: 46px;
+    }
+
+    .lg-img-box {
+        max-height: 100%;
+        width: 100%;
+    }
+
+    .sidebar-title {
+        font-size: 28px;
+        margin-bottom: 20px;
+    }
+
+    .lg-img-box img {
+        max-height: 100%;
+        width: 100%;
+    }
+
+    .education-area .column-2 {
+        -webkit-column-count: 2;
+        -moz-column-count: 2;
+        column-count: 2;
+    }
+
+    .breadcrumb-item a {
+        font-size: 16px;
+    }
+
+    .page-title {
+        font-size: 35px;
+        line-height: 45px;
+    }
+
+    .page-breadcrumb {
+        margin-bottom: 30px;
+        padding: 6px 20px;
+    }
+
+    .page-title-right {
+        width: 270px;
+    }
+
+    .page-breadcrumb .breadcrumb-item.active {
+        font-size: 16px;
+    }
+
+    .error-page,
+    .user-common {
+        padding-top: 135px;
+    }
+
+    .article-title {
+        min-height: auto;
+    }
+
+    .footer-menu-list li a {
+        margin-bottom: 0px;
+    }
+
+    .event-img {
+        right: 35px;
+    }
+
+    .choosong-us-icon {
+        left: 15%;
+    }
+
+    .slider-btn-box .slick-arrow {
+        width: 40px;
+        height: 40px;
+        font-size: 12px;
+    }
+
+    .analytics-wrapper:nth-child(2) .single-analytics {
+        border-right: 0;
+    }
+
+    .section-side-text {
+        margin-top: 20px;
+    }
+
+    .book-shop {
+        /* right: 60px; */
+        display: none;
+    }
+
+    .img-sm-left {
+        left: 140px;
+    }
+
+    .about-side-text {
+        margin-top: 0;
+    }
+
+    .mobile-hide {
+        display: none !important;
+    }
+
+    .mobile-show {
+        display: block !important;
+    }
+
+    .section-title-box {
+        max-width: 80%;
+        margin-bottom: 30px;
+    }
+
+    .single-career .btn-purple {
+        font-size: 14px;
+        padding: 12px 18px;
+    }
+
+    .single-contact-box {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+
+    .single-contact-content {
+        text-align: center;
+    }
+
+    .single-contact-box {
+        padding: 65px 35px;
+    }
+
+    .event-btn-group .btn-purple {
+        width: 80%;
+    }
+}
+@media screen and (max-width: 768px) {
+    .single-testimonial{
+        width: 100%;
+    }
+    .single-expert{
+        width: 100%;
+    }
+    .page-title-right {
+        display: none;
+    }
+
+    .quantity-box {
+        height: 53px;
+    }
+
+    .pdb-title {
+        font-size: 30px;
+        line-height: 45px;
+    }
+
+    .quantity {
+        height: 40px;
+    }
+
+    .decrement {
+        font-size: 40px;
+    }
+
+    .psc-item {
+        width: 80px;
+    }
+
+    .event-details-page .instructor-social li a {
+        width: 55px;
+        height: 55px;
+        font-size: 20px;
+    }
+
+    .wishlist {
+        width: 54px;
+        height: 54px;
+    }
+
+    .event-details-title-box .event-details-img {
+        margin-bottom: 12px;
+    }
+
+    .single-ec-top a {
+        font-size: 26px;
+    }
+
+    .contact-form-title {
+        font-size: 30px;
+        line-height: 45px;
+        margin-bottom: 8px;
+    }
+
+    .user-profile-form {
+        padding: 60px 45px;
+    }
+
+    .career-bottom {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-align: start;
+        -ms-flex-align: start;
+        align-items: start;
+    }
+
+    .career-top {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-align: start;
+        -ms-flex-align: start;
+        align-items: start;
+    }
+
+    .bd-quote {
+        font-size: 20px;
+        padding: 30px;
+    }
+
+    .column-2 {
+        -webkit-columns: 1;
+        -moz-columns: 1;
+        columns: 1;
+    }
+
+    .hero-text {
+        font-size: 16px;
+        line-height: 26px;
+    }
+
+    .error-title {
+        font-size: 40px;
+        margin-bottom: 16px;
+    }
+
+    .error-text {
+        font-size: 20px;
+        margin-bottom: 24px;
+    }
+
+    .footer-middle {
+        padding: 50px 0;
+    }
+
+    .btn-purple,
+    .btn-orange,
+    .btn-outline-purple,
+    .btn-white,
+    .btn-outline-gray {
+        font-size: 16px;
+        padding: 12px 20px;
+    }
+
+    .subscribe-box {
+        height: 350px;
+        border-radius: 15px;
+    }
+
+    .subscribe-form-box {
+        height: 65px;
+        width: 100%;
+    }
+
+    .subscibe-bottom {
+        max-width: 80%;
+    }
+
+    .subscribe-box p {
+        font-size: 16px;
+    }
+
+    .event-content {
+        width: 100%;
+    }
+
+    .event-img {
+        display: none;
+    }
+
+    .choosong-us-icon {
+        width: 100px;
+        height: 100px;
+        left: 6%;
+    }
+
+    .choosong-us-icon img {
+        width: 25px;
+    }
+
+    .single-analytics {
+        border-right: 0;
+    }
+
+    .img-sm-left {
+        left: 50px;
+    }
+
+    .book-shop {
+        right: -15px;
+    }
+
+    .section-title-box h2,
+    .section-side-title-box h2,
+    .subscribe-box h2,
+    .short-dec-title {
+        font-size: 30px;
+        line-height: 45px;
+    }
+
+    .section-title-box {
+        max-width: 80%;
+        margin-bottom: 25px;
+    }
+
+    .section-side-title-box {
+        margin-bottom: 25px;
+    }
+
+    .lg-img-box .advisor-img-lg {
+        height: 400px;
+    }
+
+    .section-side-list li {
+        gap: 10px;
+        font-size: 16px;
+        line-height: 28px;
+        margin-bottom: 12px;
+    }
+}
+@media screen and (max-width: 576px) {
+    .single-testimonial{
+        width: 100%;
+    }
+    .single-expert{
+        width: 100%;
+    }
+    .section-title-box h2,
+    .section-side-title-box h2,
+    .subscribe-box h2,
+    .short-dec-title {
+        font-size: 30px;
+        line-height: 45px;
+    }
+
+    .review-rating-box {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-align: start;
+        -ms-flex-align: start;
+        align-items: start;
+        gap: 20px;
+    }
+
+    .buying-quantity {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-align: start;
+        -ms-flex-align: start;
+        align-items: start;
+    }
+
+    .no-job-text {
+        font-size: 20px;
+        margin-bottom: 32px;
+    }
+
+    .prod-det-coll li h3 {
+        width: 200px;
+    }
+
+    .psc-item {
+        width: 70px;
+    }
+
+    .forgot-pass {
+        font-size: 16px;
+        line-height: 28px;
+    }
+
+    .event-btn-group .btn-purple {
+        width: 85%;
+    }
+
+    .event-details-title-box h2 {
+        font-size: 30px;
+        line-height: 45px;
+    }
+
+    .testimonial-quote {
+        display: none !important;
+    }
+
+    .test-name {
+        font-size: 22px;
+    }
+
+    .form-bottom-box p {
+        font-size: 16px;
+        margin-top: 12px;
+    }
+
+    .form-text {
+        font-size: 16px;
+        line-height: 28px;
+    }
+
+    .form-top-box {
+        margin-bottom: 12px;
+    }
+
+    .form-top-box .form-name {
+        font-size: 28px;
+        line-height: 45px;
+    }
+
+    .user-profile-form {
+        padding: 50px 40px;
+    }
+
+    .career-details-title-box h2 {
+        font-size: 30px;
+    }
+
+    .lg-blog .article-title {
+        font-size: 24px;
+        line-height: 38px;
+    }
+
+    .share-blog li a {
+        width: 48px;
+        height: 48px;
+        font-size: 22px;
+    }
+
+    .src-react-box {
+        width: 45px;
+        height: 45px;
+    }
+
+    .src-react-box button {
+        font-size: 22px;
+    }
+
+    .single-review-comment {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-align: start;
+        -ms-flex-align: start;
+        align-items: start;
+    }
+
+    .nav-tabs {
+        margin-bottom: 30px;
+    }
+
+    .bd-quote {
+        font-size: 18px;
+    }
+
+    .certificate-title {
+        font-size: 28px;
+        line-height: 42px;
+    }
+
+    .certificate-title-box img {
+        width: 40px;
+    }
+
+    .section-title-box {
+        max-width: 100%;
+        margin-bottom: 25px;
+    }
+
+    .error-page-content {
+        margin-top: 50px;
+    }
+
+    .error-title {
+        font-size: 36px;
+    }
+
+    .error-text {
+        font-size: 18px;
+        line-height: 30px;
+    }
+
+    .home-article-area .aricle-img {
+        width: 100%;
+        height: 210px;
+    }
+
+    .hero-title {
+        font-size: 35px;
+        line-height: 50px;
+    }
+
+    .hero-content {
+        gap: 20px;
+    }
+
+    .img-sm-left {
+        display: none;
+    }
+
+    .book-shop {
+        display: none;
+    }
+
+    .lg-img-box .advisor-img-lg {
+        height: 350px;
+    }
+
+    .single-article {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-align: start;
+        -ms-flex-align: start;
+        align-items: start;
+    }
+
+    .aricle-img {
+        width: 130px;
+        height: 130px;
+    }
+
+    .article-cat {
+        margin-bottom: 5px;
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+
+    .article-title {
+        font-size: 18px;
+        margin-bottom: 8px;
+    }
+
+    .article-img-area {
+        width: 100%;
+    }
+
+    .aricle-img {
+        width: 100%;
+        height: 240px;
+    }
+
+    .popular-course-tab.product-details-tab .nav-tabs .nav-link {
+        font-size: 16px !important;
+        line-height: 16px !important;
+    }
+
+    .product-details-tab .nav-tabs .nav-link {
+        font-size: 16px;
+        line-height: 16px;
+        color: #0a033c !important;
+        padding: 0 16px 16px 16px;
+        margin-bottom: 0;
+    }
+
+    .profile-name-box {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        gap: 24px;
+        margin-bottom: 24px;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-align: start;
+        -ms-flex-align: start;
+        align-items: start;
+    }
+
+    .instructor-resume-box {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-align: start;
+        -ms-flex-align: start;
+        align-items: start;
+        gap: 16px;
+    }
+}
+@media screen and (max-width: 480px) {
+    .single-testimonial{
+        width: 100%;
+    }
+    .single-expert{
+        width: 100%;
+    }
+    .aricle-img {
+        height: 220px;
+    }
+
+    .prod-det-coll li h3 {
+        width: 175px;
+    }
+
+    .prod-det-coll li p {
+        font-size: 16px;
+    }
+
+    .psc-item {
+        width: 50px;
+    }
+
+    .event-btn-group .btn-purple {
+        width: 80%;
+    }
+
+    .single-ec-bottom {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-align: start;
+        -ms-flex-align: start;
+        align-items: start;
+        gap: 30px;
+    }
+
+    .education-area .column-2 {
+        -webkit-column-count: 1;
+        -moz-column-count: 1;
+        column-count: 1;
+    }
+
+    .checkout-cart .scp-img {
+        height: 115px;
+    }
+
+    .error-title {
+        font-size: 30px;
+    }
+
+    .hero-title {
+        font-size: 30px;
+        line-height: 45px;
+    }
+
+    .section-title-box h2,
+    .section-side-title-box h2,
+    .subscribe-box h2,
+    .short-dec-title {
+        font-size: 30px;
+        line-height: 42px;
+    }
+}
+@media screen and (max-width: 360px) {
+}
