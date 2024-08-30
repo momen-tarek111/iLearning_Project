@@ -503,7 +503,9 @@ main{
 .nav-tabs {
     margin-bottom: 50px;
 }
-
+.categ_of_course{
+    margin-bottom: 25px;
+}
 .product-details-tab .nav-tabs .nav-link {
     margin-bottom: 0;
     background: 0;
