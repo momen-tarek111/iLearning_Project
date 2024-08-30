@@ -63,12 +63,29 @@ a:hover {
     display: none !important;
 }
 .header-1{
-    background-color: #0b033c;
+    background-color: #0b033c !important;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 .header-1 .nav-link {
     color: #fff !important;
 
+}
+.nav-link {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    color: #0a033c;
+    padding: 10px 15px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    gap: 4px;
+}
+.header.sticky .nav-link {
+    color: #fff;
 }
 .navbar-expand-xl .navbar-nav {
     gap: 12px;
@@ -1255,4 +1272,99 @@ input, optgroup, select, textarea {
 .slider-btn-box .disabled {
     background: #ffffff;
     color: var(--dark-purple);
+}
+
+
+/* ==================================================================================================================================== */
+
+
+
+/*            ================       ================       Login Page     ================        ================                   */
+
+
+/* ==================================================================================================================================== */
+.sign-in-bg {
+    background-image: url(../images/sign-in-bg.png);
+}
+.user-common {
+    padding-top: 160px;
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    background-size: auto;
+    min-height: 90vh;
+    position: relative;
+}
+.form-bottom-box p a {
+    color: #0a033c;
+}
+a:hover {
+    color: var(--dark-purple);
+    cursor: pointer;
+}
+.section {
+    margin-bottom: 60px;
+}
+.user-lg-title{
+    
+        font-weight: 600;
+        font-size: 48px;
+        line-height: 62px;
+        color: #0a033c;
+    
+}
+.form-top-box {
+    margin-bottom: 20px;
+}
+.form-top-box .form-name {
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 54px;
+    color: #0a033c;
+    margin-bottom: 12px;
+}
+.form-text {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    color: #6c688a;
+}
+
+.user-profile-form {
+    padding: 70px 60px;
+    background: #fff;
+    border-radius: 20px;
+}
+label {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 29px;
+    color: #6c688a;
+    margin-bottom: 4px;
+}
+.form-control, .form-select {
+    font-weight: 400;
+    font-size: 16px;
+    padding: 16px 12px;
+    border: 1px solid #e7e6ec;
+    color: #0a033c;
+    border-radius: 8px;
+    box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+}
+.text-end {
+    text-align: right !important;
+}
+.forgot-pass {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 32px;
+    color: #0a033c;
+}
+.form-bottom-box p {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 32px;
+    color: #6c688a;
+    text-align: center;
+    margin-top: 16px;
 }
