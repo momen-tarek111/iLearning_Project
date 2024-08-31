@@ -50,7 +50,7 @@ console.log(header)
   // Function to add or remove the 'scrolled' class
   function changeHeaderBackground() {
     const headerimg=document.querySelector("#header-logo");
-    if (window.scrollY > 200) { // Change 50 to the scroll position you want
+    if (window.scrollY > 150) { // Change 50 to the scroll position you want
         header.classList.add('sticky');
         respnone.classList.add("scroll-none")
         headerimg.setAttribute("src","./images/logo.svg")

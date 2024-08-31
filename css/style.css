@@ -10,6 +10,10 @@ menu {
     margin: 0;
     padding: 0;
 }
+select option:hover,select option:active,select option:focus {
+    background-color: #333; /* Background color for options */
+    color: white;
+}
 :root {
     --purple: #9c4df4;
     --dark-purple: #0a033c;
@@ -21,7 +25,7 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: inherit;
 }
 html, body {
-    height: 100%;
+    /* height: 100%; */
     color:var(--light-purple);
     font-family: 'Inter', sans-serif;
     
@@ -1283,6 +1287,10 @@ input, optgroup, select, textarea {
 
 
 /* ==================================================================================================================================== */
+
+
+
+
 .sign-in-bg {
     background-image: url(../images/sign-in-bg.png);
 }
@@ -1300,9 +1308,6 @@ input, optgroup, select, textarea {
 a:hover {
     color: var(--dark-purple);
     cursor: pointer;
-}
-.section {
-    margin-bottom: 60px;
 }
 .user-lg-title{
     
@@ -1367,4 +1372,144 @@ label {
     color: #6c688a;
     text-align: center;
     margin-top: 16px;
+}
+
+
+/* ==================================================================================================================================== */
+
+
+
+/*            ================       ================       Button To Page     ================        ================                   */
+
+
+/* ==================================================================================================================================== */
+
+
+
+
+
+.scrollToTop {
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    padding: 10px;
+    color: red;
+    width: 50px;
+    height: 50px;
+    font-size: 26px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--purple);
+    color: #fff;
+    border-radius: 6px;
+}
+
+
+/* ==================================================================================================================================== */
+
+
+
+/*            ================       ================       Sign Up Page     ================        ================                   */
+
+
+/* ==================================================================================================================================== */
+
+.sign-up-bg {
+    background-image: url(../images/login-bg.png);
+}
+
+.google-signin-box {
+    overflow: hidden;
+    margin-bottom: 24px;
+    text-align: center;
+}
+.google-signin-box a {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    border: 1px solid #d0d5dd;
+    padding: 12px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #344054;
+    box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+    border-radius: 8px;
+    margin-bottom: 24px;
+}
+.signUp-with-email {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 32px;
+    text-align: center;
+    color: #0a033c;
+    position: relative;
+    padding: 0 12px;
+    display: inline-block;
+}
+.signUp-with-email::before {
+    position: absolute;
+    content: '';
+    width: 200px;
+    height: 1px;
+    background: #d0d5dd;
+    right: -200px;
+    top: 16px;
+}
+.signUp-with-email::after {
+    position: absolute;
+    content: '';
+    width: 200px;
+    height: 1px;
+    background: #d0d5dd;
+    left: -200px;
+    top: 16px;
+}
+.input-group-prepend {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.input-group-prepend {
+    border: 1px solid #e7e6ec;
+    border-radius: 4px;
+    box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+}
+
+.selectpicker {
+    color: #6c688a;
+    padding: 16px 12px;
+    border: 0;
+}
+.selectpicker {
+    color: #475467;
+}
+.selectpicker:active{
+    border: none;
+    outline: none;
+}
+.selectpicker:focus-visible{
+    border: none;
+    outline: none;
+}
+.selectpicker:visited{
+    border: none;
+    outline: none;
+}
+.selectpicker {
+    height: 100%;
+    border-radius: 6px;
+}
+.form-check-input {
+    margin-top: 7px;
+}
+.form-bottom-box .form-check-label {
+    font-weight: 400;
+    font-size: 18px;
+    color: #0a033c;
 }
