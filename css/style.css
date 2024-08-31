@@ -10,6 +10,9 @@ menu {
     margin: 0;
     padding: 0;
 }
+blockquote, dl, dd, h1, h2, h3, h4, h5, h6, hr, figure, p, pre {
+    margin: 0;
+}
 select option:hover,select option:active,select option:focus {
     background-color: #333; /* Background color for options */
     color: white;
@@ -28,12 +31,11 @@ html, body {
     /* height: 100%; */
     color:var(--light-purple);
     font-family: 'Inter', sans-serif;
-    
-    background-color: #f7f5fa;
 }
 body{
     position: relative;
     z-index: -2;
+    background-color: #f7f5fa;
 }
 
 input, button, textarea, select {
@@ -295,9 +297,6 @@ main{
 /* ======================================Categories=============================*/
 .Categories{
     margin-bottom: 60px;
-}
-.Categories-container{
-    background-color: #f7f5fa;
 }
 .Categories-heder-container{
     margin: 0 auto;
@@ -961,7 +960,7 @@ input, optgroup, select, textarea {
 /* ==========================================footer==================================== */
 .footer {
     background: #f5edfe;
-    padding-top: 200px;
+    
 }
 .footer-middle {
     padding: 100px 0;
@@ -1512,4 +1511,142 @@ label {
     font-weight: 400;
     font-size: 18px;
     color: #0a033c;
+}
+
+
+
+
+/* ==================================================================================================================================== */
+
+
+
+/*            ================       ================       Instructors Page     ================        ================                   */
+
+
+/* ==================================================================================================================================== */
+
+
+
+
+
+/* =============================================== page title  ===============================================*/
+
+.page-title {
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 62px;
+    color: #0a033c;
+}
+.page-title-box {
+    background: linear-gradient(92.09deg, #ebdbfd 1.49%, #ffeeeb 99.1%);
+    border-radius: 20px;
+    margin-top: 150px;
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+.page-breadcrumb {
+    padding: 10px 20px;
+    background: #fff;
+    border-radius: 6px;
+    margin-bottom: 50px;
+
+    display: inline-flex;
+}
+.breadcrumb-item + .breadcrumb-item {
+    display: inline-flex;
+}
+.page-breadcrumb .breadcrumb-item.active {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 32px;
+    color: var(--purple)
+}
+.breadcrumb-item a {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 32px;
+    color: #0a033c;
+    display: inherit;
+}
+.page-breadcrumb .breadcrumb-item + .breadcrumb-item::before {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 32px;
+    color: #0a033c;
+}
+
+
+
+
+/* =============================================== Instructors conatiner  ===============================================*/
+.single-expert-3 .expert-img {
+    display: block;
+    height: 365px;
+    border-radius: 20px;
+}
+.single-expert-3 .expert-name {
+    display: block;
+    text-align: center;
+}
+.expert-post {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 32px;
+    text-align: center;
+    color: #6c688a;
+}
+/* =============================================== pagination  ===============================================*/
+
+.pagination-box ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.pagination-box ul .prev, .pagination-box ul .next {
+    width: 44px;
+    height: 44px;
+    background: #f2e6ff;
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--purple);
+    font-size: 16px;
+    transition: 0.3s ease all;
+}
+.pagination-box ul .prev i,.pagination-box ul .next i{
+    color: var(--purple);
+}
+.pagination-text {
+    font-family: 'Metropolis';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 16px;
+    color: #0a033c;
+    margin-bottom: 0px !important;
+}
+.pagination-text p{
+    margin-bottom: 0px !important;
+}
+.pagination-link.active {
+    width: 44px;
+    height: 44px;
+    background: #fff;
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #3e4756;
+}
+
+.pagination-box ul .prev.active, .pagination-box ul .next.active {
+    background: linear-gradient(101.04deg, #9c4df4 0%, #b071f6 100%) !important;
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+    color: #fff;
+}
+.pagination-box ul .prev.active i, .pagination-box ul .next.active i{
+    color: white;
 }
