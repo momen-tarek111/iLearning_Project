@@ -46,7 +46,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 const header = document.getElementById('header');
 const respnone=document.querySelector(".resp-none");
-console.log(header)
+
   // Function to add or remove the 'scrolled' class
   function changeHeaderBackground() {
     const headerimg=document.querySelector("#header-logo");

@@ -6,8 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>iLearning</title>
     <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.3.0/flickity.min.css">
     <link rel="stylesheet" href="./BootStrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/all.css">
+    <!-- <link rel="stylesheet" href="./css/slick.css"> -->
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/responsive.css">
     <style type="text/css">
@@ -23,63 +26,63 @@
             --fa-font-sharp-light: normal 300 1em/1 "Font Awesome 6 Sharp";
             --fa-font-brands: normal 400 1em/1 "Font Awesome 6 Brands"
         }
-    
+
         svg:not(:host).svg-inline--fa,
         svg:not(:root).svg-inline--fa {
             overflow: visible;
             box-sizing: content-box
         }
-    
+
         .svg-inline--fa {
             display: var(--fa-display, inline-block);
             height: 1em;
             overflow: visible;
             vertical-align: -.125em
         }
-    
+
         .svg-inline--fa.fa-2xs {
             vertical-align: .1em
         }
-    
+
         .svg-inline--fa.fa-xs {
             vertical-align: 0
         }
-    
+
         .svg-inline--fa.fa-sm {
             vertical-align: -.0714285705em
         }
-    
+
         .svg-inline--fa.fa-lg {
             vertical-align: -.2em
         }
-    
+
         .svg-inline--fa.fa-xl {
             vertical-align: -.25em
         }
-    
+
         .svg-inline--fa.fa-2xl {
             vertical-align: -.3125em
         }
-    
+
         .svg-inline--fa.fa-pull-left {
             margin-right: var(--fa-pull-margin, .3em);
             width: auto
         }
-    
+
         .svg-inline--fa.fa-pull-right {
             margin-left: var(--fa-pull-margin, .3em);
             width: auto
         }
-    
+
         .svg-inline--fa.fa-li {
             width: var(--fa-li-width, 2em);
             top: .25em
         }
-    
+
         .svg-inline--fa.fa-fw {
             width: var(--fa-fw-width, 1.25em)
         }
-    
+
         .fa-layers svg.svg-inline--fa {
             bottom: 0;
             left: 0;
@@ -88,14 +91,14 @@
             right: 0;
             top: 0
         }
-    
+
         .fa-layers-counter,
         .fa-layers-text {
             display: inline-block;
             position: absolute;
             text-align: center
         }
-    
+
         .fa-layers {
             display: inline-block;
             height: 1em;
@@ -104,12 +107,12 @@
             vertical-align: -.125em;
             width: 1em
         }
-    
+
         .fa-layers svg.svg-inline--fa {
             -webkit-transform-origin: center center;
             transform-origin: center center
         }
-    
+
         .fa-layers-text {
             left: 50%;
             top: 50%;
@@ -118,7 +121,7 @@
             -webkit-transform-origin: center center;
             transform-origin: center center
         }
-    
+
         .fa-layers-counter {
             background-color: var(--fa-counter-background-color, #ff253a);
             border-radius: var(--fa-counter-border-radius, 1em);
@@ -137,7 +140,7 @@
             -webkit-transform-origin: top right;
             transform-origin: top right
         }
-    
+
         .fa-layers-bottom-right {
             bottom: var(--fa-bottom, 0);
             right: var(--fa-right, 0);
@@ -147,7 +150,7 @@
             -webkit-transform-origin: bottom right;
             transform-origin: bottom right
         }
-    
+
         .fa-layers-bottom-left {
             bottom: var(--fa-bottom, 0);
             left: var(--fa-left, 0);
@@ -158,7 +161,7 @@
             -webkit-transform-origin: bottom left;
             transform-origin: bottom left
         }
-    
+
         .fa-layers-top-right {
             top: var(--fa-top, 0);
             right: var(--fa-right, 0);
@@ -167,7 +170,7 @@
             -webkit-transform-origin: top right;
             transform-origin: top right
         }
-    
+
         .fa-layers-top-left {
             left: var(--fa-left, 0);
             right: auto;
@@ -177,98 +180,98 @@
             -webkit-transform-origin: top left;
             transform-origin: top left
         }
-    
+
         .fa-1x {
             font-size: 1em
         }
-    
+
         .fa-2x {
             font-size: 2em
         }
-    
+
         .fa-3x {
             font-size: 3em
         }
-    
+
         .fa-4x {
             font-size: 4em
         }
-    
+
         .fa-5x {
             font-size: 5em
         }
-    
+
         .fa-6x {
             font-size: 6em
         }
-    
+
         .fa-7x {
             font-size: 7em
         }
-    
+
         .fa-8x {
             font-size: 8em
         }
-    
+
         .fa-9x {
             font-size: 9em
         }
-    
+
         .fa-10x {
             font-size: 10em
         }
-    
+
         .fa-2xs {
             font-size: .625em;
             line-height: .1em;
             vertical-align: .225em
         }
-    
+
         .fa-xs {
             font-size: .75em;
             line-height: .0833333337em;
             vertical-align: .125em
         }
-    
+
         .fa-sm {
             font-size: .875em;
             line-height: .0714285718em;
             vertical-align: .0535714295em
         }
-    
+
         .fa-lg {
             font-size: 1.25em;
             line-height: .05em;
             vertical-align: -.075em
         }
-    
+
         .fa-xl {
             font-size: 1.5em;
             line-height: .0416666682em;
             vertical-align: -.125em
         }
-    
+
         .fa-2xl {
             font-size: 2em;
             line-height: .03125em;
             vertical-align: -.1875em
         }
-    
+
         .fa-fw {
             text-align: center;
             width: 1.25em
         }
-    
+
         .fa-ul {
             list-style-type: none;
             margin-left: var(--fa-li-margin, 2.5em);
             padding-left: 0
         }
-    
+
         .fa-ul>li {
             position: relative
         }
-    
+
         .fa-li {
             left: calc(var(--fa-li-width, 2em) * -1);
             position: absolute;
@@ -276,7 +279,7 @@
             width: var(--fa-li-width, 2em);
             line-height: inherit
         }
-    
+
         .fa-border {
             border-color: var(--fa-border-color, #eee);
             border-radius: var(--fa-border-radius, .1em);
@@ -284,17 +287,17 @@
             border-width: var(--fa-border-width, .08em);
             padding: var(--fa-border-padding, .2em .25em .15em)
         }
-    
+
         .fa-pull-left {
             float: left;
             margin-right: var(--fa-pull-margin, .3em)
         }
-    
+
         .fa-pull-right {
             float: right;
             margin-left: var(--fa-pull-margin, .3em)
         }
-    
+
         .fa-beat {
             -webkit-animation-name: fa-beat;
             animation-name: fa-beat;
@@ -309,7 +312,7 @@
             -webkit-animation-timing-function: var(--fa-animation-timing, ease-in-out);
             animation-timing-function: var(--fa-animation-timing, ease-in-out)
         }
-    
+
         .fa-bounce {
             -webkit-animation-name: fa-bounce;
             animation-name: fa-bounce;
@@ -324,7 +327,7 @@
             -webkit-animation-timing-function: var(--fa-animation-timing, cubic-bezier(.28, .84, .42, 1));
             animation-timing-function: var(--fa-animation-timing, cubic-bezier(.28, .84, .42, 1))
         }
-    
+
         .fa-fade {
             -webkit-animation-name: fa-fade;
             animation-name: fa-fade;
@@ -339,7 +342,7 @@
             -webkit-animation-timing-function: var(--fa-animation-timing, cubic-bezier(.4, 0, .6, 1));
             animation-timing-function: var(--fa-animation-timing, cubic-bezier(.4, 0, .6, 1))
         }
-    
+
         .fa-beat-fade {
             -webkit-animation-name: fa-beat-fade;
             animation-name: fa-beat-fade;
@@ -354,7 +357,7 @@
             -webkit-animation-timing-function: var(--fa-animation-timing, cubic-bezier(.4, 0, .6, 1));
             animation-timing-function: var(--fa-animation-timing, cubic-bezier(.4, 0, .6, 1))
         }
-    
+
         .fa-flip {
             -webkit-animation-name: fa-flip;
             animation-name: fa-flip;
@@ -369,7 +372,7 @@
             -webkit-animation-timing-function: var(--fa-animation-timing, ease-in-out);
             animation-timing-function: var(--fa-animation-timing, ease-in-out)
         }
-    
+
         .fa-shake {
             -webkit-animation-name: fa-shake;
             animation-name: fa-shake;
@@ -384,7 +387,7 @@
             -webkit-animation-timing-function: var(--fa-animation-timing, linear);
             animation-timing-function: var(--fa-animation-timing, linear)
         }
-    
+
         .fa-spin {
             -webkit-animation-name: fa-spin;
             animation-name: fa-spin;
@@ -399,11 +402,11 @@
             -webkit-animation-timing-function: var(--fa-animation-timing, linear);
             animation-timing-function: var(--fa-animation-timing, linear)
         }
-    
+
         .fa-spin-reverse {
             --fa-animation-direction: reverse
         }
-    
+
         .fa-pulse,
         .fa-spin-pulse {
             -webkit-animation-name: fa-spin;
@@ -417,9 +420,9 @@
             -webkit-animation-timing-function: var(--fa-animation-timing, steps(8));
             animation-timing-function: var(--fa-animation-timing, steps(8))
         }
-    
+
         @media (prefers-reduced-motion:reduce) {
-    
+
             .fa-beat,
             .fa-beat-fade,
             .fa-bounce,
@@ -441,327 +444,327 @@
                 transition-duration: 0s
             }
         }
-    
+
         @-webkit-keyframes fa-beat {
-    
+
             0%,
             90% {
                 -webkit-transform: scale(1);
                 transform: scale(1)
             }
-    
+
             45% {
                 -webkit-transform: scale(var(--fa-beat-scale, 1.25));
                 transform: scale(var(--fa-beat-scale, 1.25))
             }
         }
-    
+
         @keyframes fa-beat {
-    
+
             0%,
             90% {
                 -webkit-transform: scale(1);
                 transform: scale(1)
             }
-    
+
             45% {
                 -webkit-transform: scale(var(--fa-beat-scale, 1.25));
                 transform: scale(var(--fa-beat-scale, 1.25))
             }
         }
-    
+
         @-webkit-keyframes fa-bounce {
             0% {
                 -webkit-transform: scale(1, 1) translateY(0);
                 transform: scale(1, 1) translateY(0)
             }
-    
+
             10% {
                 -webkit-transform: scale(var(--fa-bounce-start-scale-x, 1.1), var(--fa-bounce-start-scale-y, .9)) translateY(0);
                 transform: scale(var(--fa-bounce-start-scale-x, 1.1), var(--fa-bounce-start-scale-y, .9)) translateY(0)
             }
-    
+
             30% {
                 -webkit-transform: scale(var(--fa-bounce-jump-scale-x, .9), var(--fa-bounce-jump-scale-y, 1.1)) translateY(var(--fa-bounce-height, -.5em));
                 transform: scale(var(--fa-bounce-jump-scale-x, .9), var(--fa-bounce-jump-scale-y, 1.1)) translateY(var(--fa-bounce-height, -.5em))
             }
-    
+
             50% {
                 -webkit-transform: scale(var(--fa-bounce-land-scale-x, 1.05), var(--fa-bounce-land-scale-y, .95)) translateY(0);
                 transform: scale(var(--fa-bounce-land-scale-x, 1.05), var(--fa-bounce-land-scale-y, .95)) translateY(0)
             }
-    
+
             57% {
                 -webkit-transform: scale(1, 1) translateY(var(--fa-bounce-rebound, -.125em));
                 transform: scale(1, 1) translateY(var(--fa-bounce-rebound, -.125em))
             }
-    
+
             64% {
                 -webkit-transform: scale(1, 1) translateY(0);
                 transform: scale(1, 1) translateY(0)
             }
-    
+
             100% {
                 -webkit-transform: scale(1, 1) translateY(0);
                 transform: scale(1, 1) translateY(0)
             }
         }
-    
+
         @keyframes fa-bounce {
             0% {
                 -webkit-transform: scale(1, 1) translateY(0);
                 transform: scale(1, 1) translateY(0)
             }
-    
+
             10% {
                 -webkit-transform: scale(var(--fa-bounce-start-scale-x, 1.1), var(--fa-bounce-start-scale-y, .9)) translateY(0);
                 transform: scale(var(--fa-bounce-start-scale-x, 1.1), var(--fa-bounce-start-scale-y, .9)) translateY(0)
             }
-    
+
             30% {
                 -webkit-transform: scale(var(--fa-bounce-jump-scale-x, .9), var(--fa-bounce-jump-scale-y, 1.1)) translateY(var(--fa-bounce-height, -.5em));
                 transform: scale(var(--fa-bounce-jump-scale-x, .9), var(--fa-bounce-jump-scale-y, 1.1)) translateY(var(--fa-bounce-height, -.5em))
             }
-    
+
             50% {
                 -webkit-transform: scale(var(--fa-bounce-land-scale-x, 1.05), var(--fa-bounce-land-scale-y, .95)) translateY(0);
                 transform: scale(var(--fa-bounce-land-scale-x, 1.05), var(--fa-bounce-land-scale-y, .95)) translateY(0)
             }
-    
+
             57% {
                 -webkit-transform: scale(1, 1) translateY(var(--fa-bounce-rebound, -.125em));
                 transform: scale(1, 1) translateY(var(--fa-bounce-rebound, -.125em))
             }
-    
+
             64% {
                 -webkit-transform: scale(1, 1) translateY(0);
                 transform: scale(1, 1) translateY(0)
             }
-    
+
             100% {
                 -webkit-transform: scale(1, 1) translateY(0);
                 transform: scale(1, 1) translateY(0)
             }
         }
-    
+
         @-webkit-keyframes fa-fade {
             50% {
                 opacity: var(--fa-fade-opacity, .4)
             }
         }
-    
+
         @keyframes fa-fade {
             50% {
                 opacity: var(--fa-fade-opacity, .4)
             }
         }
-    
+
         @-webkit-keyframes fa-beat-fade {
-    
+
             0%,
             100% {
                 opacity: var(--fa-beat-fade-opacity, .4);
                 -webkit-transform: scale(1);
                 transform: scale(1)
             }
-    
+
             50% {
                 opacity: 1;
                 -webkit-transform: scale(var(--fa-beat-fade-scale, 1.125));
                 transform: scale(var(--fa-beat-fade-scale, 1.125))
             }
         }
-    
+
         @keyframes fa-beat-fade {
-    
+
             0%,
             100% {
                 opacity: var(--fa-beat-fade-opacity, .4);
                 -webkit-transform: scale(1);
                 transform: scale(1)
             }
-    
+
             50% {
                 opacity: 1;
                 -webkit-transform: scale(var(--fa-beat-fade-scale, 1.125));
                 transform: scale(var(--fa-beat-fade-scale, 1.125))
             }
         }
-    
+
         @-webkit-keyframes fa-flip {
             50% {
                 -webkit-transform: rotate3d(var(--fa-flip-x, 0), var(--fa-flip-y, 1), var(--fa-flip-z, 0), var(--fa-flip-angle, -180deg));
                 transform: rotate3d(var(--fa-flip-x, 0), var(--fa-flip-y, 1), var(--fa-flip-z, 0), var(--fa-flip-angle, -180deg))
             }
         }
-    
+
         @keyframes fa-flip {
             50% {
                 -webkit-transform: rotate3d(var(--fa-flip-x, 0), var(--fa-flip-y, 1), var(--fa-flip-z, 0), var(--fa-flip-angle, -180deg));
                 transform: rotate3d(var(--fa-flip-x, 0), var(--fa-flip-y, 1), var(--fa-flip-z, 0), var(--fa-flip-angle, -180deg))
             }
         }
-    
+
         @-webkit-keyframes fa-shake {
             0% {
                 -webkit-transform: rotate(-15deg);
                 transform: rotate(-15deg)
             }
-    
+
             4% {
                 -webkit-transform: rotate(15deg);
                 transform: rotate(15deg)
             }
-    
+
             24%,
             8% {
                 -webkit-transform: rotate(-18deg);
                 transform: rotate(-18deg)
             }
-    
+
             12%,
             28% {
                 -webkit-transform: rotate(18deg);
                 transform: rotate(18deg)
             }
-    
+
             16% {
                 -webkit-transform: rotate(-22deg);
                 transform: rotate(-22deg)
             }
-    
+
             20% {
                 -webkit-transform: rotate(22deg);
                 transform: rotate(22deg)
             }
-    
+
             32% {
                 -webkit-transform: rotate(-12deg);
                 transform: rotate(-12deg)
             }
-    
+
             36% {
                 -webkit-transform: rotate(12deg);
                 transform: rotate(12deg)
             }
-    
+
             100%,
             40% {
                 -webkit-transform: rotate(0);
                 transform: rotate(0)
             }
         }
-    
+
         @keyframes fa-shake {
             0% {
                 -webkit-transform: rotate(-15deg);
                 transform: rotate(-15deg)
             }
-    
+
             4% {
                 -webkit-transform: rotate(15deg);
                 transform: rotate(15deg)
             }
-    
+
             24%,
             8% {
                 -webkit-transform: rotate(-18deg);
                 transform: rotate(-18deg)
             }
-    
+
             12%,
             28% {
                 -webkit-transform: rotate(18deg);
                 transform: rotate(18deg)
             }
-    
+
             16% {
                 -webkit-transform: rotate(-22deg);
                 transform: rotate(-22deg)
             }
-    
+
             20% {
                 -webkit-transform: rotate(22deg);
                 transform: rotate(22deg)
             }
-    
+
             32% {
                 -webkit-transform: rotate(-12deg);
                 transform: rotate(-12deg)
             }
-    
+
             36% {
                 -webkit-transform: rotate(12deg);
                 transform: rotate(12deg)
             }
-    
+
             100%,
             40% {
                 -webkit-transform: rotate(0);
                 transform: rotate(0)
             }
         }
-    
+
         @-webkit-keyframes fa-spin {
             0% {
                 -webkit-transform: rotate(0);
                 transform: rotate(0)
             }
-    
+
             100% {
                 -webkit-transform: rotate(360deg);
                 transform: rotate(360deg)
             }
         }
-    
+
         @keyframes fa-spin {
             0% {
                 -webkit-transform: rotate(0);
                 transform: rotate(0)
             }
-    
+
             100% {
                 -webkit-transform: rotate(360deg);
                 transform: rotate(360deg)
             }
         }
-    
+
         .fa-rotate-90 {
             -webkit-transform: rotate(90deg);
             transform: rotate(90deg)
         }
-    
+
         .fa-rotate-180 {
             -webkit-transform: rotate(180deg);
             transform: rotate(180deg)
         }
-    
+
         .fa-rotate-270 {
             -webkit-transform: rotate(270deg);
             transform: rotate(270deg)
         }
-    
+
         .fa-flip-horizontal {
             -webkit-transform: scale(-1, 1);
             transform: scale(-1, 1)
         }
-    
+
         .fa-flip-vertical {
             -webkit-transform: scale(1, -1);
             transform: scale(1, -1)
         }
-    
+
         .fa-flip-both,
         .fa-flip-horizontal.fa-flip-vertical {
             -webkit-transform: scale(-1, -1);
             transform: scale(-1, -1)
         }
-    
+
         .fa-rotate-by {
             -webkit-transform: rotate(var(--fa-rotate-angle, none));
             transform: rotate(var(--fa-rotate-angle, none))
         }
-    
+
         .fa-stack {
             display: inline-block;
             vertical-align: middle;
@@ -769,7 +772,7 @@
             position: relative;
             width: 2.5em
         }
-    
+
         .fa-stack-1x,
         .fa-stack-2x {
             bottom: 0;
@@ -780,21 +783,21 @@
             top: 0;
             z-index: var(--fa-stack-z-index, auto)
         }
-    
+
         .svg-inline--fa.fa-stack-1x {
             height: 1em;
             width: 1.25em
         }
-    
+
         .svg-inline--fa.fa-stack-2x {
             height: 2em;
             width: 2.5em
         }
-    
+
         .fa-inverse {
             color: var(--fa-inverse, #fff)
         }
-    
+
         .fa-sr-only,
         .sr-only {
             position: absolute;
@@ -807,7 +810,7 @@
             white-space: nowrap;
             border-width: 0
         }
-    
+
         .fa-sr-only-focusable:not(:focus),
         .sr-only-focusable:not(:focus) {
             position: absolute;
@@ -820,30 +823,30 @@
             white-space: nowrap;
             border-width: 0
         }
-    
+
         .svg-inline--fa .fa-primary {
             fill: var(--fa-primary-color, currentColor);
             opacity: var(--fa-primary-opacity, 1)
         }
-    
+
         .svg-inline--fa .fa-secondary {
             fill: var(--fa-secondary-color, currentColor);
             opacity: var(--fa-secondary-opacity, .4)
         }
-    
+
         .svg-inline--fa.fa-swap-opacity .fa-primary {
             opacity: var(--fa-secondary-opacity, .4)
         }
-    
+
         .svg-inline--fa.fa-swap-opacity .fa-secondary {
             opacity: var(--fa-primary-opacity, 1)
         }
-    
+
         .svg-inline--fa mask .fa-primary,
         .svg-inline--fa mask .fa-secondary {
             fill: #000
         }
-    
+
         .fa-duotone.fa-inverse,
         .fad.fa-inverse {
             color: var(--fa-inverse, #fff)
@@ -862,63 +865,63 @@
             --fa-font-sharp-light: normal 300 1em/1 "Font Awesome 6 Sharp";
             --fa-font-brands: normal 400 1em/1 "Font Awesome 6 Brands"
         }
-    
+
         svg:not(:host).svg-inline--fa,
         svg:not(:root).svg-inline--fa {
             overflow: visible;
             box-sizing: content-box
         }
-    
+
         .svg-inline--fa {
             display: var(--fa-display, inline-block);
             height: 1em;
             overflow: visible;
             vertical-align: -.125em
         }
-    
+
         .svg-inline--fa.fa-2xs {
             vertical-align: .1em
         }
-    
+
         .svg-inline--fa.fa-xs {
             vertical-align: 0
         }
-    
+
         .svg-inline--fa.fa-sm {
             vertical-align: -.0714285705em
         }
-    
+
         .svg-inline--fa.fa-lg {
             vertical-align: -.2em
         }
-    
+
         .svg-inline--fa.fa-xl {
             vertical-align: -.25em
         }
-    
+
         .svg-inline--fa.fa-2xl {
             vertical-align: -.3125em
         }
-    
+
         .svg-inline--fa.fa-pull-left {
             margin-right: var(--fa-pull-margin, .3em);
             width: auto
         }
-    
+
         .svg-inline--fa.fa-pull-right {
             margin-left: var(--fa-pull-margin, .3em);
             width: auto
         }
-    
+
         .svg-inline--fa.fa-li {
             width: var(--fa-li-width, 2em);
             top: .25em
         }
-    
+
         .svg-inline--fa.fa-fw {
             width: var(--fa-fw-width, 1.25em)
         }
-    
+
         .fa-layers svg.svg-inline--fa {
             bottom: 0;
             left: 0;
@@ -927,14 +930,14 @@
             right: 0;
             top: 0
         }
-    
+
         .fa-layers-counter,
         .fa-layers-text {
             display: inline-block;
             position: absolute;
             text-align: center
         }
-    
+
         .fa-layers {
             display: inline-block;
             height: 1em;
@@ -943,12 +946,12 @@
             vertical-align: -.125em;
             width: 1em
         }
-    
+
         .fa-layers svg.svg-inline--fa {
             -webkit-transform-origin: center center;
             transform-origin: center center
         }
-    
+
         .fa-layers-text {
             left: 50%;
             top: 50%;
@@ -957,7 +960,7 @@
             -webkit-transform-origin: center center;
             transform-origin: center center
         }
-    
+
         .fa-layers-counter {
             background-color: var(--fa-counter-background-color, #ff253a);
             border-radius: var(--fa-counter-border-radius, 1em);
@@ -976,7 +979,7 @@
             -webkit-transform-origin: top right;
             transform-origin: top right
         }
-    
+
         .fa-layers-bottom-right {
             bottom: var(--fa-bottom, 0);
             right: var(--fa-right, 0);
@@ -986,7 +989,7 @@
             -webkit-transform-origin: bottom right;
             transform-origin: bottom right
         }
-    
+
         .fa-layers-bottom-left {
             bottom: var(--fa-bottom, 0);
             left: var(--fa-left, 0);
@@ -997,7 +1000,7 @@
             -webkit-transform-origin: bottom left;
             transform-origin: bottom left
         }
-    
+
         .fa-layers-top-right {
             top: var(--fa-top, 0);
             right: var(--fa-right, 0);
@@ -1006,7 +1009,7 @@
             -webkit-transform-origin: top right;
             transform-origin: top right
         }
-    
+
         .fa-layers-top-left {
             left: var(--fa-left, 0);
             right: auto;
@@ -1016,98 +1019,98 @@
             -webkit-transform-origin: top left;
             transform-origin: top left
         }
-    
+
         .fa-1x {
             font-size: 1em
         }
-    
+
         .fa-2x {
             font-size: 2em
         }
-    
+
         .fa-3x {
             font-size: 3em
         }
-    
+
         .fa-4x {
             font-size: 4em
         }
-    
+
         .fa-5x {
             font-size: 5em
         }
-    
+
         .fa-6x {
             font-size: 6em
         }
-    
+
         .fa-7x {
             font-size: 7em
         }
-    
+
         .fa-8x {
             font-size: 8em
         }
-    
+
         .fa-9x {
             font-size: 9em
         }
-    
+
         .fa-10x {
             font-size: 10em
         }
-    
+
         .fa-2xs {
             font-size: .625em;
             line-height: .1em;
             vertical-align: .225em
         }
-    
+
         .fa-xs {
             font-size: .75em;
             line-height: .0833333337em;
             vertical-align: .125em
         }
-    
+
         .fa-sm {
             font-size: .875em;
             line-height: .0714285718em;
             vertical-align: .0535714295em
         }
-    
+
         .fa-lg {
             font-size: 1.25em;
             line-height: .05em;
             vertical-align: -.075em
         }
-    
+
         .fa-xl {
             font-size: 1.5em;
             line-height: .0416666682em;
             vertical-align: -.125em
         }
-    
+
         .fa-2xl {
             font-size: 2em;
             line-height: .03125em;
             vertical-align: -.1875em
         }
-    
+
         .fa-fw {
             text-align: center;
             width: 1.25em
         }
-    
+
         .fa-ul {
             list-style-type: none;
             margin-left: var(--fa-li-margin, 2.5em);
             padding-left: 0
         }
-    
+
         .fa-ul>li {
             position: relative
         }
-    
+
         .fa-li {
             left: calc(var(--fa-li-width, 2em) * -1);
             position: absolute;
@@ -1115,7 +1118,7 @@
             width: var(--fa-li-width, 2em);
             line-height: inherit
         }
-    
+
         .fa-border {
             border-color: var(--fa-border-color, #eee);
             border-radius: var(--fa-border-radius, .1em);
@@ -1123,17 +1126,17 @@
             border-width: var(--fa-border-width, .08em);
             padding: var(--fa-border-padding, .2em .25em .15em)
         }
-    
+
         .fa-pull-left {
             float: left;
             margin-right: var(--fa-pull-margin, .3em)
         }
-    
+
         .fa-pull-right {
             float: right;
             margin-left: var(--fa-pull-margin, .3em)
         }
-    
+
         .fa-beat {
             -webkit-animation-name: fa-beat;
             animation-name: fa-beat;
@@ -1148,7 +1151,7 @@
             -webkit-animation-timing-function: var(--fa-animation-timing, ease-in-out);
             animation-timing-function: var(--fa-animation-timing, ease-in-out)
         }
-    
+
         .fa-bounce {
             -webkit-animation-name: fa-bounce;
             animation-name: fa-bounce;
@@ -1163,7 +1166,7 @@
             -webkit-animation-timing-function: var(--fa-animation-timing, cubic-bezier(.28, .84, .42, 1));
             animation-timing-function: var(--fa-animation-timing, cubic-bezier(.28, .84, .42, 1))
         }
-    
+
         .fa-fade {
             -webkit-animation-name: fa-fade;
             animation-name: fa-fade;
@@ -1178,7 +1181,7 @@
             -webkit-animation-timing-function: var(--fa-animation-timing, cubic-bezier(.4, 0, .6, 1));
             animation-timing-function: var(--fa-animation-timing, cubic-bezier(.4, 0, .6, 1))
         }
-    
+
         .fa-beat-fade {
             -webkit-animation-name: fa-beat-fade;
             animation-name: fa-beat-fade;
@@ -1193,7 +1196,7 @@
             -webkit-animation-timing-function: var(--fa-animation-timing, cubic-bezier(.4, 0, .6, 1));
             animation-timing-function: var(--fa-animation-timing, cubic-bezier(.4, 0, .6, 1))
         }
-    
+
         .fa-flip {
             -webkit-animation-name: fa-flip;
             animation-name: fa-flip;
@@ -1208,7 +1211,7 @@
             -webkit-animation-timing-function: var(--fa-animation-timing, ease-in-out);
             animation-timing-function: var(--fa-animation-timing, ease-in-out)
         }
-    
+
         .fa-shake {
             -webkit-animation-name: fa-shake;
             animation-name: fa-shake;
@@ -1223,7 +1226,7 @@
             -webkit-animation-timing-function: var(--fa-animation-timing, linear);
             animation-timing-function: var(--fa-animation-timing, linear)
         }
-    
+
         .fa-spin {
             -webkit-animation-name: fa-spin;
             animation-name: fa-spin;
@@ -1238,11 +1241,11 @@
             -webkit-animation-timing-function: var(--fa-animation-timing, linear);
             animation-timing-function: var(--fa-animation-timing, linear)
         }
-    
+
         .fa-spin-reverse {
             --fa-animation-direction: reverse
         }
-    
+
         .fa-pulse,
         .fa-spin-pulse {
             -webkit-animation-name: fa-spin;
@@ -1256,9 +1259,9 @@
             -webkit-animation-timing-function: var(--fa-animation-timing, steps(8));
             animation-timing-function: var(--fa-animation-timing, steps(8))
         }
-    
+
         @media (prefers-reduced-motion:reduce) {
-    
+
             .fa-beat,
             .fa-beat-fade,
             .fa-bounce,
@@ -1280,327 +1283,327 @@
                 transition-duration: 0s
             }
         }
-    
+
         @-webkit-keyframes fa-beat {
-    
+
             0%,
             90% {
                 -webkit-transform: scale(1);
                 transform: scale(1)
             }
-    
+
             45% {
                 -webkit-transform: scale(var(--fa-beat-scale, 1.25));
                 transform: scale(var(--fa-beat-scale, 1.25))
             }
         }
-    
+
         @keyframes fa-beat {
-    
+
             0%,
             90% {
                 -webkit-transform: scale(1);
                 transform: scale(1)
             }
-    
+
             45% {
                 -webkit-transform: scale(var(--fa-beat-scale, 1.25));
                 transform: scale(var(--fa-beat-scale, 1.25))
             }
         }
-    
+
         @-webkit-keyframes fa-bounce {
             0% {
                 -webkit-transform: scale(1, 1) translateY(0);
                 transform: scale(1, 1) translateY(0)
             }
-    
+
             10% {
                 -webkit-transform: scale(var(--fa-bounce-start-scale-x, 1.1), var(--fa-bounce-start-scale-y, .9)) translateY(0);
                 transform: scale(var(--fa-bounce-start-scale-x, 1.1), var(--fa-bounce-start-scale-y, .9)) translateY(0)
             }
-    
+
             30% {
                 -webkit-transform: scale(var(--fa-bounce-jump-scale-x, .9), var(--fa-bounce-jump-scale-y, 1.1)) translateY(var(--fa-bounce-height, -.5em));
                 transform: scale(var(--fa-bounce-jump-scale-x, .9), var(--fa-bounce-jump-scale-y, 1.1)) translateY(var(--fa-bounce-height, -.5em))
             }
-    
+
             50% {
                 -webkit-transform: scale(var(--fa-bounce-land-scale-x, 1.05), var(--fa-bounce-land-scale-y, .95)) translateY(0);
                 transform: scale(var(--fa-bounce-land-scale-x, 1.05), var(--fa-bounce-land-scale-y, .95)) translateY(0)
             }
-    
+
             57% {
                 -webkit-transform: scale(1, 1) translateY(var(--fa-bounce-rebound, -.125em));
                 transform: scale(1, 1) translateY(var(--fa-bounce-rebound, -.125em))
             }
-    
+
             64% {
                 -webkit-transform: scale(1, 1) translateY(0);
                 transform: scale(1, 1) translateY(0)
             }
-    
+
             100% {
                 -webkit-transform: scale(1, 1) translateY(0);
                 transform: scale(1, 1) translateY(0)
             }
         }
-    
+
         @keyframes fa-bounce {
             0% {
                 -webkit-transform: scale(1, 1) translateY(0);
                 transform: scale(1, 1) translateY(0)
             }
-    
+
             10% {
                 -webkit-transform: scale(var(--fa-bounce-start-scale-x, 1.1), var(--fa-bounce-start-scale-y, .9)) translateY(0);
                 transform: scale(var(--fa-bounce-start-scale-x, 1.1), var(--fa-bounce-start-scale-y, .9)) translateY(0)
             }
-    
+
             30% {
                 -webkit-transform: scale(var(--fa-bounce-jump-scale-x, .9), var(--fa-bounce-jump-scale-y, 1.1)) translateY(var(--fa-bounce-height, -.5em));
                 transform: scale(var(--fa-bounce-jump-scale-x, .9), var(--fa-bounce-jump-scale-y, 1.1)) translateY(var(--fa-bounce-height, -.5em))
             }
-    
+
             50% {
                 -webkit-transform: scale(var(--fa-bounce-land-scale-x, 1.05), var(--fa-bounce-land-scale-y, .95)) translateY(0);
                 transform: scale(var(--fa-bounce-land-scale-x, 1.05), var(--fa-bounce-land-scale-y, .95)) translateY(0)
             }
-    
+
             57% {
                 -webkit-transform: scale(1, 1) translateY(var(--fa-bounce-rebound, -.125em));
                 transform: scale(1, 1) translateY(var(--fa-bounce-rebound, -.125em))
             }
-    
+
             64% {
                 -webkit-transform: scale(1, 1) translateY(0);
                 transform: scale(1, 1) translateY(0)
             }
-    
+
             100% {
                 -webkit-transform: scale(1, 1) translateY(0);
                 transform: scale(1, 1) translateY(0)
             }
         }
-    
+
         @-webkit-keyframes fa-fade {
             50% {
                 opacity: var(--fa-fade-opacity, .4)
             }
         }
-    
+
         @keyframes fa-fade {
             50% {
                 opacity: var(--fa-fade-opacity, .4)
             }
         }
-    
+
         @-webkit-keyframes fa-beat-fade {
-    
+
             0%,
             100% {
                 opacity: var(--fa-beat-fade-opacity, .4);
                 -webkit-transform: scale(1);
                 transform: scale(1)
             }
-    
+
             50% {
                 opacity: 1;
                 -webkit-transform: scale(var(--fa-beat-fade-scale, 1.125));
                 transform: scale(var(--fa-beat-fade-scale, 1.125))
             }
         }
-    
+
         @keyframes fa-beat-fade {
-    
+
             0%,
             100% {
                 opacity: var(--fa-beat-fade-opacity, .4);
                 -webkit-transform: scale(1);
                 transform: scale(1)
             }
-    
+
             50% {
                 opacity: 1;
                 -webkit-transform: scale(var(--fa-beat-fade-scale, 1.125));
                 transform: scale(var(--fa-beat-fade-scale, 1.125))
             }
         }
-    
+
         @-webkit-keyframes fa-flip {
             50% {
                 -webkit-transform: rotate3d(var(--fa-flip-x, 0), var(--fa-flip-y, 1), var(--fa-flip-z, 0), var(--fa-flip-angle, -180deg));
                 transform: rotate3d(var(--fa-flip-x, 0), var(--fa-flip-y, 1), var(--fa-flip-z, 0), var(--fa-flip-angle, -180deg))
             }
         }
-    
+
         @keyframes fa-flip {
             50% {
                 -webkit-transform: rotate3d(var(--fa-flip-x, 0), var(--fa-flip-y, 1), var(--fa-flip-z, 0), var(--fa-flip-angle, -180deg));
                 transform: rotate3d(var(--fa-flip-x, 0), var(--fa-flip-y, 1), var(--fa-flip-z, 0), var(--fa-flip-angle, -180deg))
             }
         }
-    
+
         @-webkit-keyframes fa-shake {
             0% {
                 -webkit-transform: rotate(-15deg);
                 transform: rotate(-15deg)
             }
-    
+
             4% {
                 -webkit-transform: rotate(15deg);
                 transform: rotate(15deg)
             }
-    
+
             24%,
             8% {
                 -webkit-transform: rotate(-18deg);
                 transform: rotate(-18deg)
             }
-    
+
             12%,
             28% {
                 -webkit-transform: rotate(18deg);
                 transform: rotate(18deg)
             }
-    
+
             16% {
                 -webkit-transform: rotate(-22deg);
                 transform: rotate(-22deg)
             }
-    
+
             20% {
                 -webkit-transform: rotate(22deg);
                 transform: rotate(22deg)
             }
-    
+
             32% {
                 -webkit-transform: rotate(-12deg);
                 transform: rotate(-12deg)
             }
-    
+
             36% {
                 -webkit-transform: rotate(12deg);
                 transform: rotate(12deg)
             }
-    
+
             100%,
             40% {
                 -webkit-transform: rotate(0);
                 transform: rotate(0)
             }
         }
-    
+
         @keyframes fa-shake {
             0% {
                 -webkit-transform: rotate(-15deg);
                 transform: rotate(-15deg)
             }
-    
+
             4% {
                 -webkit-transform: rotate(15deg);
                 transform: rotate(15deg)
             }
-    
+
             24%,
             8% {
                 -webkit-transform: rotate(-18deg);
                 transform: rotate(-18deg)
             }
-    
+
             12%,
             28% {
                 -webkit-transform: rotate(18deg);
                 transform: rotate(18deg)
             }
-    
+
             16% {
                 -webkit-transform: rotate(-22deg);
                 transform: rotate(-22deg)
             }
-    
+
             20% {
                 -webkit-transform: rotate(22deg);
                 transform: rotate(22deg)
             }
-    
+
             32% {
                 -webkit-transform: rotate(-12deg);
                 transform: rotate(-12deg)
             }
-    
+
             36% {
                 -webkit-transform: rotate(12deg);
                 transform: rotate(12deg)
             }
-    
+
             100%,
             40% {
                 -webkit-transform: rotate(0);
                 transform: rotate(0)
             }
         }
-    
+
         @-webkit-keyframes fa-spin {
             0% {
                 -webkit-transform: rotate(0);
                 transform: rotate(0)
             }
-    
+
             100% {
                 -webkit-transform: rotate(360deg);
                 transform: rotate(360deg)
             }
         }
-    
+
         @keyframes fa-spin {
             0% {
                 -webkit-transform: rotate(0);
                 transform: rotate(0)
             }
-    
+
             100% {
                 -webkit-transform: rotate(360deg);
                 transform: rotate(360deg)
             }
         }
-    
+
         .fa-rotate-90 {
             -webkit-transform: rotate(90deg);
             transform: rotate(90deg)
         }
-    
+
         .fa-rotate-180 {
             -webkit-transform: rotate(180deg);
             transform: rotate(180deg)
         }
-    
+
         .fa-rotate-270 {
             -webkit-transform: rotate(270deg);
             transform: rotate(270deg)
         }
-    
+
         .fa-flip-horizontal {
             -webkit-transform: scale(-1, 1);
             transform: scale(-1, 1)
         }
-    
+
         .fa-flip-vertical {
             -webkit-transform: scale(1, -1);
             transform: scale(1, -1)
         }
-    
+
         .fa-flip-both,
         .fa-flip-horizontal.fa-flip-vertical {
             -webkit-transform: scale(-1, -1);
             transform: scale(-1, -1)
         }
-    
+
         .fa-rotate-by {
             -webkit-transform: rotate(var(--fa-rotate-angle, none));
             transform: rotate(var(--fa-rotate-angle, none))
         }
-    
+
         .fa-stack {
             display: inline-block;
             vertical-align: middle;
@@ -1608,7 +1611,7 @@
             position: relative;
             width: 2.5em
         }
-    
+
         .fa-stack-1x,
         .fa-stack-2x {
             bottom: 0;
@@ -1619,21 +1622,21 @@
             top: 0;
             z-index: var(--fa-stack-z-index, auto)
         }
-    
+
         .svg-inline--fa.fa-stack-1x {
             height: 1em;
             width: 1.25em
         }
-    
+
         .svg-inline--fa.fa-stack-2x {
             height: 2em;
             width: 2.5em
         }
-    
+
         .fa-inverse {
             color: var(--fa-inverse, #fff)
         }
-    
+
         .fa-sr-only,
         .sr-only {
             position: absolute;
@@ -1646,7 +1649,7 @@
             white-space: nowrap;
             border-width: 0
         }
-    
+
         .fa-sr-only-focusable:not(:focus),
         .sr-only-focusable:not(:focus) {
             position: absolute;
@@ -1659,30 +1662,30 @@
             white-space: nowrap;
             border-width: 0
         }
-    
+
         .svg-inline--fa .fa-primary {
             fill: var(--fa-primary-color, currentColor);
             opacity: var(--fa-primary-opacity, 1)
         }
-    
+
         .svg-inline--fa .fa-secondary {
             fill: var(--fa-secondary-color, currentColor);
             opacity: var(--fa-secondary-opacity, .4)
         }
-    
+
         .svg-inline--fa.fa-swap-opacity .fa-primary {
             opacity: var(--fa-secondary-opacity, .4)
         }
-    
+
         .svg-inline--fa.fa-swap-opacity .fa-secondary {
             opacity: var(--fa-primary-opacity, 1)
         }
-    
+
         .svg-inline--fa mask .fa-primary,
         .svg-inline--fa mask .fa-secondary {
             fill: #000
         }
-    
+
         .fa-duotone.fa-inverse,
         .fad.fa-inverse {
             color: var(--fa-inverse, #fff)
@@ -1693,14 +1696,12 @@
             width: 300px;
             height: 150px;
         }
-    
+
         .vjs-fluid:not(.vjs-audio-only-mode) {
             padding-top: 56.25%
         }
     </style>
-
 </head>
-
 <body>
     <!-- Header section start -->
     <header id="header" class="header">
@@ -1720,9 +1721,9 @@
             <div class="row">
                 <nav class="nav navbar-expand-xl" style="padding-top: 8px; padding-bottom: 8px; ">
                     <div class="container-fluid d-flex align-items-center justify-content-between">
-                        <a class="navbar-brand header-logo d-inline-block" href="index.html">
+                        <a class="navbar-brand header-logo d-inline-block" href="./index.html">
                             <div class="">
-                                <img src="./images/logo-dark.svg" id="header-logo" alt="logo">
+                                <img src="./images/logo-dark.svg" alt="logo" id="header-logo">
                             </div>
                         </a>
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -1806,62 +1807,75 @@
         </div> <!--/container -->
     </header> <!-- /header  -->
 
+    <section class="page-title section" id="page-title">
+        <div class="page-title-area">
+            <div class="container">
+                <div class="page-title-box">
+                    <div class="page-title-left">
+                        <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                            <ol class="breadcrumb page-breadcrumb">
+                                <li class="breadcrumb-item"><a href="./index.html">Home</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">Contact Us</li>
+                            </ol>
+                        </nav>
+                        <h2 class="page-title">Contact Us</h2>
+                    </div>
+                    <div class="page-title-right">
+                        <img src="./images/contact.png" alt="page-title">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <section class="signUp-page user-common section sign-up-bg" id="signUp-page">
-        <div class="signUp-page-area">
+    <section class="contact-page section" id="contact-page"> 
+        <div class="contact-page-area">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-6 mobile-hide">
-                        <h2 class="user-lg-title">Welcome to Edugo Online Learning Platform</h2>
-                    </div>
-                    <div class="col-lg-6 col-md-12">
-                        <form id="user-signUp-form" class="user-profile-form">
-                            <div class="form-top-box">
-                                <h2 class="form-name">Create Account</h2>
-                                <p class="form-text">Find the best course made for you!</p>
-                            </div>
-                            <div class="google-signin-box">
-                                <a href="#"><span><img src="./images/google-icon.svg" alt=""></span> Sign Up
-                                    with
-                                    Google</a>
-                                <h3 class="signUp-with-email">Or Sign up with Email</h3>
+                    <div class="col-xl-6 col-md-12 mb-xl-0 mb-5">
+                        <form id="contact-form" class="contact-form">
+                            <div class="row mb-4">
+                                <h2 class="contact-form-title">
+                                    Contact us
+                                </h2>
+                                <p class="contact-form-text">Get in touch with us using the form below.</p>
                             </div>
                             <div class="row mb-4">
-                                <div class="col-md-6">
+                                <div class="col-md-6 mb-4 mb-md-0">
                                     <div class="form-group">
-                                        <label for="signup-fname">First Name</label>
-                                        <input type="text" class="form-control" id="signup-fname" placeholder="First Name">
+                                        <label for="event-fName">First Name</label>
+                                        <input type="text" class="form-control" id="event-fName" placeholder="First Name">
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <label for="signup-lname">Last Name</label>
-                                        <input type="text" class="form-control" id="signup-lname" placeholder="Last Name">
+                                        <label for="event-lName">Last Name</label>
+                                        <input type="text" class="form-control" id="event-lName" placeholder="Last Name">
                                     </div>
                                 </div>
                             </div>
                             <div class="row mb-4">
                                 <div class="col-md-12">
                                     <div class="form-group">
-                                        <label for="signup-email">Email</label>
-                                        <input type="text" class="form-control" id="signup-email" placeholder="example@gmail.com">
+                                        <label for="event-address">Address</label>
+                                        <input type="text" class="form-control" id="event-address" placeholder="Full address here...">
                                     </div>
                                 </div>
                             </div>
                             <div class="row mb-4">
                                 <div class="col-md-12">
                                     <div class="form-group">
-                                        <label for="certificate-phone">Phone Number</label>
+                                        <label for="event-phone">Phone Number</label>
                                         <div class="input-group">
                                             <div class="input-group-prepend">
-                                                <select id="certificate-phone" class="selectpicker" data-live-search="true">
+                                                <select class="selectpicker" data-live-search="true">
                                                     <option data-tokens="US +1">US (+1)</option>
                                                     <option data-tokens="GB +44">UK (+44)</option>
                                                     <option data-tokens="CA +1">BD (+880)</option>
                                                     <!-- add more countries here -->
                                                 </select>
                                             </div>
-                                            <input type="tel" class="form-control" id="phone" name="certificate-phone" placeholder="Phone Number" required="">
+                                            <input type="tel" class="form-control" id="event-phone" name="phone" placeholder="Phone Number" required="">
                                         </div>
                                     </div>
                                 </div>
@@ -1869,21 +1883,63 @@
                             <div class="row mb-4">
                                 <div class="col-md-12">
                                     <div class="form-group">
-                                        <label for="signup-email">Password</label>
-                                        <input type="password" class="form-control" id="signup-password" placeholder="********">
+                                        <label for="instructor-msg">Message</label>
+                                        <textarea rows="7" class="form-control" id="instructor-msg" placeholder="Type your message here..."></textarea>
                                     </div>
                                 </div>
                             </div>
-                            <div class="form-bottom-box">
-                                <div class="form-check mb-4">
-                                    <input class="form-check-input" type="checkbox" value="" id="signup-save">
-                                    <label class="form-check-label" for="signup-save">I agree to Terms &amp;
-                                        condition</label>
+                            <div class="mb-5">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="payment-save">
+                                    <label class="form-check-label" for="payment-save">
+                                        I agree to Terms &amp; condition
+                                    </label>
                                 </div>
-                                <button type="submit" class="btn-purple w-100 text-center">Sign Up</button>
-                                <p>Already have an account? <a href="login.html">Login</a></p>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="address-save">
+                                    <label class="form-check-label" for="address-save">
+                                        I have read and agree to the Privacy Policy
+                                    </label>
+                                </div>
                             </div>
+
+                            <button type="submit" class="btn-purple w-100 text-center">Send Message</button>
                         </form>
+                    </div>
+                    <div class="col-xl-6 col-md-12">
+                        <div class="contact-box-wrapper row">
+                            <div class="col-xl-12 col-lg-6 col-md-12">
+                                <div class="single-contact-box mb-4 scb-1">
+                                    <div>
+                                        <div class="single-contact-img">
+                                            <img src="./images/chat.svg" alt="chat">
+                                        </div>
+                                    </div>
+                                    <div class="single-contact-content">
+                                        <p class="single-contact-title">Phone Number</p>
+                                        <h3 class="single-contact-text">(+91) 23 456 7890</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-12 col-lg-6 col-md-12">
+                                <div class="single-contact-box scb-2">
+                                    <div>
+                                        <div class="single-contact-img">
+                                            <img src="./images/message.svg" alt="message">
+                                        </div>
+                                    </div>
+                                    <div class="single-contact-content">
+                                        <p class="single-contact-title">Email Address</p>
+                                        <h3 class="single-contact-text">example@gmail.com</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mt-4">
+                            <div id="google-map" class="google-map">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3649.5049528954437!2d90.36271368622965!3d23.836196630344464!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c1adfeba6c49%3A0xacfa6a1a23dcfdd9!2sMirpur%20DOHS%20Central%20Masjid!5e0!3m2!1sbn!2sbd!4v1684218085125!5m2!1sbn!2sbd" allowfullscreen="" loading="lazy"></iframe>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -1891,8 +1947,164 @@
     </section>
 
 
+    <section class="visit-us section" id="visit-us">
+        <div class="visit-us-area">
+            <div class="container">
+                <div class="row">
+                    <div class="section-title-box">
+                        <h2>Come and Visit Us!</h2>
+                    </div>
+                </div>  
+                <div class="row">
+                    <div class="col-md-6 mb-4 mb-md-0">
+                        <div class="single-visit">
+                            <div class="visit-img">
+                                <img src="./images/visit-1.png" alt="">
+                            </div>
+                            <div class="visit-content">
+                                <p class="visit-location"><i class="fas fa-map-marker-alt"></i></p>
+                                <div>
+                                    <h3 class="visit-city">San jose, California</h3>
+                                    <p class="visit-address">3891 Ranchview Dr. Richardson, California 62639</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="single-visit">
+                            <div class="visit-img">
+                                <img src="./images/visit-2.png" alt="">
+                            </div>
+                            <div class="visit-content">
+                                <p class="visit-location"><i class="fas fa-map-marker-alt"></i></p>
+                                <div>
+                                    <h3 class="visit-city">San jose, California</h3>
+                                    <p class="visit-address">3891 Ranchview Dr. Richardson, California 62639</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
 
+    <section class="subscribe section">
+        <div class="subscribe-area">
+            <div class="container">
+                <div class="row">
+                    <div class="subscibe-area">
+                        <div class="subscribe-box">
+                            <img class="subscribe-bg" src="./images/subscribe-bg.svg" alt="subscribe-bg">
+                            <div class="subscribe-content">
+                                <h2>Subscribe For Get Update</h2>
+                                <div class="subscibe-bottom">
+                                    <p>30k+ students daily learn with Edugo. Subscribe for new courses.</p>
+                                    <div class="subscribe-form-box">
+                                        <input class="form-control" type="text" placeholder="Enter your email">
+                                        <button class="btn-purple">Subscribe</button>
+                                    </div><!-- /subscribe-form-box -->
+                                </div><!-- /subscibe-bottom -->
+                            </div><!-- /subscribe-content -->
+                        </div><!-- /subscribe-box -->
+                    </div><!-- /subscibe-area -->
+                </div><!-- /row -->
+            </div><!-- /container -->
+        </div><!-- /subscribe-area -->
+    </section> <!-- /subscribe -->
+    <footer class="footer">
+        <div class="footer-area">
+            <div class="container">
+                <div class="row footer-middle">
+                    <div class="col-xl-4 col-lg-3 col-md-4 col-sm-8 mb-4 mb-lg-0">
+                        <div class="footer-content">
+                            <div class="footer-logo">
+                                <img src="./images/footer-logo.svg" alt="logo">
+                            </div><!-- /footer-logo -->
+                            <p>Ilearning is a registered trademark of ilearning.com</p>
+                            <ul class="footer-social">
+                                <li>
+                                    <a href="https://www.facebook.com/">
+                                        <i class="fab fa-facebook-f footer-social-icon"></i>
+                                    </a><!-- /a -->
+                                </li><!-- /li -->
+                                <li>
+                                    <a href="https://www.instagram.com/">
+                                        <i class="fab fa-instagram footer-social-icon"></i>
+                                    </a><!-- /a -->
+                                </li><!-- /li -->
+                                <li>
+                                    <a href="https://twitter.com/">
+                                        <i class="fab fa-twitter footer-social-icon"></i>
+                                    </a><!-- /a -->
+                                </li><!-- /li -->
+                                <li>
+                                    <a href="https://www.linkedin.com/?original_referer=">
+                                        <i class="fab fa-linkedin-in footer-social-icon"></i>
+                                    </a><!-- /a -->
+                                </li><!-- /li -->
+                            </ul><!-- /footer-social -->
+                        </div><!-- /footer-content -->
+                    </div><!-- /col-xl-4 -->
+                    <div class="col-xl-3 col-lg-3 col-md-4 col-sm-4 mb-4 mb-lg-0">
+                        <div class="footer-menu">
+                            <h2 class="menu-category">Courses Category</h2>
+                            <ul class="footer-menu-list">
+                                <li><a href="#">Desgin</a></li>
+                                <li><a href="#">Development</a></li>
+                                <li><a href="#">Sales Marketing</a></li>
+                                <li><a href="#">Data Science</a></li>
+                                <li><a href="#">Life style</a></li>
+                                <li><a href="#">Photography</a></li>
+                            </ul><!--/footer-menu-list-->
+                        </div><!-- /footer-menu -->
+                    </div><!-- /col-xl-4 -->
+                    <div class="col-lg-2 col-md-4 col-sm-4 mb-4 mb-sm-0">
+                        <div class="footer-menu">
+                            <h2 class="menu-category">Resources</h2>
+                            <ul class="footer-menu-list">
+                                <li><a href="#">Learners</a></li>
+                                <li><a href="#">Instructor</a></li>
+                                <li><a href="#">My account</a></li>
+                                <li><a href="#">Wishlist</a></li>
+                                <li><a href="#">Blog</a></li>
+                                <li><a href="#">Event</a></li>
+                            </ul><!-- /footer-menu-list -->
+                        </div><!-- /footer-menu -->
+                    </div><!-- /col-lg-2-->
+                    <div class="col-lg-2 col-md-4 col-sm-4 mb-4 mb-sm-0">
+                        <div class="footer-menu">
+                            <h2 class="menu-category">Quick links</h2>
+                            <ul class="footer-menu-list">
+                                <li><a href="#">Course</a></li>
+                                <li><a href="#">Courses</a></li>
+                                <li><a href="#">Shop</a></li>
+                                <li><a href="#">Testimonial</a></li>
+                                <li><a href="#">Career</a></li>
+                            </ul><!-- /footer-menu-list -->
+                        </div><!-- /footer-menu -->
+                    </div><!-- /col-lg-2-->
+                    <div class="col-lg-1 col-md-4 col-sm-4">
+                        <div class="footer-menu">
+                            <h2 class="menu-category">More</h2>
+                            <ul class="footer-menu-list">
+                                <li><a href="#">Support</a></li>
+                                <li><a href="#">Terms</a></li>
+                                <li><a href="#">Privacy</a></li>
+                                <li><a href="#">Help</a></li>
+                                <li><a href="#">FAQ</a></li>
+                                <li><a href="#">Contact</a></li>
+                            </ul><!-- /footer-menu-list -->
+                        </div><!-- /footer-menu -->
+                    </div><!-- /col-lg-2-->
+                </div><!-- /footer-middle -->
+                <div class="mx-0 text-center">
+                    <p class="footer-copyright">© 2021 Edugo.com All Right Reserved</p>
+                </div><!-- /text-center -->
+            </div> <!-- / container-->
+        </div><!-- /footer-area -->
+    </footer><!-- /footer -->
     <button id="scrollToTop" class="scrollToTop" onclick="scrollToTop()">
         <!-- <svg class="svg-inline--fa fa-arrow-up" aria-hidden="true"
             focusable="false" data-prefix="fas" data-icon="arrow-up" role="img" xmlns="http://www.w3.org/2000/svg"
@@ -1903,7 +2115,6 @@
         </svg>-->
         <i class="fas fa-arrow-up"></i>
     </button>
-
     <div class="modal fade cartModal" id="header-cartModal" tabindex="-1" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
@@ -1954,14 +2165,9 @@
             </div>
         </div>
     </div>
-
-
-
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- <script src="./JS/scripte.js"></script> -->
     <script src="./JS/Login.js"></script>
     <script src="./JS/SignUp.js"></script>
+    <script src="./JS/scripte.js"></script>
 </body>
-
 </html>
