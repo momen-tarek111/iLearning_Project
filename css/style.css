@@ -60,7 +60,7 @@ a:hover {
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 10000000;
+    z-index: 100;
 }
 .header.sticky {
     position: fixed;
@@ -1972,4 +1972,276 @@ label {
     font-size: 24px;
     line-height: 36px;
     color: #9c4df4;
+}
+
+
+/* ==================================================================================================================================== */
+
+
+
+/*            ================       ================       Events Page     ================        ================                   */
+
+
+/* ==================================================================================================================================== */
+
+
+.single-event-box {
+    display: flex;
+    align-items: center;
+    background: #fff;
+    border-radius: 20px;
+    overflow: hidden;
+    padding-left: 0;
+}
+.single-event-img {
+    padding: 20px;
+    width: 375px;
+    height: 285px;
+    border-radius: 12px;
+}
+.single-event-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.single-ec-top {
+    padding: 20px 20px 20px 0;
+}
+.single-ec-top a {
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 36px;
+    color: #0a033c;
+    margin-bottom: 12px;
+    display: inline-block;
+}
+.single-ec-top p {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 32px;
+    color: #3b3563;
+}
+.single-ec-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    padding: 20px 20px 20px 0;
+}
+.column-2 {
+    columns: 2;
+    -webkit-columns: 2;
+    -moz-columns: 2;
+    
+}
+.single-ecb-left ul li {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 26px;
+    color: #6c688a;
+}
+.single-ecb-left ul li span {
+    color: var(--orange);
+}
+
+
+
+
+/* ==================================================================================================================================== */
+
+
+
+/*            ================       ================       Event_DetailsPage     ================        ================                   */
+
+
+/* ==================================================================================================================================== */
+
+
+
+
+.event-details-title-box h2 {
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 62px;
+    color: #0a033c;
+    margin-bottom: 12px;
+}
+.event-details-title-box p {
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 18px;
+    color: #6c688a;
+    gap: 10px;
+    margin-bottom: 35px;
+}
+.event-details-title-box .event-details-img {
+    width: 100%;
+    
+    object-fit: cover;
+    border-radius: 20px;
+    margin-bottom: 45px;
+}
+.short-dec-title {
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 50px;
+    color: #0a033c;
+    margin-bottom: 16px;
+}
+.short-dec-text {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 32px;
+    color: #6c688a;
+}
+.section-side-list li {
+    display: flex;
+    align-items: start;
+    gap: 20px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 32px;
+    color: var(--dark-purple);
+
+    margin-bottom: 16px;
+}
+.section-side-list li span {
+    display: flex;
+    width: 40px;
+    height: 40px;
+    left: 0px;
+    top: 0px;
+    background: linear-gradient(155.28deg, #ffa093 9.26%, #ff6652 92.24%);
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+.instructor-course-details {
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 45px 20px;
+}
+.instructor-course-details ul li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+}
+.instructor-course-details ul li .icd-text {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: right;
+    color: #0a033c;
+}
+.event-btn-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.event-btn-group .btn-purple {
+    width: 80%;
+}
+.wishlist {
+    width: 62px;
+    height: 62px;
+    background: #ebdbfd;
+    border-radius: 8px;
+    font-size: 28px;
+    color: var(--purple);
+    border: 1px solid #ebdbfd;
+}
+.event-details-page .instructor-social {
+    justify-content: start;
+}
+.event-details-page .instructor-course-details .instructor-social li {
+    margin-bottom: 0;
+}
+.event-details-page .instructor-social li a {
+    width: 70px;
+    height: 70px;
+    background: #f5edfe;
+    color: var(--purple);
+}
+.google-map iframe {
+    width: 100%;
+    height: 340px;
+    border-radius: 20px;
+}
+.instructor-social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 24px;
+}
+.instructor-course-details ul li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+}
+.instructor-social li a {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background: #fff0ee;
+    color: #ff6652;
+    font-size: 26px;
+}
+.text-orange {
+    color: var(--orange) !important;
+}
+
+/* ========================================== event model ========================================== */
+
+.becomeInstructorModal .modal-content {
+    border-top: 4px solid var(--purple);
+}
+.becomeInstructorModal .modal-header, .becomeInstructorModal .modal-body, .becomeInstructorModal .modal-footer {
+    padding: 30px;
+}
+
+.inst-social {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+    color: #0a033c;
+    margin-bottom: 16px;
+}
+.cm-title {
+    margin-bottom: 8px !important;
+}
+.input-group-text {
+    background-color: #fff;
+    border: 1px solid #e7e6ec;
+    padding: 16px 12px;
+}
+.input-group-text {
+    font-weight: 400;
+    font-size: 16px;
+    color: #475467;
+}
+.text-purple {
+    color: var(--purple);
+}
+.modal {
+    background: rgba(59, 53, 99, 0.65);
+}
+.modal.show .modal-dialog {
+    transform: none;
+}
+
+.form-control:focus {
+    color: #212529;
+    background-color: #fff;
+    border-color: var(--purple);
+    outline: 0;
+    border: 1px solid #d6bbfb;
+    -webkit-box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05), 0px 0px 0px 4px #f4ebff;
+    box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05), 0px 0px 0px 4px #f4ebff;
 }
