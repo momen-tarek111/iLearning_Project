@@ -2245,3 +2245,70 @@ label {
     -webkit-box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05), 0px 0px 0px 4px #f4ebff;
     box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05), 0px 0px 0px 4px #f4ebff;
 }
+
+
+
+
+
+/* ==================================================================================================================================== */
+
+
+ 
+/*            ================       ================       InstructorDetails  page    ================        ================                   */
+
+
+/* ==================================================================================================================================== */
+
+
+
+
+.instructor-info {
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 45px 20px;
+}
+
+.instructor-img {
+    width: 205px;
+    height: 205px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin: 0 auto;
+    margin-bottom: 35px;
+}
+.instructor-content {
+    text-align: center;
+}
+.instructor-info .instructor-name {
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 30px;
+    color: #0a033c;
+    margin-bottom: 12px;
+}
+.instructor-course {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 32px;
+    color: #6c688a;
+    margin-bottom: 24px;
+}
+.instructor-email, .instructor-phone {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 32px;
+    color: #6c688a;
+    margin-bottom: 12px;
+}
+.instructor-email, .instructor-phone {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 32px;
+    color: #6c688a;
+    margin-bottom: 12px;
+}
+.instructor-course-details {
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 45px 20px;
+}
