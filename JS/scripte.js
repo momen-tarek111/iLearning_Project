@@ -149,3 +149,38 @@ const respnone=document.querySelector(".resp-none");
 //     // console.log(ifd+" "+j)
 // })
 // })
+
+
+
+$('.prev').on('click', function() {
+    $('.slider2').slick('slickPrev');
+    slick_slider_buttons()
+});
+
+$('.next').on('click', function() {
+    $('.slider2').slick('slickNext');
+    slick_slider_buttons()
+});
+
+
+function slick_slider_buttons(){
+    var $slider = $('.slider2');
+    var totalSlides = $slider.slick('getSlick').slideCount;
+    var currentSlide = $slider.slick('slickCurrentSlide');
+    var slidesToShow = $('.slider2').slick('slickGetOption', 'slidesToShow');
+    // Check if it's the first slide
+    if (currentSlide === 0) {
+        $('.prev').addClass('disabled')
+        $('.next').removeClass('disabled'); // Reset next button
+    } 
+    // Check if it's the last slide
+    else if (currentSlide >= totalSlides - slidesToShow) { // Adjust for slidesToShow
+        $('.next').addClass('disabled'); // Example color when disabled
+        $('.prev').removeClass('disabled'); // Reset prev button
+    } 
+    // Middle slides
+    else {
+        $('.prev').removeClass('disabled'); // Reset prev button
+        $('.next').removeClass('disabled'); // Reset next button
+    }
+}

@@ -7,13 +7,15 @@
     <title>iLearning</title>
     <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.3.0/flickity.min.css">
-    <link rel="stylesheet" href="./BootStrap/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.3.0/flickity.min.css"> -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <!-- <link rel="stylesheet" href="./BootStrap/css/bootstrap.min.css"> -->
     <link rel="stylesheet" href="./css/all.css">
     <!-- <link rel="stylesheet" href="./css/slick.css"> -->
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/responsive.css">
-    <style type="text/css">
+    <!-- <style type="text/css">
         :host,
         :root {
             --fa-font-solid: normal 900 1em/1 "Font Awesome 6 Solid";
@@ -1700,7 +1702,7 @@
         .vjs-fluid:not(.vjs-audio-only-mode) {
             padding-top: 56.25%
         }
-    </style>
+    </style> -->
 </head>
 
 <body>
@@ -1816,155 +1818,317 @@
                         <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
                             <ol class="breadcrumb page-breadcrumb">
                                 <li class="breadcrumb-item"><a href="./index.html">Home</a></li>
-                                <li class="breadcrumb-item active" aria-current="page">All Instructor</li>
+                                <li class="breadcrumb-item active" aria-current="page">FAQ</li>
                             </ol>
                         </nav>
-                        <h2 class="page-title">Instructor</h2>
+                        <h2 class="page-title">FAQ</h2>
                     </div>
                     <div class="page-title-right">
-                        <img src="./images/instructor.png" alt="page-title">
+                        <img src="./images/pricing.png" alt="page-title">
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="instructor section" id="instructor">
-        <div class="instructor-area">
+
+    <section id="faq" class="faq section">
+        <div class="faq-area">
+            <div class="container">
+                <div class="section-side-title-box row">
+                    <div class="col-xl-7 col-md-12 pe-xl-5 mb-4 mb-xl-0">
+                        <h2 class="mb-4">Frequently asked questions</h2>
+                        <p>Especially in the beginning. Don't waste your time going at it alone. As my mentee Chris
+                            put
+                            it. The sessions with
+                            Jascha.</p>
+                    </div>
+                    <div class="col-xl-5 col-md-12 faq-heading-right">
+                        <p><span><img src="./images/ques.svg" alt=""></span> Still have a question?</p>
+                        <a href="#" class="btn-purple">Contact Us</a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="faq-box">
+                        <div class="accordion row" id="accordionFaq">
+                            <div class="col-md-6">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="faqOne">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                            Am I eligible for admission?
+                                        </button>
+                                    </h2>
+                                    <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="faqOne" data-bs-parent="#accordionFaq">
+                                        <div class="accordion-body">
+                                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi, sit
+                                            voluptate ad optio fuga itaque aperiam commodi doloremque atque ducimus
+                                            voluptatem. Soluta molestiae enim distinctio illo dolorum similique, odio
+                                            cumque animi perferendis quis doloremque tempora alias quidem veritatis
+                                            saepe tenetur possimus, unde vero omnis eius sit eum laborum expedita dicta?
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="faqTwo">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                            Any Prerequisites To Learn Python?
+                                        </button>
+                                    </h2>
+                                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="faqTwo" data-bs-parent="#accordionFaq">
+                                        <div class="accordion-body">
+                                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi, sit
+                                            voluptate ad optio fuga itaque aperiam commodi doloremque atque ducimus
+                                            voluptatem. Soluta molestiae enim distinctio illo dolorum similique, odio
+                                            cumque animi perferendis quis doloremque tempora alias quidem veritatis
+                                            saepe tenetur possimus, unde vero omnis eius sit eum laborum expedita dicta?
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="faqThree">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                            How long it take to create a video course?
+                                        </button>
+                                    </h2>
+                                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="faqThree" data-bs-parent="#accordionFaq">
+                                        <div class="accordion-body">
+                                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit saepe,
+                                            blanditiis eum adipisci dolorum reprehenderit laudantium sapiente quasi
+                                            illum dolores, sint nulla similique dignissimos explicabo error impedit
+                                            maiores veritatis incidunt. Iure, ratione? Eius quis repudiandae voluptatem
+                                            obcaecati in! Itaque ut rerum dolorum voluptas facilis perferendis
+                                            blanditiis provident molestiae consequuntur earum!
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="faqFour">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                            What does it take become an author?
+                                        </button>
+                                    </h2>
+                                    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="faqFour" data-bs-parent="#accordionFaq">
+                                        <div class="accordion-body">
+                                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit saepe,
+                                            blanditiis eum adipisci dolorum reprehenderit laudantium sapiente quasi
+                                            illum dolores, sint nulla similique dignissimos explicabo error impedit
+                                            maiores veritatis incidunt. Iure, ratione? Eius quis repudiandae voluptatem
+                                            obcaecati in! Itaque ut rerum dolorum voluptas facilis perferendis
+                                            blanditiis provident molestiae consequuntur earum!
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="faqFive">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                            How do I redeem a coupon?
+                                        </button>
+                                    </h2>
+                                    <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="faqFive" data-bs-parent="#accordionFaq">
+                                        <div class="accordion-body">
+                                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit saepe,
+                                            blanditiis eum adipisci dolorum reprehenderit laudantium sapiente quasi
+                                            illum dolores, sint nulla similique dignissimos explicabo error impedit
+                                            maiores veritatis incidunt. Iure, ratione? Eius quis repudiandae voluptatem
+                                            obcaecati in! Itaque ut rerum dolorum voluptas facilis perferendis
+                                            blanditiis provident molestiae consequuntur earum!
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="faqSix">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                            How long is my personal free trial?
+                                        </button>
+                                    </h2>
+                                    <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="faqSix" data-bs-parent="#accordionFaq">
+                                        <div class="accordion-body">
+                                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi, sit
+                                            voluptate ad optio fuga itaque aperiam commodi doloremque atque ducimus
+                                            voluptatem. Soluta molestiae enim distinctio illo dolorum similique, odio
+                                            cumque animi perferendis quis doloremque tempora alias quidem veritatis
+                                            saepe tenetur possimus, unde vero omnis eius sit eum laborum expedita dicta?
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="faqSeven">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                                            How to Change my Plan using PayPal?
+                                        </button>
+                                    </h2>
+                                    <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="faqSeven" data-bs-parent="#accordionFaq">
+                                        <div class="accordion-body">
+                                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi, sit
+                                            voluptate ad optio fuga itaque aperiam commodi doloremque atque ducimus
+                                            voluptatem. Soluta molestiae enim distinctio illo dolorum similique, odio
+                                            cumque animi perferendis quis doloremque tempora alias quidem veritatis
+                                            saepe tenetur possimus, unde vero omnis eius sit eum laborum expedita dicta?
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="faqEight">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                                            How long is my personal free trial?
+                                        </button>
+                                    </h2>
+                                    <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="faqEight" data-bs-parent="#accordionFaq">
+                                        <div class="accordion-body">
+                                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit saepe,
+                                            blanditiis eum adipisci dolorum reprehenderit laudantium sapiente quasi
+                                            illum dolores, sint nulla similique dignissimos explicabo error impedit
+                                            maiores veritatis incidunt. Iure, ratione? Eius quis repudiandae voluptatem
+                                            obcaecati in! Itaque ut rerum dolorum voluptas facilis perferendis
+                                            blanditiis provident molestiae consequuntur earum!
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="faqNine">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+                                            Any Prerequisites To Learn Python?
+                                        </button>
+                                    </h2>
+                                    <div id="collapseNine" class="accordion-collapse collapse" aria-labelledby="faqNine" data-bs-parent="#accordionFaq">
+                                        <div class="accordion-body">
+                                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit saepe,
+                                            blanditiis eum adipisci dolorum reprehenderit laudantium sapiente quasi
+                                            illum dolores, sint nulla similique dignissimos explicabo error impedit
+                                            maiores veritatis incidunt. Iure, ratione? Eius quis repudiandae voluptatem
+                                            obcaecati in! Itaque ut rerum dolorum voluptas facilis perferendis
+                                            blanditiis provident molestiae consequuntur earum!
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="faqTen">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
+                                            What does it take become an author?
+                                        </button>
+                                    </h2>
+                                    <div id="collapseTen" class="accordion-collapse collapse" aria-labelledby="faqTen" data-bs-parent="#accordionFaq">
+                                        <div class="accordion-body">
+                                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit saepe,
+                                            blanditiis eum adipisci dolorum reprehenderit laudantium sapiente quasi
+                                            illum dolores, sint nulla similique dignissimos explicabo error impedit
+                                            maiores veritatis incidunt. Iure, ratione? Eius quis repudiandae voluptatem
+                                            obcaecati in! Itaque ut rerum dolorum voluptas facilis perferendis
+                                            blanditiis provident molestiae consequuntur earum!
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="common-ques" class="common-ques section">
+        <div class="common-ques-area">
             <div class="container">
                 <div class="row">
-                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-2 mb-4">
-                        <div class="single-expert-3">
-                            <a href="./InstructorDetails.html" class="expert-img">
-                                <img src="./images/expert-5.png" alt="">
-                            </a>
-                            <a href="./InstructorDetails.html" class="expert-name">Mario Fleming</a>
-                            <p class="expert-post">Instructor</p>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-2 mb-4">
-                        <div class="single-expert-3">
-                            <a href="./InstructorDetails.html" class="expert-img">
-                                <img src="./images/expert-6.png" alt="">
-                            </a>
-                            <a href="./InstructorDetails.html" class="expert-name">Kimberly Walker</a>
-                            <p class="expert-post">Instructor</p>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-2 mb-4">
-                        <div class="single-expert-3">
-                            <a href="./InstructorDetails.html" class="expert-img">
-                                <img src="./images/expert-7.png" alt="">
-                            </a>
-                            <a href="./InstructorDetails.html" class="expert-name">Gilberto Ward</a>
-                            <p class="expert-post">Instructor</p>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-2 mb-4">
-                        <div class="single-expert-3">
-                            <a href="./InstructorDetails.html" class="expert-img">
-                                <img src="./images/expert-5.png" alt="">
-                            </a>
-                            <a href="./InstructorDetails.html" class="expert-name">Mario Fleming</a>
-                            <p class="expert-post">Instructor</p>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-2 mb-4">
-                        <div class="single-expert-3">
-                            <a href="./InstructorDetails.html" class="expert-img">
-                                <img src="./images/expert-6.png" alt="">
-                            </a>
-                            <a href="./InstructorDetails.html" class="expert-name">Kimberly Walker</a>
-                            <p class="expert-post">Instructor</p>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-2 mb-4">
-                        <div class="single-expert-3">
-                            <a href="./InstructorDetails.html" class="expert-img">
-                                <img src="./images/expert-7.png" alt="">
-                            </a>
-                            <a href="./InstructorDetails.html" class="expert-name">Gilberto Ward</a>
-                            <p class="expert-post">Instructor</p>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-2 mb-4">
-                        <div class="single-expert-3">
-                            <a href="./InstructorDetails.html" class="expert-img">
-                                <img src="./images/expert-5.png" alt="">
-                            </a>
-                            <a href="./InstructorDetails.html" class="expert-name">Mario Fleming</a>
-                            <p class="expert-post">Instructor</p>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-2 mb-4">
-                        <div class="single-expert-3">
-                            <a href="./InstructorDetails.html" class="expert-img">
-                                <img src="./images/expert-6.png" alt="">
-                            </a>
-                            <a href="./InstructorDetails.html" class="expert-name">Kimberly Walker</a>
-                            <p class="expert-post">Instructor</p>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-2 mb-4">
-                        <div class="single-expert-3">
-                            <a href="./InstructorDetails.html" class="expert-img">
-                                <img src="./images/expert-7.png" alt="">
-                            </a>
-                            <a href="./InstructorDetails.html" class="expert-name">Gilberto Ward</a>
-                            <p class="expert-post">Instructor</p>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-2 mb-4">
-                        <div class="single-expert-3">
-                            <a href="./InstructorDetails.html" class="expert-img">
-                                <img src="./images/expert-5.png" alt="">
-                            </a>
-                            <a href="./InstructorDetails.html" class="expert-name">Mario Fleming</a>
-                            <p class="expert-post">Instructor</p>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-2 mb-4">
-                        <div class="single-expert-3">
-                            <a href="./InstructorDetails.html" class="expert-img">
-                                <img src="./images/expert-6.png" alt="">
-                            </a>
-                            <a href="./InstructorDetails.html" class="expert-name">Kimberly Walker</a>
-                            <p class="expert-post">Instructor</p>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-2 mb-4">
-                        <div class="single-expert-3">
-                            <a href="./InstructorDetails.html" class="expert-img">
-                                <img src="./images/expert-7.png" alt="">
-                            </a>
-                            <a href="./InstructorDetails.html" class="expert-name">Gilberto Ward</a>
-                            <p class="expert-post">Instructor</p>
-                        </div>
+                    <div class="section-title-box">
+                        <h2>Common Questions</h2>
+                        <p>Especially in the beginning. Don't waste your time going at it alone. As my mentee Chris put
+                            it. The sessions with
+                            Jascha.</p>
                     </div>
                 </div>
-                <div class="pagination-box mt-lg-3 mt-md-5">
-                    <ul>
-                        <li>
-                            <a class="prev" href="#"><i class="fas fa-chevron-left"></i></a>
-                        </li>
-                        <li>
-                            <p class="pagination-text">Page</p>
-                        </li>
-                        <li>
-                            <a class="pagination-link active" href="#">1</a>
-                        </li>
-                        <li class="pagination-text">
-                            <p>of 3</p>
-                        </li>
-                        <li>
-                            <a class="next active" href="#"><i class="fas fa-chevron-left"></i></a>
-                        </li>
-                    </ul>
+            </div>
+            <div>
+                <div class="accordion cq-slider ">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="cqOne">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#cqcollapseOne" aria-expanded="false" aria-controls="cqcollapseOne" tabindex="0">
+                                Am I eligible for admission?
+                            </button>
+                        </h2>
+                        <div id="cqcollapseOne" class="accordion-collapse collapse" aria-labelledby="cqOne" data-bs-parent="#accordionCq">
+                            <div class="accordion-body">
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi, sit
+                                voluptate ad optio fuga itaque aperiam commodi doloremque atque ducimus
+                                voluptatem. Soluta molestiae enim distinctio illo dolorum similique, odio
+                                cumque animi perferendis quis doloremque tempora alias quidem veritatis
+                                saepe tenetur possimus, unde vero omnis eius sit eum laborum expedita dicta?
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="cqTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#cqcollapseTwo" aria-expanded="false" aria-controls="cqcollapseTwo" tabindex="0">
+                                Any Prerequisites To Learn Python?
+                            </button>
+                        </h2>
+                        <div id="cqcollapseTwo" class="accordion-collapse collapse" aria-labelledby="cqTwo" data-bs-parent="#accordionCq">
+                            <div class="accordion-body">
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi, sit
+                                voluptate ad optio fuga itaque aperiam commodi doloremque atque ducimus
+                                voluptatem. Soluta molestiae enim distinctio illo dolorum similique, odio
+                                cumque animi perferendis quis doloremque tempora alias quidem veritatis
+                                saepe tenetur possimus, unde vero omnis eius sit eum laborum expedita dicta?
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="cqThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#cqcollapseThree" aria-expanded="false" aria-controls="cqcollapseThree" tabindex="0">
+                                How long it take to create a video course?
+                            </button>
+                        </h2>
+                        <div id="cqcollapseThree" class="accordion-collapse collapse" aria-labelledby="cqThree" data-bs-parent="#accordionCq">
+                            <div class="accordion-body">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit saepe,
+                                blanditiis eum adipisci dolorum reprehenderit laudantium sapiente quasi
+                                illum dolores, sint nulla similique dignissimos explicabo error impedit
+                                maiores veritatis incidunt. Iure, ratione? Eius quis repudiandae voluptatem
+                                obcaecati in! Itaque ut rerum dolorum voluptas facilis perferendis
+                                blanditiis provident molestiae consequuntur earum!
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item" >
+                        <h2 class="accordion-header" id="cqFour">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#cqcollapseFour" aria-expanded="false" aria-controls="cqcollapseFour" tabindex="-1">
+                                What does it take become an author?
+                            </button>
+                        </h2>
+                        <div id="cqcollapseFour" class="accordion-collapse collapse" aria-labelledby="cqFour" data-bs-parent="#accordionCq">
+                            <div class="accordion-body">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit saepe,
+                                blanditiis eum adipisci dolorum reprehenderit laudantium sapiente quasi
+                                illum dolores, sint nulla similique dignissimos explicabo error impedit
+                                maiores veritatis incidunt. Iure, ratione? Eius quis repudiandae voluptatem
+                                obcaecati in! Itaque ut rerum dolorum voluptas facilis perferendis
+                                blanditiis provident molestiae consequuntur earum!
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="cqFive">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#cqcollapseFive" aria-expanded="false" aria-controls="cqcollapseFive" tabindex="-1">
+                                How do I redeem a coupon?
+                            </button>
+                        </h2>
+                        <div id="cqcollapseFive" class="accordion-collapse collapse" aria-labelledby="cqFive" data-bs-parent="#accordionCq">
+                            <div class="accordion-body">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit saepe,
+                                blanditiis eum adipisci dolorum reprehenderit laudantium sapiente quasi
+                                illum dolores, sint nulla similique dignissimos explicabo error impedit
+                                maiores veritatis incidunt. Iure, ratione? Eius quis repudiandae voluptatem
+                                obcaecati in! Itaque ut rerum dolorum voluptas facilis perferendis
+                                blanditiis provident molestiae consequuntur earum!
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
-
 
     <section class="subscribe section">
         <div class="subscribe-area">
@@ -2141,6 +2305,37 @@
             </div>
         </div>
     </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script>
+        $('.cq-slider').slick({
+           dots: true,
+           infinite: false,
+           speed: 400,
+           slidesToShow: 3,
+           slidesToScroll: 1,
+           autoplay: false,
+           autoplaySpeed: 2000,
+           arrows: false,
+           adaptiveHeight: true,
+           responsive: [
+               {
+                   breakpoint: 1200,
+                   settings: {
+                       slidesToShow: 2,
+                       slidesToScroll: 1
+                   }
+               },
+               {
+                   breakpoint: 993,
+                   settings: {
+                       slidesToShow: 1,
+                       slidesToScroll: 1
+                   }
+               }
+           ]
+        });
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="./JS/Login.js"></script>
     <script src="./JS/SignUp.js"></script>

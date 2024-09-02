@@ -3,6 +3,10 @@
     padding: 0;
     box-sizing: border-box;
 }
+h1, h2, h3, h4, h5, h6 {
+    font-size: inherit;
+    font-weight: inherit;
+}
 ol,
 ul,
 menu {
@@ -1191,22 +1195,29 @@ input, optgroup, select, textarea {
 }
 
 /* =============================================Our Students Says================================================== */
-.container-testimonial{
+
+.slick-dotted.slick-slider {
     margin-bottom: 100px;
 }
 .single-testimonial {
     background: #ffffff;
     border-radius: 30px;
-    width: 408px;
-    display: block;
-    margin: 50px 12px;
+    margin-top: 50px !important;
 }
 .slider-btn-box {
     display: flex;
     align-items: center;
     gap: 10px;
 }
-
+.testimonial-img {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    margin-top: -50px;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+}
 .slider-btn-box .slick-arrow {
     background: var(--purple);
     box-shadow: 0px 50px 80px rgba(0, 0, 0, 0.05);
@@ -1219,18 +1230,7 @@ input, optgroup, select, textarea {
     color: #fff;
     cursor: pointer;
 } 
-.testimonial-img {
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    margin-top: -50px;
-    width: 90px;
-    height: 90px;
-    border-radius: 50%;
-}
-.testimonial-img img {
-    display: block;
-}
+
 .testimonial-top-box {
     padding: 20px;
 }
@@ -2325,13 +2325,6 @@ label {
 
 
 
-
-
-.single-testimonial {
-    background: #ffffff;
-    border-radius: 30px;
-    margin-top: 50px;
-}
 .testimonial-3 .single-testimonial {
     margin-top: 0;
     border-radius: 20px;
@@ -2575,4 +2568,121 @@ label {
 }
 .error-page {
     padding-top: 160px;
+}
+
+/* ==================================================================================================================================== */
+
+
+ 
+/*            ================       ================      No Jop  page    ================        ================                   */
+
+
+/* ==================================================================================================================================== */
+
+
+
+.no-job-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.no-job-title {
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 62px;
+    text-align: center;
+    color: #0a033c;
+    margin-bottom: 24px;
+}
+.no-job-text {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+    text-align: center;
+    color: #6c688a;
+    width: 80%;
+    margin-bottom: 40px;
+}
+.no-job-page {
+    padding-top: 160px;
+}
+.no-job-page-area {
+    background: url(../images/no-job.png);
+    min-height: 87vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+/* ==================================================================================================================================== */
+
+
+ 
+/*            ================       ================      FAQ  page    ================        ================                   */
+
+
+/* ==================================================================================================================================== */
+
+
+
+.faq-heading-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+
+.section-side-title-box h2 {
+    max-width: 700px;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 62px;
+    color: var(--dark-purple);
+}
+.faq-heading-right p {
+    display: flex;
+    gap: 4px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 32px;
+    color: #6c688a;
+    align-items: center;
+}
+.accordion-item {
+    margin-bottom: 16px;
+    border-radius: 8px;
+    border: 0 !important;
+}
+.accordion-body {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 32px;
+    color: #6c688a;
+    padding-top: 0;
+}
+.accordion-button {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+    color: #0a033c;
+    border: 0;
+    border-radius: 8px;
+    padding: 30px;
+}
+.accordion-button:focus {
+    border-color: transparent !important;
+    outline: 0;
+    box-shadow: none;
+    background: transparent;
+    color: #0a033c;
+}
+.slick-slide {
+    margin: 0 10px;
+    padding: 0;
+}
+.slick-slider {
+    margin: 0 10px;
+    padding: 0;
 }
