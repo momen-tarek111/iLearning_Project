@@ -1702,6 +1702,7 @@
         }
     </style>
 </head>
+
 <body>
     <!-- Header section start -->
     <header id="header" class="header">
@@ -1807,7 +1808,6 @@
         </div> <!--/container -->
     </header> <!-- /header  -->
 
-
     <section class="page-title section" id="page-title">
         <div class="page-title-area">
             <div class="container">
@@ -1816,171 +1816,335 @@
                         <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
                             <ol class="breadcrumb page-breadcrumb">
                                 <li class="breadcrumb-item"><a href="./index.html">Home</a></li>
-                                <li class="breadcrumb-item active" aria-current="page">Contact Us</li>
+                                <li class="breadcrumb-item"><a href="./Blog.html">Blog</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">Blog Details</li>
                             </ol>
                         </nav>
-                        <h2 class="page-title">Contact Us</h2>
+                        <h2 class="page-title">Event Details</h2>
                     </div>
                     <div class="page-title-right">
-                        <img src="./images/contact.png" alt="page-title">
+                        <img src="./images/blog.png" alt="page-title">
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="contact-page section" id="contact-page"> 
-        <div class="contact-page-area">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xl-6 col-md-12 mb-xl-0 mb-5">
-                        <form id="contact-form" class="contact-form">
-                            <div class="row mb-4">
-                                <h2 class="contact-form-title">
-                                    Contact us
-                                </h2>
-                                <p class="contact-form-text">Get in touch with us using the form below.</p>
-                            </div>
-                            <div class="row mb-4">
-                                <div class="col-md-6 mb-4 mb-md-0">
-                                    <div class="form-group">
-                                        <label for="event-fName">First Name</label>
-                                        <input type="text" class="form-control" id="event-fName" placeholder="First Name">
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <label for="event-lName">Last Name</label>
-                                        <input type="text" class="form-control" id="event-lName" placeholder="Last Name">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row mb-4">
-                                <div class="col-md-12">
-                                    <div class="form-group">
-                                        <label for="event-address">Address</label>
-                                        <input type="text" class="form-control" id="event-address" placeholder="Full address here...">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row mb-4">
-                                <div class="col-md-12">
-                                    <div class="form-group">
-                                        <label for="event-phone">Phone Number</label>
-                                        <div class="input-group">
-                                            <div class="input-group-prepend">
-                                                <select class="selectpicker" data-live-search="true">
-                                                    <option data-tokens="US +1">US (+1)</option>
-                                                    <option data-tokens="GB +44">UK (+44)</option>
-                                                    <option data-tokens="CA +1">BD (+880)</option>
-                                                    <!-- add more countries here -->
-                                                </select>
-                                            </div>
-                                            <input type="tel" class="form-control" id="event-phone" name="phone" placeholder="Phone Number" required="">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row mb-4">
-                                <div class="col-md-12">
-                                    <div class="form-group">
-                                        <label for="instructor-msg">Message</label>
-                                        <textarea rows="7" class="form-control" id="instructor-msg" placeholder="Type your message here..."></textarea>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="mb-5">
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="payment-save">
-                                    <label class="form-check-label" for="payment-save">
-                                        I agree to Terms &amp; condition
-                                    </label>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="address-save">
-                                    <label class="form-check-label" for="address-save">
-                                        I have read and agree to the Privacy Policy
-                                    </label>
-                                </div>
-                            </div>
-
-                            <button type="submit" class="btn-purple w-100 text-center">Send Message</button>
-                        </form>
-                    </div>
-                    <div class="col-xl-6 col-md-12">
-                        <div class="contact-box-wrapper row">
-                            <div class="col-xl-12 col-lg-6 col-md-12">
-                                <div class="single-contact-box mb-4 scb-1">
-                                    <div>
-                                        <div class="single-contact-img">
-                                            <img src="./images/chat.svg" alt="chat">
-                                        </div>
-                                    </div>
-                                    <div class="single-contact-content">
-                                        <p class="single-contact-title">Phone Number</p>
-                                        <h3 class="single-contact-text">(+91) 23 456 7890</h3>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xl-12 col-lg-6 col-md-12">
-                                <div class="single-contact-box scb-2">
-                                    <div>
-                                        <div class="single-contact-img">
-                                            <img src="./images/message.svg" alt="message">
-                                        </div>
-                                    </div>
-                                    <div class="single-contact-content">
-                                        <p class="single-contact-title">Email Address</p>
-                                        <h3 class="single-contact-text">example@gmail.com</h3>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row mt-4">
-                            <div id="google-map" class="google-map">
-                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3649.5049528954437!2d90.36271368622965!3d23.836196630344464!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c1adfeba6c49%3A0xacfa6a1a23dcfdd9!2sMirpur%20DOHS%20Central%20Masjid!5e0!3m2!1sbn!2sbd!4v1684218085125!5m2!1sbn!2sbd" allowfullscreen="" loading="lazy"></iframe>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-    <section class="visit-us section" id="visit-us">
-        <div class="visit-us-area">
+    <section id="blog-details-page" class="blog-details-page section">
+        <div class="blog-details-page-area">
             <div class="container">
                 <div class="row">
                     <div class="section-title-box">
-                        <h2>Come and Visit Us!</h2>
+                        <span class="stc-span text-center">Published February 1, 2022 - 5 min Read</span>
+                        <h2>Data Science and Machine Learning with Python - Hands On!</h2>
                     </div>
-                </div>  
+                </div>
+                <div class="blog-details-lg-img">
+                    <img src="./images/blog-5.png" alt="blog">
+                </div>
                 <div class="row">
-                    <div class="col-md-6 mb-4 mb-md-0">
-                        <div class="single-visit">
-                            <div class="visit-img">
-                                <img src="./images/visit-1.png" alt="">
+                    <div class="col-xl-8 col-lg-12">
+                        <div class="blog-details-content">
+                            <div class="single-short-desc mb-4">
+                                <h2 class="short-dec-title">I will touch upon the Intrinsic and germane type as think
+                                    that these are the most applicable to UX design.</h2>
+                                <p class="short-dec-text">
+                                    Dolor sit amet, consectetur adipiscing elit. Commodo amet habitasse orci convallis
+                                    sodales augue.
+                                    Ac, pellentesque proin tincidunt lobortis sit velit velit dui eget. Massa, lectus
+                                    orci auctor morbi. A nisl vitae,
+                                    sagittis elementum placerat nullam id integer leo. Diam venenatis amet diam odio
+                                    ultrices auctor.
+                                    <br><br>
+                                    Cnsectetur adipiscing elit. Commodo amet habitasse orci convallis sodales augue.
+                                    Ac, pellentesque proin tincidunt lobortis sit velit velit dui eget. Massa, lectus
+                                    orci auctor morbi. A nisl vitae,
+                                    sagittis elementum placerat nullam id integer leo.
+                                </p>
                             </div>
-                            <div class="visit-content">
-                                <p class="visit-location"><i class="fas fa-map-marker-alt"></i></p>
-                                <div>
-                                    <h3 class="visit-city">San jose, California</h3>
-                                    <p class="visit-address">3891 Ranchview Dr. Richardson, California 62639</p>
+                            <img class="bd-middle-img" src="./images/blog-details.png" alt="bd-img">
+                            <div class="single-short-desc mb-4">
+                                <h2 class="short-dec-title">Intrinsic Cognitive Load</h2>
+                                <p class="short-dec-text">
+                                    Typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever
+                                    since the 1500s when an unknown
+                                    printer took a galley of type and scrambled it to make a type specimen book. It has
+                                    survived not only five centuries,
+                                    but also the leap into electronic typesetting, remaining essentially unchanged. It
+                                    was popularsed in the 1960 with
+                                    release containing Lorem Ipsum passages desktop publishing software.
+                                    <br><br>
+                                    Cnsectetur adipiscing elit. Commodo amet habitasse orci convallis sodales augue.
+                                    Ac, pellentesque proin tincidunt lobortis sit velit velit dui eget. Massa, lectus
+                                    orci auctor morbi. A nisl vitae,
+                                    sagittis elementum placerat nullam id integer leo.
+                                </p>
+                            </div>
+                            <div class="single-short-desc mb-4">
+                                <h2 class="short-dec-title">Law of Proximity</h2>
+                                <p class="short-dec-text">
+                                    Cnsectetur adipiscing elit. Commodo amet habitasse orci convallis sodales augue.
+                                    Ac, pellentesque proin tincidunt lobortis sit velit velit dui eget. Massa, lectus
+                                    orci auctor morbi. A nisl vitae,
+                                    sagittis elementum placerat nullam id integer leo.
+                                </p>
+                                <br><br>
+
+                                <div class="bd-quote">“ simply dummy text of the printing and types industry's standard
+                                    dummy text ever since the when scrambled it to make a
+                                    type specimen book. ”</div>
+                                <p class="short-dec-text">
+                                    Typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever
+                                    since
+                                    the 1500s when an unknown
+                                    printer took a galley of type and scrambled it to make a type specimen book. It has
+                                    survived not only five centuries.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="aprreciate-box">
+                            <h2>Do you appreciate This blog?</h2>
+                            <div class="src-right">
+                                <div class="src-react-box">
+                                    <button type="button">
+                                        <i class="fas fa-thumbs-up"></i>
+                                    </button>
+                                </div>
+                                <div class="src-react-box">
+                                    <button type="button">
+                                        <i class="far fa-thumbs-down"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="bd-comment-box section">
+                            <div class="single-short-desc mb-4">
+                                <h2 class="short-dec-title">Write your Comment</h2>
+                                <form id="bd-comment-form">
+                                    <textarea class="form-control" rows="6" placeholder="Please write your honest opinion and give a rating..."></textarea>
+                                    <button class="btn-purple mt-4" type="submit">Post Comment</button>
+                                </form>
+                            </div>
+                        </div>
+
+                        <div class="review-comment-wrapper">
+                            <div class="single-review-comment mb-5">
+                                <div class="src-left">
+                                    <div class="product-author">
+                                        <div class="product-img">
+                                            <img src="./images/testimonial-1.png" alt="">
+                                        </div>
+                                        <div>
+                                            <h3 class="product-name">Courtney Henry</h3>
+                                            <p class="product-post">UX/UI Student</p>
+                                        </div>
+                                    </div>
+                                    <p class="src-text">Wonderful writing. Nicely chosen words.
+                                        Good
+                                        to
+                                        read
+                                        overall.</p>
+                                    <div class="article-desc mt-3">
+                                        <p class="text-purple"><span><img src="./images/reply.svg" alt="" class="mr-1"></span>Reply
+                                            Comment
+                                        </p>
+                                        <p><span><img src="./images/like.svg" alt="" class="mr-1"></span>Like
+                                            25</p>
+
+                                        <p><span><img src="./images/dislike.svg" alt="" class="mr-1"></span>Dislike 4
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="src-right">
+                                    <div class="src-react-box">
+                                        <button type="button">
+                                            <i class="fas fa-thumbs-up"></i>
+                                        </button>
+                                    </div>
+                                    <div class="src-react-box">
+                                        <button type="button">
+                                            <i class="far fa-thumbs-down"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="single-review-comment mb-5">
+                                <div class="src-left">
+                                    <div class="product-author">
+                                        <div class="product-img">
+                                            <img src="./images/testimonial-1.png" alt="">
+                                        </div>
+                                        <div>
+                                            <h3 class="product-name">Courtney Henry</h3>
+                                            <p class="product-post">UX/UI Student</p>
+                                        </div>
+                                    </div>
+                                    <p class="src-text">Wonderful writing. Nicely chosen words.
+                                        Good
+                                        to
+                                        read
+                                        overall.</p>
+                                    <div class="article-desc mt-3">
+                                        <p class="text-purple"><span><img src="./images/reply.svg" alt="" class="mr-1"></span>Reply
+                                            Comment
+                                        </p>
+                                        <p><span><img src="./images/like.svg" alt="" class="mr-1"></span>Like
+                                            25</p>
+
+                                        <p><span><img src="./images/dislike.svg" alt="" class="mr-1"></span>Dislike 4
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="src-right">
+                                    <div class="src-react-box">
+                                        <button type="button" class="">
+                                            <i class="fas fa-thumbs-up"></i>
+                                        </button>
+                                    </div>
+                                    <div class="src-react-box">
+                                        <button type="button">
+                                            <i class="far fa-thumbs-down"></i>
+                                        </button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6">
-                        <div class="single-visit">
-                            <div class="visit-img">
-                                <img src="./images/visit-2.png" alt="">
+                    <div class="col-xl-4 col-lg-6">
+                        <div class="bd-sidebar">
+                            <div class="single-sidebar mb-5">
+                                <h2 class="sidebar-title">Post Category</h2>
+                                <div class="sidebar-content">
+                                    <ul class="bd-sidebar-cat">
+                                        <li>
+                                            <a href="blog.html">
+                                                <h3>UI/UX Design</h3>
+                                                <p>(10)</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="blog.html">
+                                                <h3>Development</h3>
+                                                <p>(04)</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="blog.html">
+                                                <h3>Sales Marketing</h3>
+                                                <p>(07)</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="blog.html">
+                                                <h3>Data Science</h3>
+                                                <p>(13)</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="blog.html">
+                                                <h3>Life Style</h3>
+                                                <p>(03)</p>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
-                            <div class="visit-content">
-                                <p class="visit-location"><i class="fas fa-map-marker-alt"></i></p>
-                                <div>
-                                    <h3 class="visit-city">San jose, California</h3>
-                                    <p class="visit-address">3891 Ranchview Dr. Richardson, California 62639</p>
+                            <div class="single-sidebar mb-5">
+                                <h2 class="sidebar-title">Recent Post</h2>
+                                <div class="sidebar-content bds-blog">
+                                    <div class="bd-sidebar-single-blog">
+                                        <div class="">
+                                            <a href="blog-details.html" class="bds-img">
+                                                <img src="./images/sidebar-blog-1.png" alt="bds-blog">
+                                            </a>
+                                        </div>
+                                        <div class="bds-content">
+                                            <a href="blog-details.html" class="bds-title">
+                                                Get Techs HTML5 JS Tutorial For Newbies
+                                            </a>
+                                            <div class="article-desc">
+                                                <p><span><img src="./images//clock.svg" alt="" class="mr-1"></span>24
+                                                    Dec,
+                                                    2022
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <div class="bd-sidebar-single-blog">
+                                        <div>
+                                            <a href="blog-details.html" class="bds-img">
+                                                <img src="./images/sidebar-blog-1.png" alt="bds-blog">
+                                            </a>
+                                        </div>
+                                        <div class="bds-content">
+                                            <a href="blog-details.html" class="bds-title">
+                                                How to Plan your Week for Ultimate Productivity
+                                            </a>
+                                            <div class="article-desc">
+                                                <p><span><img src="./images/clock.svg" alt="" class="mr-1"></span>24
+                                                    Dec,
+                                                    2022
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <div class="bd-sidebar-single-blog">
+                                        <div>
+                                            <a href="blog-details.html" class="bds-img">
+                                                <img src="./images/sidebar-blog-1.png" alt="bds-blog">
+                                            </a>
+                                        </div>
+                                        <div class="bds-content">
+                                            <a href="blog-details.html" class="bds-title">
+                                                8 Great Design Trends That Are Coming Back
+                                            </a>
+                                            <div class="article-desc">
+                                                <p><span><img src="./images/clock.svg" alt="" class="mr-1"></span>24
+                                                    Dec,
+                                                    2022
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="single-sidebar mb-5">
+                                <h2 class="sidebar-title">Popular Tags</h2>
+                                <div class="sidebar-content">
+                                    <ul class="bds-tag-collections">
+                                        <li>
+                                            <a href="#">UI/UX Design</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Life Style</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Development</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Sales marketing</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Data Science</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Photography</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="single-sidebar">
+                                <h2 class="sidebar-title">Share Blog</h2>
+                                <div class="">
+                                    <ul class="instructor-social share-blog">
+                                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                        <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                                    </ul>
                                 </div>
                             </div>
                         </div>
@@ -1989,7 +2153,6 @@
             </div>
         </div>
     </section>
-
 
     <section class="subscribe section">
         <div class="subscribe-area">
@@ -2014,6 +2177,9 @@
             </div><!-- /container -->
         </div><!-- /subscribe-area -->
     </section> <!-- /subscribe -->
+
+
+
     <footer class="footer">
         <div class="footer-area">
             <div class="container">
