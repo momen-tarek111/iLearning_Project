@@ -2954,3 +2954,305 @@ label {
     background-color: transparent;
     border: none;
 }
+
+
+/* ==================================================================================================================================== */
+
+
+ 
+/*            ================       ================      Career  page    ================        ================                   */
+
+
+/* ==================================================================================================================================== */
+
+
+.single-career {
+    padding: 30px;
+    background: #fff;
+    border-radius: 20px;
+}
+.career-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+}
+.career-title {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+    color: #000000;
+}
+.career-top p {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+    text-align: right;
+}
+.career-top span {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: right;
+    color: #0a033c;
+}
+.career-bottom {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+.cb-left .career-text {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 32px;
+    color: #333333;
+    margin-bottom: 24px;
+}
+.single-career .article-desc {
+    margin-bottom: 0;
+}
+
+.becomeInstructorModal .modal-content {
+    border-top: 4px solid var(--purple);
+}
+.bc-instructor-header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 20px;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.bcih-img {
+    width: 80px;
+    height: 80px;
+    background: #f5edfe;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+
+    align-items: center;
+}
+.bcih-content h2 {
+    font-weight: 600;
+    font-size: 24px;
+    color: #0a033c;
+    margin-bottom: 8px;
+}
+.bcih-content p {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 32px;
+    color: #6c688a;
+}
+.cm-title {
+    margin-bottom: 8px !important;
+}
+.inst-social {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+    color: #0a033c;
+    margin-bottom: 16px;
+}
+.form-text {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    color: #6c688a;
+}
+small {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    color: #9d9ab1;
+}
+.ql-toolbar.ql-snow {
+    border-radius: 8px 8px 0 0;
+    border-color: #e7e6ec;
+}
+.ql-toolbar.ql-snow + .ql-container.ql-snow {
+    height: 120px;
+    border-radius: 0 0 8px 8px;
+    border-color: #e7e6ec;
+}
+.instructor-resume-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.instructor-resume-box h3 {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    color: #0a033c;
+}
+.instructor-resume-box h3 span {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 32px;
+    color: #6c688a;
+}
+
+.file-input-label {
+    font-weight: 500;
+    font-size: 16px;
+    color: #515b6f;
+    border: 1px dashed var(--purple);
+    padding: 16px;
+    cursor: pointer;
+    border-radius: 8px;
+}
+.attachment-box label {
+    cursor: pointer;
+}
+.file-input-input {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+.form-check-label {
+    font-weight: 400;
+    font-size: 18px;
+    color: #6c688a;
+}
+.file-input-label span {
+    color: var(--purple);
+}
+/* ==================================================================================================================================== */
+
+
+ 
+/*            ================       ================      Career Details  page    ================        ================                   */
+
+
+/* ==================================================================================================================================== */
+
+.career-details-title-box {
+    margin-bottom: 24px;
+}
+.career-details-title-box h2 {
+    font-weight: 600;
+    font-size: 60px;
+    line-height: 78px;
+    color: #0a033c;
+    margin-bottom: 12px;
+}
+.career-details-title-box p {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    color: #6c688a;
+}
+.career-details-title-box ul li {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    color: #6c688a;
+    list-style: disc;
+    margin-left: 12px;
+}
+.career-details-tag-box {
+    margin-top: 28px;
+    margin-bottom: 60px;
+}
+.cd-tag {
+
+    display: flex;
+    align-items: center;
+    gap: 16px;
+
+}
+
+.cdt-title {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 32px;
+    color: #333333;
+}
+
+
+.cdt-text {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    color: #9c4df4;
+    padding: 2px 8px;
+    background: #f5edfe;
+    border: 0.5px solid #ebdbfd;
+    border-radius: 4px;
+}
+.cdt-date {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 32px;
+    text-align: right;
+    color: #6c688a;
+}
+.quick-summary-collection li {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 32px;
+    color: #3b3563;
+    margin-bottom: 12px;
+}
+.career-details-page .short-dec-text {
+    color: #3b3563;
+}
+.required-skill-collections {
+    display: flex;
+    align-items: center;
+
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.required-skill-collections li {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 32px;
+    color: #0a033c;
+    padding: 8px 24px;
+    border: 1px solid #cecdd8;
+    border-radius: 99px;
+}
+.career-details-page .short-dec-text {
+    color: #3b3563;
+}
+.short-dec-text {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 32px;
+    color: #6c688a;
+}
+.hiring-process-collections {
+    margin-top: 24px;
+}
+.hiring-process-collections li {
+    display: flex;
+    align-items: start;
+    gap: 20px;
+    margin-bottom: 24px;
+}
+.hpc-warning {
+    align-items: center !important;
+    margin-bottom: 0 !important;
+}
+.hpc-number {
+    width: 48px;
+    height: 48px;
+    background: #f7f7f7;
+    border: 1px solid #e7e6ec;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 32px;
+    color: #0a033c;
+}
