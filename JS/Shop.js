@@ -1,6 +1,6 @@
 // Get all category buttons and course items
-const categoryButtons = document.querySelectorAll('.filter-btn-2');
-const courseItems = document.querySelectorAll('.grid-item');
+const categoryButtons = document.querySelectorAll('.filter-item');
+const courseItems = document.querySelectorAll('.categ-item');
 const toppp=351.4
 
 // Add click event listener to each category button

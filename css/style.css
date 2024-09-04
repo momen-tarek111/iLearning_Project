@@ -3256,3 +3256,52 @@ small {
     line-height: 32px;
     color: #0a033c;
 }
+
+/* ==================================================================================================================================== */
+
+
+ 
+/*            ================       ================      Became An Instructor  page    ================        ================                   */
+
+
+/* ==================================================================================================================================== */
+
+.mobile-lg-show {
+    display: none;
+}
+.become-instructor-img img {
+    width: 100%;
+    border-radius: 20px;
+}
+.bic-title {
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 30px;
+    color: #0a033c;
+    margin-bottom: 24px;
+}
+.short-dec-text {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 32px;
+    color: #6c688a;
+}
+.bic-title-2 {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+    color: #0a033c;
+    margin-bottom: 24px;
+}
+.playlist-mother-video {
+    width: 100% !important;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.playlist-wrapper {
+    display: flex;
+}
+
+.video-js {
+    width: 100%;
+}
