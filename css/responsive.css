@@ -82,12 +82,12 @@
 }
 
 @media screen and (max-width: 1440px) {
-    .single-testimonial{
-        width: 50%;
-    }
-    .single-expert{
-        width: 33.3333333333333333333333333333333333333%;
-    }
+    /* .testimonial-3 .testimonial-wrapper{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    } */
     .btn-purple,
     .btn-orange,
     .btn-outline-purple,

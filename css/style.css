@@ -3,6 +3,14 @@
     padding: 0;
     box-sizing: border-box;
 }
+.slick-slide {
+    margin: 0 10px;
+    padding: 0;
+}
+.slick-slider {
+    margin: 0 10px;
+    padding: 0;
+}
 h1, h2, h3, h4, h5, h6 {
     font-size: inherit;
     font-weight: inherit;
@@ -1208,7 +1216,7 @@ input, optgroup, select, textarea {
 .single-testimonial {
     background: #ffffff;
     border-radius: 30px;
-    margin-top: 50px !important;
+    margin-top: 50px;
 }
 .slider-btn-box {
     display: flex;
@@ -2684,14 +2692,7 @@ label {
     background: transparent;
     color: #0a033c;
 }
-.slick-slide {
-    margin: 0 10px;
-    padding: 0;
-}
-.slick-slider {
-    margin: 0 10px;
-    padding: 0;
-}
+
 
 
 /* ==================================================================================================================================== */
@@ -3761,4 +3762,130 @@ small {
     font-size: 20px;
     line-height: 30px;
     color: #0a033c;
+}
+
+/* ==================================================================================================================================== */
+
+
+ 
+/*            ================       ================     AboutUs  page    ================        ================                   */
+
+
+/* ==================================================================================================================================== */
+
+.section-side-title {
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 62px;
+    color: var(--dark-purple);
+    margin-bottom: 24px;
+}
+
+.section-title-box h2 {
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 62px;
+    text-align: center;
+    color: var(--dark-purple);
+}
+.education-slider {
+    margin-top: 50px;
+}
+.education-slider img {
+    border-radius: 30px;
+}
+.lg-img-box {
+    max-height: 600px;
+    position: relative;
+}
+.single-offer {
+    padding: 30px 15px;
+    background: #fff;
+    border-radius: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.offer-content h3 {
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 45px;
+    text-align: center;
+    color: #0a033c;
+    margin-bottom: 20px;
+}
+.offer-content p {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 32px;
+    text-align: center;
+    color: #6c688a;
+}
+.lg-img-box {
+    max-height: 600px;
+    position: relative;
+}
+.testimonial-4 .single-testimonial {
+    margin-top: 50px ;
+    border-radius: 20px;
+}
+
+
+
+/* ==================================================================================================================================== */
+
+
+ 
+/*            ================       ================    Account Settings   page    ================        ================                   */
+
+
+/* ==================================================================================================================================== */
+
+
+
+.profile-name-box {
+    display: flex;
+    
+    align-items: center;
+    gap: 24px;
+    margin-bottom: 24px;
+}
+
+.pn-img-box {
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 5px solid #ebdbfd;
+}
+.pn-img-box img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+.file-input-input {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+.attachment-box label {
+    cursor: pointer;
+}
+.inst-social {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+    color: #0a033c;
+    margin-bottom: 16px;
+}
+.pn-button-box {
+    display: flex;
+    gap: 12px;
+    align-items: center;
 }
