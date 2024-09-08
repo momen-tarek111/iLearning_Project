@@ -1,17 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>iLearning</title>
     <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.3.0/flickity.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
     <link rel="stylesheet" href="./BootStrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/quill.snow.css">
     <link rel="stylesheet" href="./css/all.css">
-    <!-- <link rel="stylesheet" href="./css/slick.css"> -->
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/responsive.css">
     <style type="text/css">
@@ -1703,6 +1702,7 @@
         }
     </style>
 </head>
+
 <body>
     <!-- Header section start -->
     <header id="header" class="header">
@@ -1780,7 +1780,7 @@
                                         <li><a class="dropdown-item" href="#">Certificate</a></li>
                                         <li><a class="dropdown-item" href="#">Career</a></li>
                                         <li><a class="dropdown-item" href="#">Career Details</a></li>
-                                        <li><a class="dropdown-item" href="#">Blog</a></li>
+                                        <li><a class="dropdown-item" href="./Blog.html">Blog</a></li>
                                         <li><a class="dropdown-item" href="#">Blog Details</a></li>
                                         <li><a class="dropdown-item" href="#">Become An Instructor</a></li>
                                         <li><a class="dropdown-item" href="#">Account Setting</a></li>
@@ -1807,6 +1807,7 @@
             </div> <!--/row -->
         </div> <!--/container -->
     </header> <!-- /header  -->
+
     <section class="page-title section" id="page-title">
         <div class="page-title-area">
             <div class="container">
@@ -1815,476 +1816,615 @@
                         <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
                             <ol class="breadcrumb page-breadcrumb">
                                 <li class="breadcrumb-item"><a href="./index.html">Home</a></li>
-                                <li class="breadcrumb-item active" aria-current="page">Shop</li>
+                                <li class="breadcrumb-item"><a href="./Career.html">Courses</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">Courses Details</li>
                             </ol>
                         </nav>
-                        <h2 class="page-title">Online Shop</h2>
+                        <h2 class="page-title">Courses Details</h2>
                     </div>
                     <div class="page-title-right">
-                        <img src="./images/about-page.png" alt="page-title">
+                        <img src="./images/courses.png" alt="page-title">
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="shop-page section" id="shop-page">
-        <div class="shop-page-area">
+    <section id="course-video" class="course-video section">
+        <div class="course-video-area">
             <div class="container">
                 <div class="row">
-                    <div class="col-xl-8 col-md-12 order-xl-2">
-                        <div class="shop-products">
-                            <div class="row">
-                                <div class="filter-box-2 mb-5 filters">
-                                    <ul class="">
-                                        <li role="button" data-category="all" class="filter-btn-2 filter-item is-checked" >
-                                            All Courses
-                                        </li>
-                                        <li role="button" data-category="uxUi" class="filter-btn-2 filter-item">
-                                            UX/UI Design
-                                        </li>
-                                        <li role="button" data-category="development" class="filter-btn-2 filter-item" >
-                                            Development
-                                        </li>
-                                        <li role="button" data-category="salesMarketing" class="filter-btn-2 filter-item" >
-                                            Sales Marketing
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="row mb-4">
-                                <div class="col-xxl-8 col-xl-7 col-md-7 mb-4 mb-md-0">
-                                    <div class="shop-search-bar">
-                                        <input type="text" class="form-control" placeholder="Serach Class, Course, Book Name">
-                                        <button class="search-btn" type="button"><i class="fas fa-search"></i></button>
-                                    </div>
-                                </div>
-                                <div class="col-xxl-4 col-xl-5 col-md-5">
-                                    <div class="shop-sort-box">
-                                        <label>Sort by:</label>
-                                        <select class="form-select shop-p-filter" aria-label="Default select">
-                                            <option selected="">Latest</option>
-                                            <option value="old">Old</option>
-                                            <option value="date">Date</option>
-                                            <option value="price">Price</option>
-                                        </select>
-                                    </div>
-                                </div>
+                    <div class="col-xl-8 col-lg-7 col-md-12 mb-4 mb-lg-0">
+                        <div class="playlist-wrapper">
+                            <div class="playlist-mother-video">
+                                <div id="example_video_1" autoplay="true" preload="auto" class="video-js vjs-theme-city example_video_1-dimensions vjs-controls-enabled vjs-workinghover vjs-v8 vjs-has-started vjs-paused vjs-user-inactive">
+                                    <video controls>
+                                        <source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4">
+                                    </video>
+                                </div>    
                             </div>
                         </div>
-                        <div class="shop-products-box">
-                            <div class="row grid" style="position: relative; height: 1405.6px;">
-                                <div class="col-md-6 mb-4 animate__animated categ-item grid-item development" data-category="development" style="position: absolute; left: 0px; top: 0px;">
-                                    <div class="single-shop-product">
-                                        <a href="product-details.html" class="single-shop-product-img">
-                                            <img src="./images/product-1.png" alt="product">
-                                        </a>
-                                        <div class="single-shop-product-content">
-                                            <div>
-                                                <a href="shop-details.html">The Three Musketeers</a>
-                                                <div class="ratings">
-                                                    <p class="rating-average">5.0</p>
-                                                    <ul>
-                                                        <li><i class="fas fa-star"></i></li>
-                                                        <li><i class="fas fa-star"></i></li>
-                                                        <li><i class="fas fa-star"></i></li>
-                                                        <li><i class="fas fa-star"></i></li>
-                                                        <li><i class="fas fa-star"></i></li>
-                                                    </ul>
-                                                    <p class="total-rating">(31)</p>
-                                                </div>
-                                            </div>
-                                            <p class="price">$49.00</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-6 mb-4 animate__animated categ-item grid-item uxUi" data-category="uxUi" style="position: absolute; left: 439.987px; top: 0px;">
-                                    <div class="single-shop-product">
-                                        <a href="product-details.html" class="single-shop-product-img">
-                                            <img src="./images/product-2.png" alt="product">
-                                        </a>
-                                        <div class="single-shop-product-content">
-                                            <div>
-                                                <a href="shop-details.html">The Three Musketeers</a>
-                                                <div class="ratings">
-                                                    <p class="rating-average">5.0</p>
-                                                    <ul>
-                                                        <li><i class="fas fa-star"></i></li>
-                                                        <li><i class="fas fa-star"></i></li>
-                                                        <li><i class="fas fa-star"></i></li>
-                                                        <li><i class="fas fa-star"></i></li>
-                                                        <li><i class="fas fa-star"></i></li>
-                                                    </ul>
-                                                    <p class="total-rating">(31)</p>
-                                                </div>
-                                            </div>
-                                            <p class="price">$49.00</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-6 mb-4 animate__animated categ-item grid-item salesMarketing" data-category="salesMarketing" style="position: absolute; left: 0px; top: 351.4px;">
-                                    <div class="single-shop-product">
-                                        <a href="product-details.html" class="single-shop-product-img">
-                                            <img src="./images/product-3.png" alt="product">
-                                        </a>
-                                        <div class="single-shop-product-content">
-                                            <div>
-                                                <a href="shop-details.html">The Three Musketeers</a>
-                                                <div class="ratings">
-                                                    <p class="rating-average">5.0</p>
-                                                    <ul>
-                                                        <li><i class="fas fa-star"></i></li>
-                                                        <li><i class="fas fa-star"></i></li>
-                                                        <li><i class="fas fa-star"></i></li>
-                                                        <li><i class="fas fa-star"></i></li>
-                                                        <li><i class="fas fa-star"></i></li>
-                                                    </ul>
-                                                    <p class="total-rating">(31)</p>
-                                                </div>
-                                            </div>
-                                            <p class="price">$49.00</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-6 mb-4 animate__animated categ-item grid-item uxUi" data-category="uxUi" style="position: absolute; left: 439.987px; top: 351.4px;">
-                                    <div class=" single-shop-product">
-                                        <a href="product-details.html" class="single-shop-product-img">
-                                            <img src="./images/product-4.png" alt="product">
-                                        </a>
-                                        <div class="single-shop-product-content">
-                                            <div>
-                                                <a href="shop-details.html">The Three Musketeers</a>
-                                                <div class="ratings">
-                                                    <p class="rating-average">5.0</p>
-                                                    <ul>
-                                                        <li><i class="fas fa-star"></i></li>
-                                                        <li><i class="fas fa-star"></i></li>
-                                                        <li><i class="fas fa-star"></i></li>
-                                                        <li><i class="fas fa-star"></i></li>
-                                                        <li><i class="fas fa-star"></i></li>
-                                                    </ul>
-                                                    <p class="total-rating">(31)</p>
-                                                </div>
-                                            </div>
-                                            <p class="price">$49.00</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-6 mb-4 animate__animated categ-item grid-item development" data-category="development" style="position: absolute; left: 0px; top: 702.8px;">
-                                    <div class="single-shop-product">
-                                        <a href="product-details.html" class="single-shop-product-img">
-                                            <img src="./images/product-5.png" alt="product">
-                                        </a>
-                                        <div class="single-shop-product-content">
-                                            <div>
-                                                <a href="shop-details.html">The Three Musketeers</a>
-                                                <div class="ratings">
-                                                    <p class="rating-average">5.0</p>
-                                                    <ul>
-                                                        <li><i class="fas fa-star"></i></li>
-                                                        <li><i class="fas fa-star"></i></li>
-                                                        <li><i class="fas fa-star"></i></li>
-                                                        <li><i class="fas fa-star"></i></li>
-                                                        <li><i class="fas fa-star"></i></li>
-                                                    </ul>
-                                                    <p class="total-rating">(31)</p>
-                                                </div>
-                                            </div>
-                                            <p class="price">$49.00</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-6 mb-4 animate__animated categ-item grid-item salesMarketing" data-category="salesMarketing" style="position: absolute; left: 439.987px; top: 702.8px;">
-                                    <div class="single-shop-product">
-                                        <a href="product-details.html" class="single-shop-product-img">
-                                            <img src="./images/product-6.png" alt="product">
-                                        </a>
-                                        <div class="single-shop-product-content">
-                                            <div>
-                                                <a href="shop-details.html">The Three Musketeers</a>
-                                                <div class="ratings">
-                                                    <p class="rating-average">5.0</p>
-                                                    <ul>
-                                                        <li><i class="fas fa-star"></i></li>
-                                                        <li><i class="fas fa-star"></i></li>
-                                                        <li><i class="fas fa-star"></i></li>
-                                                        <li><i class="fas fa-star"></i></li>
-                                                        <li><i class="fas fa-star"></i></li>
-                                                    </ul>
-                                                    <p class="total-rating">(31)</p>
-                                                </div>
-                                            </div>
-                                            <p class="price">$49.00</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-6 mb-4 animate__animated categ-item grid-item development" data-category="development" style="position: absolute; left: 0px; top: 1054.2px;">
-                                    <div class="single-shop-product">
-                                        <a href="product-details.html" class="single-shop-product-img">
-                                            <img src="./images/product-7.png" alt="product">
-                                        </a>
-                                        <div class="single-shop-product-content">
-                                            <div>
-                                                <a href="shop-details.html">The Three Musketeers</a>
-                                                <div class="ratings">
-                                                    <p class="rating-average">5.0</p>
-                                                    <ul>
-                                                        <li><i class="fas fa-star"></i></li>
-                                                        <li><i class="fas fa-star"></i></li>
-                                                        <li><i class="fas fa-star"></i></li>
-                                                        <li><i class="fas fa-star"></i></li>
-                                                        <li><i class="fas fa-star"></i></li>
-                                                    </ul>
-                                                    <p class="total-rating">(31)</p>
-                                                </div>
-                                            </div>
-                                            <p class="price">$49.00</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-6 mb-4 animate__animated categ-item grid-item uxUi" data-category="uxUi" style="position: absolute; left: 439.987px; top: 1054.2px;">
-                                    <div class="single-shop-product">
-                                        <a href="product-details.html" class="single-shop-product-img">
-                                            <img src="./images/product-8.png" alt="product">
-                                        </a>
-                                        <div class="single-shop-product-content">
-                                            <div>
-                                                <a href="shop-details.html">The Three Musketeers</a>
-                                                <div class="ratings">
-                                                    <p class="rating-average">5.0</p>
-                                                    <ul>
-                                                        <li><i class="fas fa-star"></i></li>
-                                                        <li><i class="fas fa-star"></i></li>
-                                                        <li><i class="fas fa-star"></i></li>
-                                                        <li><i class="fas fa-star"></i></li>
-                                                        <li><i class="fas fa-star"></i></li>
-                                                    </ul>
-                                                    <p class="total-rating">(31)</p>
-                                                </div>
-                                            </div>
-                                            <p class="price">$49.00</p>
-                                        </div>
-                                    </div>
-                                </div>
+                        <h2 id="video-title" class="playing-video-title"></h2>
+                    </div>
+                    <div class="col-xl-4 col-lg-5 col-md-12">
+                        <div class="single-sidebar courses-playlist">
+                            <h2 class="sidebar-title">Course Playlists</h2>
+                            <div class="playlist-child-videos" id="plylst_upcming">
+                                
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-4 col-md-12">
-                        <div class="shop-sidebar mb-5">
-                            <div class="single-sidebar">
-                                <h2 class="sidebar-title">Popular Book</h2>
-                                <div class="single-sidebar-product mb-4">
-                                    <div class="">
-                                        <a href="product-details.html" class="sidebar-product-img">
-                                            <img src="./images/product-sm-1.png" alt="product">
-                                        </a>
-                                    </div>
-                                    <div class="sidebar-product-content">
-                                        <div class="ratings">
-                                            <p class="rating-average">5.0</p>
-                                            <ul>
-                                                <li><i class="fas fa-star"></i></li>
-                                                <li><i class="fas fa-star"></i></li>
-                                                <li><i class="fas fa-star"></i></li>
-                                                <li><i class="fas fa-star"></i></li>
-                                                <li><i class="fas fa-star"></i></li>
-                                            </ul>
-                                            <p class="total-rating">(31)</p>
-                                        </div>
-                                        <a href="product-details.html">
-                                            <h4 class="sidebar-product-title">The Three Musketeers, by
-                                                Alexandre Dumas</h4>
-                                        </a>
-                                        <p class="sidebar-product-price">$39.00</p>
-                                    </div>
-                                </div>
-                                <div class="single-sidebar-product mb-4">
-                                    <div class="">
-                                        <a href="product-details.html" class="sidebar-product-img">
-                                            <img src="./images/product-sm-2.png" alt="product">
-                                        </a>
-                                    </div>
-                                    <div class="sidebar-product-content">
-                                        <div class="ratings">
-                                            <p class="rating-average">5.0</p>
-                                            <ul>
-                                                <li><i class="fas fa-star"></i></li>
-                                                <li><i class="fas fa-star"></i></li>
-                                                <li><i class="fas fa-star"></i></li>
-                                                <li><i class="fas fa-star"></i></li>
-                                                <li><i class="fas fa-star"></i></li>
-                                            </ul>
-                                            <p class="total-rating">(31)</p>
-                                        </div>
-                                        <a href="product-details.html">
-                                            <h4 class="sidebar-product-title">The Three Musketeers, by
-                                                Alexandre Dumas</h4>
-                                        </a>
-                                        <p class="sidebar-product-price">$39.00</p>
-                                    </div>
-                                </div>
-                                <div class="single-sidebar-product mb-4">
-                                    <div class="">
-                                        <a href="product-details.html" class="sidebar-product-img">
-                                            <img src="./images/product-sm-3.png" alt="product">
-                                        </a>
-                                    </div>
-                                    <div class="sidebar-product-content">
-                                        <div class="ratings">
-                                            <p class="rating-average">5.0</p>
-                                            <ul>
-                                                <li><i class="fas fa-star"></i></li>
-                                                <li><i class="fas fa-star"></i></li>
-                                                <li><i class="fas fa-star"></i></li>
-                                                <li><i class="fas fa-star"></i></li>
-                                                <li><i class="fas fa-star"></i></li>
-                                            </ul>
-                                            <p class="total-rating">(31)</p>
-                                        </div>
-                                        <a href="product-details.html">
-                                            <h4 class="sidebar-product-title">The Three Musketeers, by
-                                                Alexandre Dumas</h4>
-                                        </a>
-                                        <p class="sidebar-product-price">$39.00</p>
-                                    </div>
-                                </div>
-                                <div class="single-sidebar-product mb-4">
-                                    <div class="">
-                                        <a href="product-details.html" class="sidebar-product-img">
-                                            <img src="./images/product-sm-4.png" alt="product">
-                                        </a>
-                                    </div>
-                                    <div class="sidebar-product-content">
-                                        <div class="ratings">
-                                            <p class="rating-average">5.0</p>
-                                            <ul>
-                                                <li><i class="fas fa-star"></i></li>
-                                                <li><i class="fas fa-star"></i></li>
-                                                <li><i class="fas fa-star"></i></li>
-                                                <li><i class="fas fa-star"></i></li>
-                                                <li><i class="fas fa-star"></i></li>
-                                            </ul>
-                                            <p class="total-rating">(31)</p>
-                                        </div>
-                                        <a href="product-details.html">
-                                            <h4 class="sidebar-product-title">The Three Musketeers, by
-                                                Alexandre Dumas</h4>
-                                        </a>
-                                        <p class="sidebar-product-price">$39.00</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="single-sidebar">
-                                <h2 class="sidebar-title">New Arrivals</h2>
-                                <div class="single-sidebar-product mb-4">
-                                    <div class="">
-                                        <a href="product-details.html" class="sidebar-product-img">
-                                            <img src="./images/product-sm-5.png" alt="product">
-                                        </a>
-                                    </div>
-                                    <div class="sidebar-product-content">
-                                        <div class="ratings">
-                                            <p class="rating-average">5.0</p>
-                                            <ul>
-                                                <li><i class="fas fa-star"></i></li>
-                                                <li><i class="fas fa-star"></i></li>
-                                                <li><i class="fas fa-star"></i></li>
-                                                <li><i class="fas fa-star"></i></li>
-                                                <li><i class="fas fa-star"></i></li>
-                                            </ul>
-                                            <p class="total-rating">(31)</p>
-                                        </div>
-                                        <a href="product-details.html">
-                                            <h4 class="sidebar-product-title">The Three Musketeers, by
-                                                Alexandre Dumas</h4>
-                                        </a>
-                                        <p class="sidebar-product-price">$39.00</p>
-                                    </div>
-                                </div>
-                                <div class="single-sidebar-product mb-4">
-                                    <div class="">
-                                        <a href="product-details.html" class="sidebar-product-img">
-                                            <img src="./images/product-sm-6.png" alt="product">
-                                        </a>
-                                    </div>
-                                    <div class="sidebar-product-content">
-                                        <div class="ratings">
-                                            <p class="rating-average">5.0</p>
-                                            <ul>
-                                                <li><i class="fas fa-star"></i></li>
-                                                <li><i class="fas fa-star"></i></li>
-                                                <li><i class="fas fa-star"></i></li>
-                                                <li><i class="fas fa-star"></i></li>
-                                                <li><i class="fas fa-star"></i></li>
-                                            </ul>
-                                            <p class="total-rating">(31)</p>
-                                        </div>
-                                        <a href="product-details.html">
-                                            <h4 class="sidebar-product-title">The Three Musketeers, by
-                                                Alexandre Dumas</h4>
-                                        </a>
-                                        <p class="sidebar-product-price">$39.00</p>
-                                    </div>
-                                </div>
-                                <div class="single-sidebar-product mb-4">
-                                    <div class="">
-                                        <a href="product-details.html" class="sidebar-product-img">
-                                            <img src="./images/product-sm-7.png" alt="product">
-                                        </a>
-                                    </div>
-                                    <div class="sidebar-product-content">
-                                        <div class="ratings">
-                                            <p class="rating-average">5.0</p>
-                                            <ul>
-                                                <li><i class="fas fa-star"></i></li>
-                                                <li><i class="fas fa-star"></i></li>
-                                                <li><i class="fas fa-star"></i></li>
-                                                <li><i class="fas fa-star"></i></li>
-                                                <li><i class="fas fa-star"></i></li>
-                                            </ul>
-                                            <p class="total-rating">(31)</p>
-                                        </div>
-                                        <a href="product-details.html">
-                                            <h4 class="sidebar-product-title">The Three Musketeers, by
-                                                Alexandre Dumas</h4>
-                                        </a>
-                                        <p class="sidebar-product-price">$39.00</p>
-                                    </div>
-                                </div>
-                                <div class="single-sidebar-product mb-4">
-                                    <div class="">
-                                        <a href="product-details.html" class="sidebar-product-img">
-                                            <img src="./images/product-sm-8.png" alt="product">
-                                        </a>
-                                    </div>
-                                    <div class="sidebar-product-content">
-                                        <div class="ratings">
-                                            <p class="rating-average">5.0</p>
-                                            <ul>
-                                                <li><i class="fas fa-star"></i></li>
-                                                <li><i class="fas fa-star"></i></li>
-                                                <li><i class="fas fa-star"></i></li>
-                                                <li><i class="fas fa-star"></i></li>
-                                                <li><i class="fas fa-star"></i></li>
-                                            </ul>
-                                            <p class="total-rating">(31)</p>
-                                        </div>
-                                        <a href="product-details.html">
-                                            <h4 class="sidebar-product-title">The Three Musketeers, by
-                                                Alexandre Dumas</h4>
-                                        </a>
-                                        <p class="sidebar-product-price">$39.00</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>    
                 </div>
             </div>
         </div>
     </section>
 
 
+    <section id="course-details-area" class="course-details-area section">
+        <div class="course-details-areaa">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xxl-8 col-lg-12">
+                        <div class="cd-content-box">
+                            <div class="single-short-desc mb-4">
+                                <h2 class="short-dec-title">Couse Details</h2>
+                                <p class="short-dec-text">
+                                    Learning programming is hard. Especially in the beginning. Don't waste your time
+                                    going at it alone.
+                                    As my mentee Chris put it. The sessions with Jascha have been more valuable than
+                                    eight weeks of my professor's lectures.
+                                    It's money much better spent!
+                                    <br><br>
+                                    Especially in the beginning. Don't waste your time going at it alone. As my mentee
+                                    Chris put it. The sessions with
+                                    Jascha have been more valuable than eight weeks of my professor's lectures.
+                                    <br><br>
+                                    Beginning. Don't waste your time going at it alone. As my mentee Chris put it. The
+                                    sessions with Jascha have been more
+                                    valuable than eight weeks of my professor's lectures.
+                                </p>
+                            </div>
+                            <div class="single-short-desc mb-4">
+                                <h2 class="short-dec-title">Certification</h2>
+                                <p class="short-dec-text">
+                                    Learning programming is hard. Especially in the beginning. Don't waste your time
+                                    going at it alone.
+                                    As my mentee Chris put it. The sessions with Jascha have been more valuable than
+                                    eight weeks of my professor's lectures.
+                                    It's money much better spent!
+                                    <br><br>
+                                    Especially in the beginning. Don't waste your time going at it alone. As my mentee
+                                    Chris put it. The sessions with
+                                    Jascha have been more valuable than eight weeks of my professor's lectures.
+                                    <br><br>
+                                    Beginning. Don't waste your time going at it alone. As my mentee Chris put it. The
+                                    sessions with Jascha have been more
+                                    valuable than eight weeks of my professor's lectures.
+                                </p>
+                            </div>
+                            <div class="single-short-desc mb-4">
+                                <h2 class="short-dec-title">What you'll learn</h2>
+                                <ul class="section-side-list">
+                                    <li>
+                                        <span><img src="./images/tick.svg" alt=""></span>You will be able to
+                                        program in Python professionally
+                                    </li>
+                                    <li>
+                                        <span><img src="./images/tick.svg" alt=""></span>Create a portfolio
+                                        of 100 Python projects
+                                    </li>
+                                    <li>
+                                        <span><img src="./images/tick.svg" alt=""></span>Be able to use
+                                        Python for data science and machine learning
+                                    </li>
+                                    <li>
+                                        <span><img src="./images/tick.svg" alt=""></span>Build GUIs and
+                                        Desktop applications with Python
+                                    </li>
+                                    <li>
+                                        <span><img src="./images/tick.svg" alt=""></span>Be able to build
+                                        fully fledged websites and web apps with Python
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="prod-review mt-4">
+                            <h2>Review and Rating</h2>
+                            <div class="review-rating-box">
+                                <div class="review-rating-left">
+                                    <div class="rating-num">
+                                        <h3>4.5</h3>
+                                    </div>
+                                    <div class="rating-star">
+                                        <p>Total 15 Rating (4.5)</p>
+                                        <div class="ratings">
+                                            <ul>
+                                                <li><svg class="svg-inline--fa fa-star" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="star" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" data-fa-i2svg=""><path fill="currentColor" d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"></path></svg><!-- <i class="fa-solid fa-star"></i> Font Awesome fontawesome.com --></li>
+                                                <li><svg class="svg-inline--fa fa-star" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="star" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" data-fa-i2svg=""><path fill="currentColor" d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"></path></svg><!-- <i class="fa-solid fa-star"></i> Font Awesome fontawesome.com --></li>
+                                                <li><svg class="svg-inline--fa fa-star" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="star" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" data-fa-i2svg=""><path fill="currentColor" d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"></path></svg><!-- <i class="fa-solid fa-star"></i> Font Awesome fontawesome.com --></li>
+                                                <li><svg class="svg-inline--fa fa-star" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="star" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" data-fa-i2svg=""><path fill="currentColor" d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"></path></svg><!-- <i class="fa-solid fa-star"></i> Font Awesome fontawesome.com --></li>
+                                                <li><svg class="svg-inline--fa fa-star" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="star" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" data-fa-i2svg=""><path fill="currentColor" d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"></path></svg><!-- <i class="fa-solid fa-star"></i> Font Awesome fontawesome.com --></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="review-rating-right">
+                                    <button type="button" class="btn-outline-purple">Write a
+                                        Review</button>
+                                </div>
+                            </div>
+                            <ul class="review-lg-star">
+                                <li><svg class="svg-inline--fa fa-star" aria-hidden="true" focusable="false" data-prefix="far" data-icon="star" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" data-fa-i2svg=""><path fill="currentColor" d="M287.9 0c9.2 0 17.6 5.2 21.6 13.5l68.6 141.3 153.2 22.6c9 1.3 16.5 7.6 19.3 16.3s.5 18.1-5.9 24.5L433.6 328.4l26.2 155.6c1.5 9-2.2 18.1-9.6 23.5s-17.3 6-25.3 1.7l-137-73.2L151 509.1c-8.1 4.3-17.9 3.7-25.3-1.7s-11.2-14.5-9.7-23.5l26.2-155.6L31.1 218.2c-6.5-6.4-8.7-15.9-5.9-24.5s10.3-14.9 19.3-16.3l153.2-22.6L266.3 13.5C270.4 5.2 278.7 0 287.9 0zm0 79L235.4 187.2c-3.5 7.1-10.2 12.1-18.1 13.3L99 217.9 184.9 303c5.5 5.5 8.1 13.3 6.8 21L171.4 443.7l105.2-56.2c7.1-3.8 15.6-3.8 22.6 0l105.2 56.2L384.2 324.1c-1.3-7.7 1.2-15.5 6.8-21l85.9-85.1L358.6 200.5c-7.8-1.2-14.6-6.1-18.1-13.3L287.9 79z"></path></svg><!-- <i class="fa-regular fa-star"></i> Font Awesome fontawesome.com --></li>
+                                <li><svg class="svg-inline--fa fa-star" aria-hidden="true" focusable="false" data-prefix="far" data-icon="star" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" data-fa-i2svg=""><path fill="currentColor" d="M287.9 0c9.2 0 17.6 5.2 21.6 13.5l68.6 141.3 153.2 22.6c9 1.3 16.5 7.6 19.3 16.3s.5 18.1-5.9 24.5L433.6 328.4l26.2 155.6c1.5 9-2.2 18.1-9.6 23.5s-17.3 6-25.3 1.7l-137-73.2L151 509.1c-8.1 4.3-17.9 3.7-25.3-1.7s-11.2-14.5-9.7-23.5l26.2-155.6L31.1 218.2c-6.5-6.4-8.7-15.9-5.9-24.5s10.3-14.9 19.3-16.3l153.2-22.6L266.3 13.5C270.4 5.2 278.7 0 287.9 0zm0 79L235.4 187.2c-3.5 7.1-10.2 12.1-18.1 13.3L99 217.9 184.9 303c5.5 5.5 8.1 13.3 6.8 21L171.4 443.7l105.2-56.2c7.1-3.8 15.6-3.8 22.6 0l105.2 56.2L384.2 324.1c-1.3-7.7 1.2-15.5 6.8-21l85.9-85.1L358.6 200.5c-7.8-1.2-14.6-6.1-18.1-13.3L287.9 79z"></path></svg><!-- <i class="fa-regular fa-star"></i> Font Awesome fontawesome.com --></li>
+                                <li><svg class="svg-inline--fa fa-star" aria-hidden="true" focusable="false" data-prefix="far" data-icon="star" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" data-fa-i2svg=""><path fill="currentColor" d="M287.9 0c9.2 0 17.6 5.2 21.6 13.5l68.6 141.3 153.2 22.6c9 1.3 16.5 7.6 19.3 16.3s.5 18.1-5.9 24.5L433.6 328.4l26.2 155.6c1.5 9-2.2 18.1-9.6 23.5s-17.3 6-25.3 1.7l-137-73.2L151 509.1c-8.1 4.3-17.9 3.7-25.3-1.7s-11.2-14.5-9.7-23.5l26.2-155.6L31.1 218.2c-6.5-6.4-8.7-15.9-5.9-24.5s10.3-14.9 19.3-16.3l153.2-22.6L266.3 13.5C270.4 5.2 278.7 0 287.9 0zm0 79L235.4 187.2c-3.5 7.1-10.2 12.1-18.1 13.3L99 217.9 184.9 303c5.5 5.5 8.1 13.3 6.8 21L171.4 443.7l105.2-56.2c7.1-3.8 15.6-3.8 22.6 0l105.2 56.2L384.2 324.1c-1.3-7.7 1.2-15.5 6.8-21l85.9-85.1L358.6 200.5c-7.8-1.2-14.6-6.1-18.1-13.3L287.9 79z"></path></svg><!-- <i class="fa-regular fa-star"></i> Font Awesome fontawesome.com --></li>
+                                <li><svg class="svg-inline--fa fa-star" aria-hidden="true" focusable="false" data-prefix="far" data-icon="star" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" data-fa-i2svg=""><path fill="currentColor" d="M287.9 0c9.2 0 17.6 5.2 21.6 13.5l68.6 141.3 153.2 22.6c9 1.3 16.5 7.6 19.3 16.3s.5 18.1-5.9 24.5L433.6 328.4l26.2 155.6c1.5 9-2.2 18.1-9.6 23.5s-17.3 6-25.3 1.7l-137-73.2L151 509.1c-8.1 4.3-17.9 3.7-25.3-1.7s-11.2-14.5-9.7-23.5l26.2-155.6L31.1 218.2c-6.5-6.4-8.7-15.9-5.9-24.5s10.3-14.9 19.3-16.3l153.2-22.6L266.3 13.5C270.4 5.2 278.7 0 287.9 0zm0 79L235.4 187.2c-3.5 7.1-10.2 12.1-18.1 13.3L99 217.9 184.9 303c5.5 5.5 8.1 13.3 6.8 21L171.4 443.7l105.2-56.2c7.1-3.8 15.6-3.8 22.6 0l105.2 56.2L384.2 324.1c-1.3-7.7 1.2-15.5 6.8-21l85.9-85.1L358.6 200.5c-7.8-1.2-14.6-6.1-18.1-13.3L287.9 79z"></path></svg><!-- <i class="fa-regular fa-star"></i> Font Awesome fontawesome.com --></li>
+                                <li><svg class="svg-inline--fa fa-star" aria-hidden="true" focusable="false" data-prefix="far" data-icon="star" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" data-fa-i2svg=""><path fill="currentColor" d="M287.9 0c9.2 0 17.6 5.2 21.6 13.5l68.6 141.3 153.2 22.6c9 1.3 16.5 7.6 19.3 16.3s.5 18.1-5.9 24.5L433.6 328.4l26.2 155.6c1.5 9-2.2 18.1-9.6 23.5s-17.3 6-25.3 1.7l-137-73.2L151 509.1c-8.1 4.3-17.9 3.7-25.3-1.7s-11.2-14.5-9.7-23.5l26.2-155.6L31.1 218.2c-6.5-6.4-8.7-15.9-5.9-24.5s10.3-14.9 19.3-16.3l153.2-22.6L266.3 13.5C270.4 5.2 278.7 0 287.9 0zm0 79L235.4 187.2c-3.5 7.1-10.2 12.1-18.1 13.3L99 217.9 184.9 303c5.5 5.5 8.1 13.3 6.8 21L171.4 443.7l105.2-56.2c7.1-3.8 15.6-3.8 22.6 0l105.2 56.2L384.2 324.1c-1.3-7.7 1.2-15.5 6.8-21l85.9-85.1L358.6 200.5c-7.8-1.2-14.6-6.1-18.1-13.3L287.9 79z"></path></svg><!-- <i class="fa-regular fa-star"></i> Font Awesome fontawesome.com --></li>
+                            </ul>
+                            <div class="review-input mb-5">
+                                <textarea id="comment" rows="6" class="form-control" placeholder="Please write your honest opinion and give a rating..."></textarea>
+                            </div>
+
+                            <div class="review-comment-wrapper">
+                                <div class="single-review-comment mb-5">
+                                    <div class="src-left">
+                                        <div class="product-author">
+                                            <div class="product-img">
+                                                <img src="./images/testimonial-1.png" alt="">
+                                            </div>
+                                            <div>
+                                                <h3 class="product-name">Courtney Henry</h3>
+                                                <p class="product-post">UX/UI Student</p>
+                                            </div>
+                                        </div>
+                                        <div class="ratings">
+                                            <ul>
+                                                <li><svg class="svg-inline--fa fa-star" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="star" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" data-fa-i2svg=""><path fill="currentColor" d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"></path></svg><!-- <i class="fa-solid fa-star"></i> Font Awesome fontawesome.com --></li>
+                                                <li><svg class="svg-inline--fa fa-star" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="star" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" data-fa-i2svg=""><path fill="currentColor" d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"></path></svg><!-- <i class="fa-solid fa-star"></i> Font Awesome fontawesome.com --></li>
+                                                <li><svg class="svg-inline--fa fa-star" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="star" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" data-fa-i2svg=""><path fill="currentColor" d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"></path></svg><!-- <i class="fa-solid fa-star"></i> Font Awesome fontawesome.com --></li>
+                                                <li><svg class="svg-inline--fa fa-star" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="star" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" data-fa-i2svg=""><path fill="currentColor" d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"></path></svg><!-- <i class="fa-solid fa-star"></i> Font Awesome fontawesome.com --></li>
+                                                <li><svg class="svg-inline--fa fa-star" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="star" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" data-fa-i2svg=""><path fill="currentColor" d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"></path></svg><!-- <i class="fa-solid fa-star"></i> Font Awesome fontawesome.com --></li>
+                                            </ul>
+                                            <p class="rating-average">(5.0) <span class="ms-2">1 Day
+                                                    ago</span>
+                                            </p>
+                                        </div>
+                                        <p class="src-text">Wonderful writing. Nicely chosen words.
+                                            Good
+                                            to
+                                            read
+                                            overall.</p>
+                                    </div>
+                                    <div class="src-right">
+                                        <div class="src-react-box">
+                                            <button type="button"><svg class="svg-inline--fa fa-thumbs-up" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="thumbs-up" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M313.4 32.9c26 5.2 42.9 30.5 37.7 56.5l-2.3 11.4c-5.3 26.7-15.1 52.1-28.8 75.2H464c26.5 0 48 21.5 48 48c0 18.5-10.5 34.6-25.9 42.6C497 275.4 504 288.9 504 304c0 23.4-16.8 42.9-38.9 47.1c4.4 7.3 6.9 15.8 6.9 24.9c0 21.3-13.9 39.4-33.1 45.6c.7 3.3 1.1 6.8 1.1 10.4c0 26.5-21.5 48-48 48H294.5c-19 0-37.5-5.6-53.3-16.1l-38.5-25.7C176 420.4 160 390.4 160 358.3V320 272 247.1c0-29.2 13.3-56.7 36-75l7.4-5.9c26.5-21.2 44.6-51 51.2-84.2l2.3-11.4c5.2-26 30.5-42.9 56.5-37.7zM32 192H96c17.7 0 32 14.3 32 32V448c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32V224c0-17.7 14.3-32 32-32z"></path></svg><!-- <i class="fa-solid fa-thumbs-up"></i> Font Awesome fontawesome.com --></button>
+                                        </div>
+                                        <div class="src-react-box">
+                                            <button type="button"><svg class="svg-inline--fa fa-thumbs-down" aria-hidden="true" focusable="false" data-prefix="far" data-icon="thumbs-down" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M323.8 477.2c-38.2 10.9-78.1-11.2-89-49.4l-5.7-20c-3.7-13-10.4-25-19.5-35l-51.3-56.4c-8.9-9.8-8.2-25 1.6-33.9s25-8.2 33.9 1.6l51.3 56.4c14.1 15.5 24.4 34 30.1 54.1l5.7 20c3.6 12.7 16.9 20.1 29.7 16.5s20.1-16.9 16.5-29.7l-5.7-20c-5.7-19.9-14.7-38.7-26.6-55.5c-5.2-7.3-5.8-16.9-1.7-24.9s12.3-13 21.3-13L448 288c8.8 0 16-7.2 16-16c0-6.8-4.3-12.7-10.4-15c-7.4-2.8-13-9-14.9-16.7s.1-15.8 5.3-21.7c2.5-2.8 4-6.5 4-10.6c0-7.8-5.6-14.3-13-15.7c-8.2-1.6-15.1-7.3-18-15.2s-1.6-16.7 3.6-23.3c2.1-2.7 3.4-6.1 3.4-9.9c0-6.7-4.2-12.6-10.2-14.9c-11.5-4.5-17.7-16.9-14.4-28.8c.4-1.3 .6-2.8 .6-4.3c0-8.8-7.2-16-16-16H286.5c-12.6 0-25 3.7-35.5 10.7l-61.7 41.1c-11 7.4-25.9 4.4-33.3-6.7s-4.4-25.9 6.7-33.3l61.7-41.1c18.4-12.3 40-18.8 62.1-18.8H384c34.7 0 62.9 27.6 64 62c14.6 11.7 24 29.7 24 50c0 4.5-.5 8.8-1.3 13c15.4 11.7 25.3 30.2 25.3 51c0 6.5-1 12.8-2.8 18.7C504.8 238.3 512 254.3 512 272c0 35.3-28.6 64-64 64l-92.3 0c4.7 10.4 8.7 21.2 11.8 32.2l5.7 20c10.9 38.2-11.2 78.1-49.4 89zM32 384c-17.7 0-32-14.3-32-32V128c0-17.7 14.3-32 32-32H96c17.7 0 32 14.3 32 32V352c0 17.7-14.3 32-32 32H32z"></path></svg><!-- <i class="fa-regular fa-thumbs-down"></i> Font Awesome fontawesome.com --></button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="single-review-comment mb-5">
+                                    <div class="src-left">
+                                        <div class="product-author">
+                                            <div class="product-img">
+                                                <img src="./images/testimonial-1.png" alt="">
+                                            </div>
+                                            <div>
+                                                <h3 class="product-name">Courtney Henry</h3>
+                                                <p class="product-post">UX/UI Student</p>
+                                            </div>
+                                        </div>
+                                        <div class="ratings">
+                                            <ul>
+                                                <li><svg class="svg-inline--fa fa-star" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="star" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" data-fa-i2svg=""><path fill="currentColor" d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"></path></svg><!-- <i class="fa-solid fa-star"></i> Font Awesome fontawesome.com --></li>
+                                                <li><svg class="svg-inline--fa fa-star" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="star" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" data-fa-i2svg=""><path fill="currentColor" d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"></path></svg><!-- <i class="fa-solid fa-star"></i> Font Awesome fontawesome.com --></li>
+                                                <li><svg class="svg-inline--fa fa-star" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="star" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" data-fa-i2svg=""><path fill="currentColor" d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"></path></svg><!-- <i class="fa-solid fa-star"></i> Font Awesome fontawesome.com --></li>
+                                                <li><svg class="svg-inline--fa fa-star" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="star" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" data-fa-i2svg=""><path fill="currentColor" d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"></path></svg><!-- <i class="fa-solid fa-star"></i> Font Awesome fontawesome.com --></li>
+                                                <li><svg class="svg-inline--fa fa-star" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="star" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" data-fa-i2svg=""><path fill="currentColor" d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"></path></svg><!-- <i class="fa-solid fa-star"></i> Font Awesome fontawesome.com --></li>
+                                            </ul>
+                                            <p class="rating-average">(5.0) <span class="ms-2">1 Day
+                                                    ago</span>
+                                            </p>
+                                        </div>
+                                        <p class="src-text">Wonderful writing. Nicely chosen words.
+                                            Good
+                                            to
+                                            read
+                                            overall.</p>
+                                    </div>
+                                    <div class="src-right">
+                                        <div class="src-react-box">
+                                            <button type="button"><svg class="svg-inline--fa fa-thumbs-up" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="thumbs-up" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M313.4 32.9c26 5.2 42.9 30.5 37.7 56.5l-2.3 11.4c-5.3 26.7-15.1 52.1-28.8 75.2H464c26.5 0 48 21.5 48 48c0 18.5-10.5 34.6-25.9 42.6C497 275.4 504 288.9 504 304c0 23.4-16.8 42.9-38.9 47.1c4.4 7.3 6.9 15.8 6.9 24.9c0 21.3-13.9 39.4-33.1 45.6c.7 3.3 1.1 6.8 1.1 10.4c0 26.5-21.5 48-48 48H294.5c-19 0-37.5-5.6-53.3-16.1l-38.5-25.7C176 420.4 160 390.4 160 358.3V320 272 247.1c0-29.2 13.3-56.7 36-75l7.4-5.9c26.5-21.2 44.6-51 51.2-84.2l2.3-11.4c5.2-26 30.5-42.9 56.5-37.7zM32 192H96c17.7 0 32 14.3 32 32V448c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32V224c0-17.7 14.3-32 32-32z"></path></svg><!-- <i class="fa-solid fa-thumbs-up"></i> Font Awesome fontawesome.com --></button>
+                                        </div>
+                                        <div class="src-react-box">
+                                            <button type="button"><svg class="svg-inline--fa fa-thumbs-down" aria-hidden="true" focusable="false" data-prefix="far" data-icon="thumbs-down" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M323.8 477.2c-38.2 10.9-78.1-11.2-89-49.4l-5.7-20c-3.7-13-10.4-25-19.5-35l-51.3-56.4c-8.9-9.8-8.2-25 1.6-33.9s25-8.2 33.9 1.6l51.3 56.4c14.1 15.5 24.4 34 30.1 54.1l5.7 20c3.6 12.7 16.9 20.1 29.7 16.5s20.1-16.9 16.5-29.7l-5.7-20c-5.7-19.9-14.7-38.7-26.6-55.5c-5.2-7.3-5.8-16.9-1.7-24.9s12.3-13 21.3-13L448 288c8.8 0 16-7.2 16-16c0-6.8-4.3-12.7-10.4-15c-7.4-2.8-13-9-14.9-16.7s.1-15.8 5.3-21.7c2.5-2.8 4-6.5 4-10.6c0-7.8-5.6-14.3-13-15.7c-8.2-1.6-15.1-7.3-18-15.2s-1.6-16.7 3.6-23.3c2.1-2.7 3.4-6.1 3.4-9.9c0-6.7-4.2-12.6-10.2-14.9c-11.5-4.5-17.7-16.9-14.4-28.8c.4-1.3 .6-2.8 .6-4.3c0-8.8-7.2-16-16-16H286.5c-12.6 0-25 3.7-35.5 10.7l-61.7 41.1c-11 7.4-25.9 4.4-33.3-6.7s-4.4-25.9 6.7-33.3l61.7-41.1c18.4-12.3 40-18.8 62.1-18.8H384c34.7 0 62.9 27.6 64 62c14.6 11.7 24 29.7 24 50c0 4.5-.5 8.8-1.3 13c15.4 11.7 25.3 30.2 25.3 51c0 6.5-1 12.8-2.8 18.7C504.8 238.3 512 254.3 512 272c0 35.3-28.6 64-64 64l-92.3 0c4.7 10.4 8.7 21.2 11.8 32.2l5.7 20c10.9 38.2-11.2 78.1-49.4 89zM32 384c-17.7 0-32-14.3-32-32V128c0-17.7 14.3-32 32-32H96c17.7 0 32 14.3 32 32V352c0 17.7-14.3 32-32 32H32z"></path></svg><!-- <i class="fa-regular fa-thumbs-down"></i> Font Awesome fontawesome.com --></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xxl-4 col-lg-12">
+                        <div class="single-short-desc mb-4">
+                            <div class="instructor-course-details">
+                                <ul>
+                                    <li>
+                                        <h3 class="icd-title">Price</h3>
+                                        <p class="icd-text text-orange">$49.00</p>
+                                    </li>
+                                    <li>
+                                        <h3 class="icd-title">Ratings</h3>
+                                        <p class="icd-text">4.9(145)</p>
+                                    </li>
+                                    <li>
+                                        <h3 class="icd-title">Durations</h3>
+                                        <p class="icd-text">15 Days</p>
+                                    </li>
+                                    <li>
+                                        <h3 class="icd-title">Lessons</h3>
+                                        <p class="icd-text">45</p>
+                                    </li>
+                                    <li>
+                                        <h3 class="icd-title">Certificate</h3>
+                                        <p class="icd-text">Yse</p>
+                                    </li>
+                                    <li>
+                                        <h3 class="icd-title">Language</h3>
+                                        <p class="icd-text">English</p>
+                                    </li>
+                                    <li>
+                                        <h3 class="icd-title">Access</h3>
+                                        <p class="icd-text">Lifetime</p>
+                                    </li>
+                                    <li>
+                                        <h3 class="icd-title">Instructor</h3>
+                                        <p class="icd-text">Carolyn Gray</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="d-flex mb-4 justify-content-between align-items-center">
+                            <button class="btn-purple">Purchase Course</button>
+                            <button type="button" data-bs-toggle="modal" data-bs-target="#cartModal" class="btn-purple-light">Send Message</button>
+                        </div>
+                        <div class="join-community">
+                            <h2 class="jc-title">What you'll learn</h2>
+                            <div class="jc-img-box">
+                                <img src="./images/community.png" alt="community">
+                                <div class="jc-member">
+                                    <p><span><svg class="svg-inline--fa fa-users" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="users" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" data-fa-i2svg=""><path fill="currentColor" d="M144 0a80 80 0 1 1 0 160A80 80 0 1 1 144 0zM512 0a80 80 0 1 1 0 160A80 80 0 1 1 512 0zM0 298.7C0 239.8 47.8 192 106.7 192h42.7c15.9 0 31 3.5 44.6 9.7c-1.3 7.2-1.9 14.7-1.9 22.3c0 38.2 16.8 72.5 43.3 96c-.2 0-.4 0-.7 0H21.3C9.6 320 0 310.4 0 298.7zM405.3 320c-.2 0-.4 0-.7 0c26.6-23.5 43.3-57.8 43.3-96c0-7.6-.7-15-1.9-22.3c13.6-6.3 28.7-9.7 44.6-9.7h42.7C592.2 192 640 239.8 640 298.7c0 11.8-9.6 21.3-21.3 21.3H405.3zM224 224a96 96 0 1 1 192 0 96 96 0 1 1 -192 0zM128 485.3C128 411.7 187.7 352 261.3 352H378.7C452.3 352 512 411.7 512 485.3c0 14.7-11.9 26.7-26.7 26.7H154.7c-14.7 0-26.7-11.9-26.7-26.7z"></path></svg><!-- <i class="fa-solid fa-users"></i> Font Awesome fontawesome.com --></span>4k Member Join</p>
+                                </div>
+                            </div>
+                            <p class="text">Ilearning Community</p>
+                            <a class="btn-purple w-100 text-center" href="#"><span class="me-2"><svg class="svg-inline--fa fa-clock" aria-hidden="true" focusable="false" data-prefix="far" data-icon="clock" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M464 256A208 208 0 1 1 48 256a208 208 0 1 1 416 0zM0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM232 120V256c0 8 4 15.5 10.7 20l96 64c11 7.4 25.9 4.4 33.3-6.7s4.4-25.9-6.7-33.3L280 243.2V120c0-13.3-10.7-24-24-24s-24 10.7-24 24z"></path></svg><!-- <i class="fa-regular fa-clock"></i> Font Awesome fontawesome.com --></span>Join Facebook Group</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="testimonial" class="testimonial testimonial-3 section">
+        <div class="testimonial-area">
+            <div class="container">
+                <div class="section-title-box">
+                    <h2>Feedback From Students</h2>
+                </div>
+                <div class="slick-3">
+                    <div class="single-testimonial">
+                        <div class="test-top-area">
+                            <div class="test-author">
+                                <div class="test-img">
+                                    <img src="./images/testimonial-1.png" alt="">
+                                </div>
+                                <div>
+                                    <h3 class="test-name">Courtney Henry</h3>
+                                    <p class="test-post">UX/UI Student</p>
+                                </div>
+                            </div>
+                            <img class="testimonial-quote" src="./images/quote.svg" alt="quote">
+                        </div>
+                        <p class="testimonial-msg">
+                            Provides educational consulting services for student- clients who want to study in
+                            Canada with the application process.
+                        </p>
+                        <hr>
+                        <div class="testimonial-bottom-box">
+                            <div class="ratings">
+                                <ul>
+                                    <li><svg class="svg-inline--fa fa-star" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="star" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" data-fa-i2svg=""><path fill="currentColor" d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"></path></svg><!-- <i class="fa-solid fa-star"></i> Font Awesome fontawesome.com --></li>
+                                    <li><svg class="svg-inline--fa fa-star" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="star" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" data-fa-i2svg=""><path fill="currentColor" d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"></path></svg><!-- <i class="fa-solid fa-star"></i> Font Awesome fontawesome.com --></li>
+                                    <li><svg class="svg-inline--fa fa-star" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="star" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" data-fa-i2svg=""><path fill="currentColor" d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"></path></svg><!-- <i class="fa-solid fa-star"></i> Font Awesome fontawesome.com --></li>
+                                    <li><svg class="svg-inline--fa fa-star" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="star" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" data-fa-i2svg=""><path fill="currentColor" d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"></path></svg><!-- <i class="fa-solid fa-star"></i> Font Awesome fontawesome.com --></li>
+                                    <li><svg class="svg-inline--fa fa-star" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="star" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" data-fa-i2svg=""><path fill="currentColor" d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"></path></svg><!-- <i class="fa-solid fa-star"></i> Font Awesome fontawesome.com --></li>
+                                </ul>
+                            </div>
+                            <h4 class="review">(5.0) Review</h4>
+                        </div>
+                    </div>
+                    <div class="single-testimonial">
+                        <div class="test-top-area">
+                            <div class="test-author">
+                                <div class="test-img">
+                                    <img src="./images/testimonial-2.png" alt="">
+                                </div>
+                                <div>
+                                    <h3 class="test-name">Courtney Henry</h3>
+                                    <p class="test-post">UX/UI Student</p>
+                                </div>
+                            </div>
+                            <img class="testimonial-quote" src="./images/quote.svg" alt="quote">
+                        </div>
+                        <p class="testimonial-msg">
+                            Provides educational consulting services for student- clients who want to study in
+                            Canada with the application process.
+                        </p>
+                        <hr>
+                        <div class="testimonial-bottom-box">
+                            <div class="ratings">
+                                <ul>
+                                    <li><svg class="svg-inline--fa fa-star" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="star" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" data-fa-i2svg=""><path fill="currentColor" d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"></path></svg><!-- <i class="fa-solid fa-star"></i> Font Awesome fontawesome.com --></li>
+                                    <li><svg class="svg-inline--fa fa-star" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="star" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" data-fa-i2svg=""><path fill="currentColor" d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"></path></svg><!-- <i class="fa-solid fa-star"></i> Font Awesome fontawesome.com --></li>
+                                    <li><svg class="svg-inline--fa fa-star" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="star" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" data-fa-i2svg=""><path fill="currentColor" d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"></path></svg><!-- <i class="fa-solid fa-star"></i> Font Awesome fontawesome.com --></li>
+                                    <li><svg class="svg-inline--fa fa-star" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="star" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" data-fa-i2svg=""><path fill="currentColor" d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"></path></svg><!-- <i class="fa-solid fa-star"></i> Font Awesome fontawesome.com --></li>
+                                    <li><svg class="svg-inline--fa fa-star" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="star" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" data-fa-i2svg=""><path fill="currentColor" d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"></path></svg><!-- <i class="fa-solid fa-star"></i> Font Awesome fontawesome.com --></li>
+                                </ul>
+                            </div>
+                            <h4 class="review">(5.0) Review</h4>
+                        </div>
+                    </div>
+                    <div class="single-testimonial">
+                        <div class="test-top-area">
+                            <div class="test-author">
+                                <div class="test-img">
+                                    <img src="./images/testimonial-3.png" alt="">
+                                </div>
+                                <div>
+                                    <h3 class="test-name">Courtney Henry</h3>
+                                    <p class="test-post">UX/UI Student</p>
+                                </div>
+                            </div>
+                            <img class="testimonial-quote" src="./images/quote.svg" alt="quote">
+                        </div>
+                        <p class="testimonial-msg">
+                            Provides educational consulting services for student- clients who want to study in
+                            Canada with the application process.
+                        </p>
+                        <hr>
+                        <div class="testimonial-bottom-box">
+                            <div class="ratings">
+                                <ul>
+                                    <li><svg class="svg-inline--fa fa-star" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="star" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" data-fa-i2svg=""><path fill="currentColor" d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"></path></svg><!-- <i class="fa-solid fa-star"></i> Font Awesome fontawesome.com --></li>
+                                    <li><svg class="svg-inline--fa fa-star" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="star" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" data-fa-i2svg=""><path fill="currentColor" d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"></path></svg><!-- <i class="fa-solid fa-star"></i> Font Awesome fontawesome.com --></li>
+                                    <li><svg class="svg-inline--fa fa-star" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="star" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" data-fa-i2svg=""><path fill="currentColor" d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"></path></svg><!-- <i class="fa-solid fa-star"></i> Font Awesome fontawesome.com --></li>
+                                    <li><svg class="svg-inline--fa fa-star" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="star" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" data-fa-i2svg=""><path fill="currentColor" d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"></path></svg><!-- <i class="fa-solid fa-star"></i> Font Awesome fontawesome.com --></li>
+                                    <li><svg class="svg-inline--fa fa-star" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="star" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" data-fa-i2svg=""><path fill="currentColor" d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"></path></svg><!-- <i class="fa-solid fa-star"></i> Font Awesome fontawesome.com --></li>
+                                </ul>
+                            </div>
+                            <h4 class="review">(5.0) Review</h4>
+                        </div>
+                    </div>
+                    <div class="single-testimonial">
+                        <div class="test-top-area">
+                            <div class="test-author">
+                                <div class="test-img">
+                                    <img src="./images/testimonial-1.png" alt="">
+                                </div>
+                                <div>
+                                    <h3 class="test-name">Courtney Henry</h3>
+                                    <p class="test-post">UX/UI Student</p>
+                                </div>
+                            </div>
+                            <img class="testimonial-quote" src="./images/quote.svg" alt="quote">
+                        </div>
+                        <p class="testimonial-msg">
+                            Provides educational consulting services for student- clients who want to study in
+                            Canada with the application process.
+                        </p>
+                        <hr>
+                        <div class="testimonial-bottom-box">
+                            <div class="ratings">
+                                <ul>
+                                    <li><svg class="svg-inline--fa fa-star" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="star" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" data-fa-i2svg=""><path fill="currentColor" d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"></path></svg><!-- <i class="fa-solid fa-star"></i> Font Awesome fontawesome.com --></li>
+                                    <li><svg class="svg-inline--fa fa-star" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="star" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" data-fa-i2svg=""><path fill="currentColor" d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"></path></svg><!-- <i class="fa-solid fa-star"></i> Font Awesome fontawesome.com --></li>
+                                    <li><svg class="svg-inline--fa fa-star" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="star" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" data-fa-i2svg=""><path fill="currentColor" d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"></path></svg><!-- <i class="fa-solid fa-star"></i> Font Awesome fontawesome.com --></li>
+                                    <li><svg class="svg-inline--fa fa-star" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="star" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" data-fa-i2svg=""><path fill="currentColor" d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"></path></svg><!-- <i class="fa-solid fa-star"></i> Font Awesome fontawesome.com --></li>
+                                    <li><svg class="svg-inline--fa fa-star" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="star" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" data-fa-i2svg=""><path fill="currentColor" d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"></path></svg><!-- <i class="fa-solid fa-star"></i> Font Awesome fontawesome.com --></li>
+                                </ul>
+                            </div>
+                            <h4 class="review">(5.0) Review</h4>
+                        </div>
+                    </div>
+                    <div class="single-testimonial">
+                        <div class="test-top-area">
+                            <div class="test-author">
+                                <div class="test-img">
+                                    <img src="./images/testimonial-2.png" alt="">
+                                </div>
+                                <div>
+                                    <h3 class="test-name">Courtney Henry</h3>
+                                    <p class="test-post">UX/UI Student</p>
+                                </div>
+                            </div>
+                            <img class="testimonial-quote" src="./images/quote.svg" alt="quote">
+                        </div>
+                        <p class="testimonial-msg">
+                            Provides educational consulting services for student- clients who want to study in
+                            Canada with the application process.
+                        </p>
+                        <hr>
+                        <div class="testimonial-bottom-box">
+                            <div class="ratings">
+                                <ul>
+                                    <li><svg class="svg-inline--fa fa-star" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="star" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" data-fa-i2svg=""><path fill="currentColor" d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"></path></svg><!-- <i class="fa-solid fa-star"></i> Font Awesome fontawesome.com --></li>
+                                    <li><svg class="svg-inline--fa fa-star" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="star" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" data-fa-i2svg=""><path fill="currentColor" d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"></path></svg><!-- <i class="fa-solid fa-star"></i> Font Awesome fontawesome.com --></li>
+                                    <li><svg class="svg-inline--fa fa-star" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="star" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" data-fa-i2svg=""><path fill="currentColor" d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"></path></svg><!-- <i class="fa-solid fa-star"></i> Font Awesome fontawesome.com --></li>
+                                    <li><svg class="svg-inline--fa fa-star" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="star" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" data-fa-i2svg=""><path fill="currentColor" d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"></path></svg><!-- <i class="fa-solid fa-star"></i> Font Awesome fontawesome.com --></li>
+                                    <li><svg class="svg-inline--fa fa-star" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="star" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" data-fa-i2svg=""><path fill="currentColor" d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"></path></svg><!-- <i class="fa-solid fa-star"></i> Font Awesome fontawesome.com --></li>
+                                </ul>
+                            </div>
+                            <h4 class="review">(5.0) Review</h4>
+                        </div>
+                    </div>
+                    <div class="single-testimonial">
+                        <div class="test-top-area">
+                            <div class="test-author">
+                                <div class="test-img">
+                                    <img src="./images/testimonial-3.png" alt="">
+                                </div>
+                                <div>
+                                    <h3 class="test-name">Courtney Henry</h3>
+                                    <p class="test-post">UX/UI Student</p>
+                                </div>
+                            </div>
+                            <img class="testimonial-quote" src="./images/quote.svg" alt="quote">
+                        </div>
+                        <p class="testimonial-msg">
+                            Provides educational consulting services for student- clients who want to study in
+                            Canada with the application process.
+                        </p>
+                        <hr>
+                        <div class="testimonial-bottom-box">
+                            <div class="ratings">
+                                <ul>
+                                    <li><svg class="svg-inline--fa fa-star" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="star" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" data-fa-i2svg=""><path fill="currentColor" d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"></path></svg><!-- <i class="fa-solid fa-star"></i> Font Awesome fontawesome.com --></li>
+                                    <li><svg class="svg-inline--fa fa-star" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="star" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" data-fa-i2svg=""><path fill="currentColor" d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"></path></svg><!-- <i class="fa-solid fa-star"></i> Font Awesome fontawesome.com --></li>
+                                    <li><svg class="svg-inline--fa fa-star" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="star" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" data-fa-i2svg=""><path fill="currentColor" d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"></path></svg><!-- <i class="fa-solid fa-star"></i> Font Awesome fontawesome.com --></li>
+                                    <li><svg class="svg-inline--fa fa-star" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="star" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" data-fa-i2svg=""><path fill="currentColor" d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"></path></svg><!-- <i class="fa-solid fa-star"></i> Font Awesome fontawesome.com --></li>
+                                    <li><svg class="svg-inline--fa fa-star" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="star" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" data-fa-i2svg=""><path fill="currentColor" d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"></path></svg><!-- <i class="fa-solid fa-star"></i> Font Awesome fontawesome.com --></li>
+                                </ul>
+                            </div>
+                            <h4 class="review">(5.0) Review</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <div class="modal fade becomeInstructorModal" id="applyInstructor" tabindex="-1" style="display: none;" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="bc-instructor-header">
+                        <div class="bcih-img">
+                            <img src="./images/become.svg" alt="become">
+                        </div>
+                        <div class="bcih-content">
+                            <h2>Submit your application</h2>
+                            <p>The following is required and will only be shared with Nomad</p>
+                        </div>
+                    </div>
+                </div>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                    <svg class="svg-inline--fa fa-xmark" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="xmark" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" data-fa-i2svg=""><path fill="currentColor" d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"></path></svg><!-- <i class="fa-solid fa-xmark"></i> Font Awesome fontawesome.com -->
+                </button>
+                <div class="modal-body">
+                    <form id="become-instructor-form" class="become-instructor-form">
+                        <div class="row mb-4">
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label for="instructor-name">Name</label>
+                                    <input type="text" class="form-control" id="instructor-name" placeholder="Full Name">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mb-4">
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label for="address-full">Address</label>
+                                    <input type="text" class="form-control" id="address-full" placeholder="Full address here...">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mb-4">
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label for="phone">Phone Number</label>
+                                    <div class="input-group">
+                                        <div class="input-group-prepend">
+                                            <select class="selectpicker" data-live-search="true">
+                                                <option data-tokens="US +1">US (+1)</option>
+                                                <option data-tokens="GB +44">UK (+44)</option>
+                                                <option data-tokens="CA +1">BD (+880)</option>
+                                                <!-- add more countries here -->
+                                            </select>
+                                        </div>
+                                        <input type="tel" class="form-control" id="phone" name="phone" placeholder="Phone Number" required="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <h2 class="inst-social">
+                                Social Media
+                            </h2>
+                        </div>
+                        <div class="row mb-4">
+                            <div class="mb-3">
+                                <label for="instructor-linkedin" class="form-label">Linkedin URL</label>
+                                <div class="input-group">
+                                    <span class="input-group-text" id="instructor-addon3">Link to your LinkedIn
+                                        URL</span>
+                                    <input type="text" class="form-control" id="instructor-linkedin">
+                                </div>
+                                <div class="form-text" id="basic-addon4">www.Linkedin.com/
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mb-4">
+                            <div class="mb-3">
+                                <label for="instructor-facebook" class="form-label">Facebook URL<span>(Optional)
+                                    </span>
+                                </label>
+                                <div class="input-group">
+                                    <span class="input-group-text" id="instructor-addon7">Link to your Facebook
+                                        URL</span>
+                                    <input type="text" class="form-control" id="instructor-facebook">
+                                </div>
+                                <div class="form-text" id="basic-addon9">www.facebook.com/
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mb-4">
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label for="instructor-msg">Additional Information</label>
+                                    <textarea rows="5" class="form-control" id="instructor-msg" placeholder="Add a cover letter or anything else you want to share"></textarea>
+                                    <small>Maximum 500 characters</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mb-4">
+                            <div class="instructor-resume-box">
+                                <h3>Attach your resume <span>(Optional)</span></h3>
+                                <div class="attachment-box">
+                                    <input type="file" name="file-input" id="file-input" class="file-input-input">
+                                    <label class="file-input-label" for="file-input">
+                                        <span class="me-1"><svg class="svg-inline--fa fa-paperclip" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="paperclip" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M364.2 83.8c-24.4-24.4-64-24.4-88.4 0l-184 184c-42.1 42.1-42.1 110.3 0 152.4s110.3 42.1 152.4 0l152-152c10.9-10.9 28.7-10.9 39.6 0s10.9 28.7 0 39.6l-152 152c-64 64-167.6 64-231.6 0s-64-167.6 0-231.6l184-184c46.3-46.3 121.3-46.3 167.6 0s46.3 121.3 0 167.6l-176 176c-28.6 28.6-75 28.6-103.6 0s-28.6-75 0-103.6l144-144c10.9-10.9 28.7-10.9 39.6 0s10.9 28.7 0 39.6l-144 144c-6.7 6.7-6.7 17.7 0 24.4s17.7 6.7 24.4 0l176-176c24.4-24.4 24.4-64 0-88.4z"></path></svg><!-- <i class="fa-solid fa-paperclip"></i> Font Awesome fontawesome.com --></span>Attach
+                                        Resume/CV</label>
+
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <div class="form-check mb-4">
+                        <input class="form-check-input" type="checkbox" value="" id="address-save">
+                        <label class="form-check-label" for="address-save">
+                            By sending the request you can confirm that you accept our <a href="#" class="text-purple">Terms of Service</a> and
+                            <a href="#" class="text-purple">Privacy
+                                Policy</a>
+                        </label>
+                    </div>
+                    <button type="submit" class="btn-purple w-100 text-center">Apply as a Instructor</button>
+                </div>
+            </div>
+        </div>
+    </div>
     <section class="subscribe section">
         <div class="subscribe-area">
             <div class="container">
@@ -2460,13 +2600,46 @@
             </div>
         </div>
     </div>
-
-
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <Script>
+        $('.slick-3').slick({
+           dots: true,
+           infinite: false,
+           speed: 400,
+           slidesToShow: 3,
+           slidesToScroll: 1,
+           autoplay: false,
+           autoplaySpeed: 2000,
+           arrows: false,
+           adaptiveHeight: true,
+           responsive: [
+               {
+                   breakpoint: 1200,
+                   settings: {
+                       slidesToShow: 2,
+                       slidesToScroll: 1
+                   }
+               },
+               {
+                   breakpoint: 990,
+                   settings: {
+                       slidesToShow: 1,
+                       slidesToScroll: 1
+                   }
+               }
+           ]
+        });
     
+    </Script>
+    <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- <script src="https://vjs.zencdn.net/8.3.0/video.min.js"></script> -->
+    <script src="./js/video.min.js"></script>
+    <script src="./js/videojs-playlist.min.js"></script>
+    <script src="./JS/CoursesDetails.js"></script>
     <script src="./JS/Login.js"></script>
     <script src="./JS/SignUp.js"></script>
     <script src="./JS/scripte.js"></script>
-    <script src="./JS/Shop.js"></script>
 </body>
 </html>
