@@ -4058,3 +4058,98 @@ small {
     color: #ff6652;
     text-align: left;
 }
+
+/* ==================================================================================================================================== */
+
+
+ 
+/*            ================       ================     User Profile  page    ================        ================                   */
+
+
+/* ==================================================================================================================================== */
+
+
+.user-profile-name {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    color: #0a033c;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 0;
+}
+.user-profile-box {
+    padding: 28px;
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+.up-img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.up-name {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+    color: #0a033c;
+    margin-bottom: 12px;
+}
+.up-mail {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 32px;
+    color: #6c688a;
+}
+.up-menu-list {
+    padding: 16px 28px;
+}
+.up-menu-list li a {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    color: #0a033c;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 0;
+}
+.up-logout-box {
+    display: flex;
+    justify-content: center;
+
+    align-items: center;
+    padding: 28px;
+}
+.up-logout-box a {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    color: #9c4df4;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+.header-buttons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.dropdown-userprofile-toggle::after{
+    display: none !important;
+}
+.user-profile-dropdown {
+    width: 460px;
+    border-radius: 20px;
+    border: 0;
+    left: unset !important;
+    right: 0 !important;
+    top: 60px !important;
+    transform: none !important;
+}
+.header.sticky .User-name{
+    color: white !important;
+}

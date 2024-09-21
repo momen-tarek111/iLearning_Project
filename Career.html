@@ -1793,14 +1793,81 @@
                                     <a class="nav-link" href="#">Pricing</a>
                                 </li> <!--/nav-item -->
                             </ul> <!--/navbar-nav -->
-                            <div class="header-buttons d-none d-xl-flex justify-content-between align-items-center">
+                            <div class="header-buttons">
                                 <div data-bs-toggle="modal" data-bs-target="#header-cartModal" class="cart-btn">
                                     <img src="./images/cart.svg" alt="cart">
                                     <div class="cart-number">2</div>
                                 </div>
-                                <a href="./Login.html" class="signin-btn">Login</a>
-                                <a href="./SignUp.html" class="signup-btn">Sign Up</a>
-                            </div> <!--/header-buttons -->
+                                <div class="without-login d-flex gap-2">
+                                    <a href="./Login.html" class="signin-btn">Login</a>
+                                    <a href="./SignUp.html" class="signup-btn">Sign Up</a>
+                                </div>
+                                <div class="without-login d-none">
+                                    <div class="dropdown">
+                                        <button class="user-profile-name dropdown-toggle dropdown-userprofile-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            <span class="user-profile-img">
+                                                <img src="./images/profile.png" alt="profile-picture">
+                                            </span>
+                                            <span class="User-name">Mahbubur Rahman<span class="ms-2"><i class="fas fa-angle-down"></i></span></span>
+                                        </button>
+                                        <div class="dropdown-menu user-profile-dropdown">
+                                            <div class="user-profile-box">
+                                                <div class="up-img">
+                                                    <img src="./images/profile-lg.png" alt="">
+                                                </div>
+                                                <div class="up-content">
+                                                    <h3 class="up-name">Mahbubur Rahman</h3>
+                                                    <h3 class="up-mail">example@gmail.com</h3>
+                                                </div>
+                                            </div>
+                                            <hr>
+                                            <ul class="up-menu-list">
+                                                <li>
+                                                    <a href="#">
+                                                        <span><img src="./images/learning.svg" alt="user-menu"></span>My Learning
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <span><img src="./images/purchase.svg" alt="user-menu"></span>My Purchases
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <span><img src="./images/wishlist.svg" alt="user-menu"></span>Wishlist
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <span><img src="./images/certificate.svg" alt="user-menu"></span>Get Certificate
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <span><img src="./images/setting.svg" alt="user-menu"></span>Account Settings
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                            <hr>
+                                            <div class="up-logout-box">
+                                                <a href="#">
+                                                    <span><img src="./images/logout.svg" alt="user-menu"></span>Log out
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div><!--/header-buttons -->
+                            
+                            
+                            <!-- <div class="header-buttons d-none d-xl-flex justify-content-between align-items-center">
+                                <div data-bs-toggle="modal" data-bs-target="#header-cartModal" class="cart-btn">
+                                    <img src="./images/cart.svg" alt="cart">
+                                    <div class="cart-number">2</div>
+                                </div>
+                                
+                            </div> -->
+                        
                         </div> <!--/collapse -->
                     </div> <!--/container-fluid -->
                 </nav> <!--/nav -->
@@ -2148,7 +2215,6 @@
             </div>
         </div>
     </div>
-
     <section class="subscribe section">
         <div class="subscribe-area">
             <div class="container">
